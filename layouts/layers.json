@@ -1,0 +1,40 @@
+{
+	"layers_grid": {
+		"type": "array",
+		"orientation": "vertical",
+		"margin": "0,0",
+		"content": [
+			{
+				"type": "array",
+				"orientation": "horizontal",
+				"margin": "0,0",
+				"content": [
+					{
+						"type": "itemgrid",
+						"item_margin": "2, 2",
+						"h_alignment": "left",
+						"item_h_alignment": "center",
+						"rows": [
+							[
+								"l0_access"
+							],
+							[
+								"l1_access",
+								"l2_access",
+								"l3_access"
+							],
+							[
+								"l4_access",
+								"l5_access",
+								"l6_access"
+							],
+							[
+								"l7_access"
+							]
+						]
+					}	
+				]
+			}
+		]
+	}
+}

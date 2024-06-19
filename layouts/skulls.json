@@ -1,0 +1,72 @@
+{
+	"skulls_grid": {
+		"type": "array",
+		"orientation": "vertical",
+		"margin": "0,0",
+		"content": [
+			{
+				"type": "array",
+				"orientation": "horizontal",
+				"margin": "0,0",
+				"content": [
+					{
+						"type": "itemgrid",
+						"item_margin": "2, 2",
+						"item_h_alignment": "center",
+						"h_alignment": "left",
+						"rows": [
+							[
+								"0_2_bskull",
+								"0_s_bskull",
+								"1_1_bskull",
+								"1_2_bskull",
+								"1_3_bskull",
+								"1_4_bskull"
+							],
+							[
+								"",
+								"0_s_rskull",
+								"1_1_rskull",
+								"1_2_rskull",
+								"1_3_rskull",
+								""
+							],
+							[
+								"2_3_bskull",
+								"2_4_bskull",
+								"4_2_bskull",
+								"4_3_bskull",
+								"4_4_bskull",
+								"5_1_bskull"
+							],
+							[
+								"2_3_rskull",
+								"2_4_rskull",
+								"4_2_rskull",
+								"",
+								"",
+								"",
+							],
+							[
+								"5_2_bskull",
+								"5_3_bskull",
+								"6_1_rskull",
+								"7_1_bskull",
+								"7_2_rskull",
+								"7_s_bskull"
+							],
+							[
+								"5_2_rskull",
+								"5_3_rskull",
+								"",
+								"7_1_rskull",
+								"",
+								"7_s_rskull"
+							]
+						]
+					}
+				]
+			}
+		]
+	}
+}

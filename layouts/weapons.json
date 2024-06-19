@@ -1,0 +1,79 @@
+{
+    "weapons_grid": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "2, 2",
+                        "h_alignment": "left",
+                        "rows": [
+                            [
+                                "arm0",
+                                "arm1",
+                                "arm2"
+                            ],
+                            [
+                                "rev0",
+                                "rev1",
+                                "rev2",
+                                "revstd",
+                                "revalt"
+                            ],
+                            [
+                                "rev0_fire2",
+                                "rev1_fire2",
+                                "rev2_fire2"
+                            ],
+                            [
+                                "sho0",
+                                "sho1",
+                                "sho2",
+                                "shostd",
+                                "shoalt"
+                            ],
+                            [
+                                "sho0_fire2",
+                                "sho1_fire2",
+                                "sho2_fire2"
+                            ],
+                            [
+                                "nai0",
+                                "nai1",
+                                "nai2",
+                                "naistd",
+                                "naialt"
+                            ],
+                            [
+                                "nai0_fire2",
+                                "nai1_fire2",
+                                "nai2_fire2"
+                            ],
+                            [
+                                "rai0",
+                                "rai1",
+                                "rai2"
+                            ],
+                            [
+                                "rock0",
+                                "rock1",
+                                "rock2"
+                            ],
+                            [
+                                "rock0_fire2",
+                                "rock1_fire2",
+                                "rock2_fire2"
+                            ]
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

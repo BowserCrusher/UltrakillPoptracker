@@ -1,0 +1,944 @@
+[
+	{
+		"name": "Feedbacker",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "/images/weapons/arm0.png",
+		"codes": "arm0"
+	}, 
+	{
+		"name": "Knuckleblaster",
+		"type": "toggle",
+		"img": "/images/weapons/arm1.png",
+		"codes": "arm1"
+	}, 
+	{
+		"name": "Whiplash",
+		"type": "toggle",
+		"img": "/images/weapons/arm2.png",
+		"codes": "arm2"
+	}, 
+	{
+		"name": "Revolver - Piercer",
+		"type": "toggle",
+		"img": "/images/weapons/rev0.png",
+		"codes": "rev0"
+	}, 
+	{
+		"name": "Secondary Fire - Piercer",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "/images/weapons/rev0_fire2.png",
+		"codes": "rev0_fire2"
+	}, 
+	{
+		"name": "Revolver - Marksman",
+		"type": "toggle",
+		"img": "/images/weapons/rev1.png",
+		"codes": "rev1"
+	}, 
+	{
+		"name": "Secondary Fire - Marksman",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "/images/weapons/rev1_fire2.png",
+		"codes": "rev1_fire2"
+	}, 
+	{
+		"name": "Revolver - Sharpshooter",
+		"type": "toggle",
+		"img": "/images/weapons/rev2.png",
+		"codes": "rev2"
+	}, 
+	{
+		"name": "Secondary Fire - Sharpshooter",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "/images/weapons/rev2_fire2.png",
+		"codes": "rev2_fire2"
+	}, 
+	{
+		"name": "Revolver - Standard",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "/images/weapons/revstd.png",
+		"codes": "revstd"
+	}, 
+	{
+		"name": "Revolver - Alternate",
+		"type": "toggle",
+		"img": "/images/weapons/revalt.png",
+		"codes": "revalt"
+	}, 
+	{
+		"name": "Shotgun - Core Eject",
+		"type": "toggle",
+		"img": "/images/weapons/sho0.png",
+		"codes": "sho0"
+	}, 
+	{
+		"name": "Secondary Fire - Core Eject",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "/images/weapons/sho0_fire2.png",
+		"codes": "sho0_fire2"
+	}, 
+	{
+		"name": "Shotgun - Pump Charge",
+		"type": "toggle",
+		"img": "/images/weapons/sho1.png",
+		"codes": "sho1"
+	}, 
+	{
+		"name": "Secondary Fire - Pump Charge",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "/images/weapons/sho1_fire2.png",
+		"codes": "sho1_fire2"
+	}, 
+	{
+		"name": "Shotgun - Sawed-On",
+		"type": "toggle",
+		"img": "/images/weapons/sho2.png",
+		"codes": "sho2"
+	}, 
+	{
+		"name": "Secondary Fire - Sawed-On",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "/images/weapons/sho2_fire2.png",
+		"codes": "sho2_fire2"
+	}, 
+	{
+		"name": "Shotgun - Standard",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "/images/weapons/shostd.png",
+		"codes": "shostd"
+	}, 
+	{
+		"name": "Shotgun - Alternate",
+		"type": "toggle",
+		"img": "/images/weapons/shoalt.png",
+		"codes": "shoalt"
+	}, 
+	{
+		"name": "Nailgun - Attractor",
+		"type": "toggle",
+		"img": "/images/weapons/nai0.png",
+		"codes": "nai0"
+	}, 
+	{
+		"name": "Secondary Fire - Attractor",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "/images/weapons/nai0_fire2.png",
+		"codes": "nai0_fire2"
+	}, 
+	{
+		"name": "Nailgun - Overheat",
+		"type": "toggle",
+		"img": "/images/weapons/nai1.png",
+		"codes": "nai1"
+	}, 
+	{
+		"name": "Secondary Fire - Overheat",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "/images/weapons/nai1_fire2.png",
+		"codes": "nai1_fire2"
+	}, 
+	{
+		"name": "Nailgun - JumpStart",
+		"type": "toggle",
+		"img": "/images/weapons/nai2.png",
+		"codes": "nai2"
+	}, 
+	{
+		"name": "Secondary Fire - JumpStart",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "/images/weapons/nai2_fire2.png",
+		"codes": "nai2_fire2"
+	}, 
+	{
+		"name": "Nailgun - Standard",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "/images/weapons/naistd.png",
+		"codes": "naistd"
+	}, 
+	{
+		"name": "Nailgun - Alternate",
+		"type": "toggle",
+		"img": "/images/weapons/naialt.png",
+		"codes": "naialt"
+	}, 
+	{
+		"name": "Railcannon - Electric",
+		"type": "toggle",
+		"img": "/images/weapons/rai0.png",
+		"codes": "rai0"
+	}, 
+	{
+		"name": "Railcannon - Screwdriver",
+		"type": "toggle",
+		"img": "/images/weapons/rai1.png",
+		"codes": "rai1"
+	}, 
+	{
+		"name": "Railcannon - Malicious",
+		"type": "toggle",
+		"img": "/images/weapons/rai2.png",
+		"codes": "rai2"
+	}, 
+	{
+		"name": "Rocket Launcher - Freezeframe",
+		"type": "toggle",
+		"img": "/images/weapons/rock0.png",
+		"codes": "rock0"
+	}, 
+	{
+		"name": "Secondary Fire - Freezeframe",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "/images/weapons/rock0_fire2.png",
+		"codes": "rock0_fire2"
+	}, 
+	{
+		"name": "Rocket Launcher - S.R.S. Cannon",
+		"type": "toggle",
+		"img": "/images/weapons/rock1.png",
+		"codes": "rock1"
+	}, 
+	{
+		"name": "Secondary Fire - S.R.S. Cannon",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "/images/weapons/rock1_fire2.png",
+		"codes": "rock1_fire2"
+	}, 
+	{
+		"name": "Rocket Launcher - Firestarter",
+		"type": "toggle",
+		"img": "/images/weapons/rock2.png",
+		"codes": "rock2"
+	},
+	{
+		"name": "Secondary Fire - Firestarter",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "/images/weapons/rock2_fire2.png",
+		"codes": "rock2_fire2"
+	},
+	{
+		"name": "0-1: INTO THE FIRE",
+		"type": "toggle",
+		"img": "images/levels/0-1.png",
+		"codes": "0_1_access",
+		"initial_active_state": true,
+		"allow_disabled": false
+	},
+	{
+		"name": "0-2: THE MEATGRINDER",
+		"type": "toggle",
+		"img": "images/levels/0-2.png",
+		"codes": "0_2_access"
+	},
+	{
+		"name": "0-3: DOUBLE DOWN",
+		"type": "toggle",
+		"img": "images/levels/0-3.png",
+		"codes": "0_3_access"
+	},
+	{
+		"name": "0-4: A ONE-MACHINE ARMY",
+		"type": "toggle",
+		"img": "images/levels/0-4.png",
+		"codes": "0_4_access"
+	},
+	{
+		"name": "0-5: CERBERUS",
+		"type": "toggle",
+		"img": "images/levels/0-5.png",
+		"codes": "0_5_access"
+	},
+	{
+		"name": "OVERTURE: THE MOUTH OF HELL",
+		"type": "toggle",
+		"img": "images/levels/layer0.png",
+		"codes": "l0_access"
+	},
+	{
+		"name": "1-1: HEART OF THE SUNRISE",
+		"type": "toggle",
+		"img": "images/levels/1-1.png",
+		"codes": "1_1_access"
+	},
+	{
+		"name": "1-2: THE BURNING WORLD",
+		"type": "toggle",
+		"img": "images/levels/1-2.png",
+		"codes": "1_2_access"
+	},
+	{
+		"name": "1-3: HALLS OF SACRED REMAINS",
+		"type": "toggle",
+		"img": "images/levels/1-3.png",
+		"codes": "1_3_access"
+	},
+	{
+		"name": "1-4: CLAIRE DE LUNE",
+		"type": "toggle",
+		"img": "images/levels/1-4.png",
+		"codes": "1_4_access"
+	},
+	{
+		"name": "LAYER 1: LIMBO",
+		"type": "toggle",
+		"img": "images/levels/layer1.png",
+		"codes": "l1_access"
+	},
+	{
+		"name": "2-1: BRIDGEBURNER",
+		"type": "toggle",
+		"img": "images/levels/2-1.png",
+		"codes": "2_1_access"
+	},
+	{
+		"name": "2-2: DEATH AT 20,000 VOLTS",
+		"type": "toggle",
+		"img": "images/levels/2-2.png",
+		"codes": "2_2_access"
+	},
+	{
+		"name": "2-3: SHEER HEART ATTACK",
+		"type": "toggle",
+		"img": "images/levels/2-3.png",
+		"codes": "2_3_access"
+	},
+	{
+		"name": "2-4: COURT OF THE CORPSE KING",
+		"type": "toggle",
+		"img": "images/levels/2-4.png",
+		"codes": "2_4_access"
+	},
+	{
+		"name": "LAYER 2: LUST",
+		"type": "toggle",
+		"img": "images/levels/layer2.png",
+		"codes": "l2_access"
+	},
+	{
+		"name": "3-1: BELLY OF THE BEAST",
+		"type": "toggle",
+		"img": "images/levels/3-1.png",
+		"codes": "3_1_access"
+	},
+	{
+		"name": "3-2: IN THE FLESH",
+		"type": "toggle",
+		"img": "images/levels/3-2.png",
+		"codes": "3_2_access"
+	},
+	{
+		"name": "LAYER 3: GLUTTONY",
+		"type": "toggle",
+		"img": "images/levels/layer3.png",
+		"codes": "l3_access"
+	},
+	{
+		"name": "4-1: SLAVES TO POWER",
+		"type": "toggle",
+		"img": "images/levels/4-1.png",
+		"codes": "4_1_access"
+	},
+	{
+		"name": "4-2: GOD DAMN THE SUN",
+		"type": "toggle",
+		"img": "images/levels/4-2.png",
+		"codes": "4_2_access"
+	},
+	{
+		"name": "4-3: A SHOT IN THE DARK",
+		"type": "toggle",
+		"img": "images/levels/4-3.png",
+		"codes": "4_3_access"
+	},
+	{
+		"name": "4-4: CLAIRE DE SOLEIL",
+		"type": "toggle",
+		"img": "images/levels/4-4.png",
+		"codes": "4_4_access"
+	},
+	{
+		"name": "LAYER 4: GREED",
+		"type": "toggle",
+		"img": "images/levels/layer4.png",
+		"codes": "l4_access"
+	},
+	{
+		"name": "5-1: IN THE WAKE OF POSEIDON",
+		"type": "toggle",
+		"img": "images/levels/5-1.png",
+		"codes": "5_1_access"
+	},
+	{
+		"name": "5-2: WAVES OF THE STARLESS SEA",
+		"type": "toggle",
+		"img": "images/levels/5-2.png",
+		"codes": "5_2_access"
+	},
+	{
+		"name": "5-3: SHIP OF FOOLS",
+		"type": "toggle",
+		"img": "images/levels/5-3.png",
+		"codes": "5_3_access"
+	},
+	{
+		"name": "5-4: LEVIATHAN",
+		"type": "toggle",
+		"img": "images/levels/5-4.png",
+		"codes": "5_4_access"
+	},
+	{
+		"name": "LAYER 5: WRATH",
+		"type": "toggle",
+		"img": "images/levels/layer5.png",
+		"codes": "l5_access"
+	},
+	{
+		"name": "6-1: CRY FOR THE WEEPER",
+		"type": "toggle",
+		"img": "images/levels/6-1.png",
+		"codes": "6_1_access"
+	},
+	{
+		"name": "6-2: AESTHETICS OF HATE",
+		"type": "toggle",
+		"img": "images/levels/6-2.png",
+		"codes": "6_2_access"
+	},
+	{
+		"name": "LAYER 6: HERESY",
+		"type": "toggle",
+		"img": "images/levels/layer6.png",
+		"codes": "l6_access"
+	},
+	{
+		"name": "7-1: GARDEN OF FORKING PATHS",
+		"type": "toggle",
+		"img": "images/levels/7-1.png",
+		"codes": "7_1_access"
+	},
+	{
+		"name": "7-2: LIGHT UP THE NIGHT",
+		"type": "toggle",
+		"img": "images/levels/7-2.png",
+		"codes": "7_2_access"
+	},
+	{
+		"name": "7-3: NO SOUND, NO MEMORY",
+		"type": "toggle",
+		"img": "images/levels/7-3.png",
+		"codes": "7_3_access"
+	},
+	{
+		"name": "7-4: ...LIKE ANTENNAS TO HEAVEN",
+		"type": "toggle",
+		"img": "images/levels/7-4.png",
+		"codes": "7_4_access"
+	},
+	{
+		"name": "LAYER 7: VIOLENCE",
+		"type": "toggle",
+		"img": "images/levels/layer7.png",
+		"codes": "l7_access"
+	},
+	{
+		"name": "P-1: SOUL SURVIVOR",
+		"type": "toggle",
+		"img": "images/levels/P-1.png",
+		"codes": "p_1_access"
+	},
+	{
+		"name": "P-2: WAIT OF THE WORLD",
+		"type": "toggle",
+		"img": "images/levels/P-2.png",
+		"codes": "p_2_access"
+	},
+	{
+		"name": "Levels Completed",
+		"type": "consumable",
+		"max_quantity": 33,
+		"initial_quantity": 0,
+		"img": "images/other/LevelsCompleted.png",
+		"codes": "lvlcomplete"
+	},
+	{
+		"name": "Blue Skull (0-2)",
+		"type": "toggle",
+		"img": "images/keys/0-2Blue.png",
+		"codes": "0_2_bskull"
+	},
+	{
+		"name": "Blue Skull (0-S)",
+		"type": "toggle",
+		"img": "images/keys/0-SBlue.png",
+		"codes": "0_s_bskull"
+	},
+	{
+		"name": "Red Skull (0-S)",
+		"type": "toggle",
+		"img": "images/keys/0-SRed.png",
+		"codes": "0_s_rskull"
+	},
+	{
+		"name": "Blue Skull (1-1)",
+		"type": "toggle",
+		"img": "images/keys/1-1Blue.png",
+		"codes": "1_1_bskull"
+	},
+	{
+		"name": "Red Skull (1-1)",
+		"type": "toggle",
+		"img": "images/keys/1-1Red.png",
+		"codes": "1_1_rskull"
+	},
+	{
+		"name": "Blue Skull (1-2)",
+		"type": "toggle",
+		"img": "images/keys/1-2Blue.png",
+		"codes": "1_2_bskull"
+	},
+	{
+		"name": "Red Skull (1-2)",
+		"type": "toggle",
+		"img": "images/keys/1-2Red.png",
+		"codes": "1_2_rskull"
+	},
+	{
+		"name": "Blue Skull (1-3)",
+		"type": "toggle",
+		"img": "images/keys/1-3Blue.png",
+		"codes": "1_3_bskull"
+	},
+	{
+		"name": "Red Skull (1-3)",
+		"type": "toggle",
+		"img": "images/keys/1-3Red.png",
+		"codes": "1_3_rskull"
+	},
+	{
+		"name": "Blue Skull (1-4)",
+		"type": "consumable",
+		"max_quantity": 4,
+		"initial_quantity": 0,
+		"img": "images/keys/1-4Blue.png",
+		"codes": "1_4_bskull"
+	},
+	{
+		"name": "Blue Skull (2-3)",
+		"type": "toggle",
+		"img": "images/keys/2-3Blue.png",
+		"codes": "2_3_bskull"
+	},
+	{
+		"name": "Red Skull (2-3)",
+		"type": "toggle",
+		"img": "images/keys/2-3Red.png",
+		"codes": "2_3_rskull"
+	},
+	{
+		"name": "Blue Skull (2-4)",
+		"type": "toggle",
+		"img": "images/keys/2-4Blue.png",
+		"codes": "2_4_bskull"
+	},
+	{
+		"name": "Red Skull (2-4)",
+		"type": "toggle",
+		"img": "images/keys/2-4Red.png",
+		"codes": "2_4_rskull"
+	},
+	{
+		"name": "Blue Skull (4-2)",
+		"type": "toggle",
+		"img": "images/keys/4-2Blue.png",
+		"codes": "4_2_bskull"
+	},
+	{
+		"name": "Red Skull (4-2)",
+		"type": "toggle",
+		"img": "images/keys/4-2Red.png",
+		"codes": "4_2_rskull"
+	},
+	{
+		"name": "Blue Skull (4-3)",
+		"type": "toggle",
+		"img": "images/keys/4-3Blue.png",
+		"codes": "4_3_bskull"
+	},
+	{
+		"name": "Blue Skull (4-4)",
+		"type": "toggle",
+		"img": "images/keys/4-4Blue.png",
+		"codes": "4_4_bskull"
+	},
+	{
+		"name": "Blue Skull (5-1)",
+		"type": "consumable",
+		"max_quantity": 3,
+		"initial_quantity": 0,
+		"img": "images/keys/5-1Blue.png",
+		"codes": "5_1_bskull"
+	},
+	{
+		"name": "Blue Skull (5-2)",
+		"type": "toggle",
+		"img": "images/keys/5-2Blue.png",
+		"codes": "5_2_bskull"
+	},
+	{
+		"name": "Red Skull (5-2)",
+		"type": "toggle",
+		"img": "images/keys/5-2Red.png",
+		"codes": "5_2_rskull"
+	},
+	{
+		"name": "Blue Skull (5-3)",
+		"type": "toggle",
+		"img": "images/keys/5-3Blue.png",
+		"codes": "5_3_bskull"
+	},
+	{
+		"name": "Red Skull (5-3)",
+		"type": "toggle",
+		"img": "images/keys/5-3Red.png",
+		"codes": "5_3_rskull"
+	},
+	{
+		"name": "Red Skull (6-1)",
+		"type": "toggle",
+		"img": "images/keys/6-1Red.png",
+		"codes": "6_1_rskull"
+	},
+	{
+		"name": "Blue Skull (7-1)",
+		"type": "toggle",
+		"img": "images/keys/7-1Blue.png",
+		"codes": "7_1_bskull"
+	},
+	{
+		"name": "Red Skull (7-1)",
+		"type": "toggle",
+		"img": "images/keys/7-1Red.png",
+		"codes": "7_1_rskull"
+	},
+	{
+		"name": "Red Skull (7-2)",
+		"type": "toggle",
+		"img": "images/keys/7-2Red.png",
+		"codes": "7_2_rskull"
+	},
+	{
+		"name": "Blue Skull (7-S)",
+		"type": "toggle",
+		"img": "images/keys/7-SBlue.png",
+		"codes": "7_s_bskull"
+	},
+	{
+		"name": "Red Skull (7-S)",
+		"type": "toggle",
+		"img": "images/keys/7-SRed.png",
+		"codes": "7_s_rskull"
+	},
+	{
+		"name": "Limbo Switch I",
+		"type": "toggle",
+		"img": "images/switches/LimboSwitch1.png",
+		"codes": "lswitch1"
+	},
+	{
+		"name": "Limbo Switch II",
+		"type": "toggle",
+		"img": "images/switches/LimboSwitch2.png",
+		"codes": "lswitch2"
+	},
+	{
+		"name": "Limbo Switch III",
+		"type": "toggle",
+		"img": "images/switches/LimboSwitch3.png",
+		"codes": "lswitch3"
+	},
+	{
+		"name": "Limbo Switch IV",
+		"type": "toggle",
+		"img": "images/switches/LimboSwitch4.png",
+		"codes": "lswitch4"
+	},
+	{
+		"name": "Violence Switch I",
+		"type": "toggle",
+		"img": "images/switches/ViolenceSwitch1.png",
+		"codes": "vswitch1"
+	},
+	{
+		"name": "Violence Switch II",
+		"type": "toggle",
+		"img": "images/switches/ViolenceSwitch2.png",
+		"codes": "vswitch2"
+	},
+	{
+		"name": "Violence Switch III",
+		"type": "toggle",
+		"img": "images/switches/ViolenceSwitch3.png",
+		"codes": "vswitch3"
+	},
+	{
+		"name": "Stamina Bar",
+		"type": "consumable",
+		"max_quantity": 3,
+		"initial_quantity": 3,
+		"img": "images/movement/dash.png",
+		"codes": "dash"
+	},
+	{
+		"name": "Wall Jump",
+		"type": "consumable",
+		"max_quantity": 3,
+		"initial_quantity": 3,
+		"img": "images/movement/walljump.png",
+		"codes": "walljump"
+	},
+	{
+		"name": "Slam",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "images/movement/slam.png",
+		"codes": "slam"
+	},
+	{
+		"name": "Slide",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "images/movement/slide.png",
+		"codes": "slide"
+	},
+	{
+		"name": "Clash Mode",
+		"type": "toggle",
+		"img": "images/other/clash.png",
+		"codes": "clashitem"
+	},
+	{
+		"name": "Goal Amount",
+		"type": "consumable",
+		"max_quantity": 33,
+		"initial_quantity": 15,
+		"min_quantity": 1,
+		"allow_disabled": false,
+		"img": "images/other/GoalAmount.png",
+		"codes": "goalamount"
+	},
+	{
+		"name": "Goal",
+		"type": "progressive",
+		"loop": true,
+		"allow_disabled": false,
+		"initial_stage_idx": 5,
+		"stages": [
+			{
+				"img": "images/levels/1-4.png",
+				"name": "Goal: 1-4",
+				"codes": "goal,goal1",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/2-4.png",
+				"name": "Goal: 2-4",
+				"codes": "goal,goal2",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/3-2.png",
+				"name": "Goal: 3-2",
+				"codes": "goal,goal3",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/4-4.png",
+				"name": "Goal: 4-4",
+				"codes": "goal,goal4",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/5-4.png",
+				"name": "Goal: 5-4",
+				"codes": "goal,goal5",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/6-2.png",
+				"name": "Goal: 6-2",
+				"codes": "goal,goal6",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/P-1.png",
+				"name": "Goal: P-1",
+				"codes": "goal,goalp1",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/P-2.png",
+				"name": "Goal: P-2",
+				"codes": "goal,goalp2",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/7-4.png",
+				"name": "Goal: 7-4",
+				"codes": "goal,goal7",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Boss Rewards",
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": false,
+		"stages": [
+			{
+				"img": "images/other/BossOff.png",
+				"name": "Boss Rewards - Disabled",
+				"codes": "boss,bossoff"
+			},
+			{
+				"img": "images/other/Boss.png",
+				"name": "Boss Rewards - Standard",
+				"codes": "boss,bossstd"
+			},
+			{
+				"img": "images/other/BossEx.png",
+				"name": "Boss Rewards - Extended",
+				"codes": "boss,bossex"
+			}
+		]
+	},
+	{
+		"name": "Challenge Rewards",
+		"type": "toggle",
+		"img": "images/other/Challenge.png",
+		"codes": "challenge"
+	},
+	{
+		"name": "P Rank Rewards",
+		"type": "toggle",
+		"img": "images/other/Prank.png",
+		"codes": "prank"
+	},
+	{
+		"name": "Hank Rewards",
+		"type": "toggle",
+		"img": "images/keys/Blue.png",
+		"codes": "hank"
+	},
+	{
+		"name": "Clash Reward",
+		"type": "toggle",
+		"img": "images/other/clash.png",
+		"codes": "clash"
+	},
+	{
+		"name": "Fish Rewards",
+		"type": "toggle",
+		"img": "images/other/Fish.png",
+		"codes": "fish"
+	},
+	{
+		"name": "Cleaning Rewards",
+		"type": "toggle",
+		"img": "images/weapons/washer.png",
+		"codes": "clean"
+	},
+	{
+		"name": "Chess Reward",
+		"type": "toggle",
+		"img": "images/other/chess.png",
+		"codes": "chess"
+	},
+	{
+		"name": "Rocket Race Reward",
+		"type": "toggle",
+		"img": "images/weapons/rock0_fire2.png",
+		"codes": "rockrace"
+	},
+	{
+		"name": "Randomize Secondary Fire",
+		"type": "toggle",
+		"img": "images/weapons/rev1_fire2.png",
+		"codes": "secfire"
+	},
+	{
+		"name": "Randomize Limbo Switches",
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": false,
+		"stages": [
+			{
+				"img": "images/switches/SwitchOff.png",
+				"name": "Randomize Limbo Switches - Disabled",
+				"codes": "lswitches,lswitchoff",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/switches/LimboSwitch1.png",
+				"name": "Randomize Limbo Switches - Enabled",
+				"codes": "lswitches, lswitchon",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Randomize Violence Switches",
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": false,
+		"stages": [
+			{
+				"img": "images/switches/SwitchOff.png",
+				"name": "Randomize Violence Switches - Disabled",
+				"codes": "vswitches,vswitchoff",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/switches/ViolenceSwitch1.png",
+				"name": "Randomize Violence Switches - Enabled",
+				"codes": "vswitches, vswitchon",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Randomize Skulls",
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": false,
+		"stages": [
+			{
+				"img": "images/keys/RedOff.png",
+				"name": "Randomize Skulls - Disabled",
+				"codes": "skulls, skullsoff",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/keys/Red.png",
+				"name": "Randomize Skulls - Enabled",
+				"codes": "skulls, skullson",
+				"inherit_codes": false
+			}
+		]
+	}
+]

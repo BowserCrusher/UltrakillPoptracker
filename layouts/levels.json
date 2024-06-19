@@ -1,0 +1,74 @@
+{
+	"levels_grid": {
+		"type": "array",
+		"orientation": "vertical",
+		"margin": "0,0",
+		"content": [
+			{
+				"type": "array",
+				"orientation": "horizontal",
+				"margin": "0,0",
+				"content": [
+					{
+						"type": "itemgrid",
+						"item_margin": "2, 2",
+						"h_alignment": "left",
+						"item_h_alignment": "center",
+						"rows": [
+							[
+								"0_1_access",
+								"0_2_access",
+								"0_3_access",
+								"0_4_access",
+								"0_5_access"
+							],
+							[
+								"1_1_access",
+								"1_2_access",
+								"1_3_access",
+								"1_4_access"
+							],
+							[
+								"2_1_access",
+								"2_2_access",
+								"2_3_access",
+								"2_4_access"
+							],
+							[
+								"3_1_access",
+								"3_2_access",
+								"p_1_access"
+							],
+							[
+								"4_1_access",
+								"4_2_access",
+								"4_3_access",
+								"4_4_access"
+							],
+							[
+								"5_1_access",
+								"5_2_access",
+								"5_3_access",
+								"5_4_access"
+							],
+							[
+								"6_1_access",
+								"6_2_access",
+								"p_2_access"
+							],
+							[
+								"7_1_access",
+								"7_2_access",
+								"7_3_access",
+								"7_4_access"
+							],
+							[
+								"lvlcomplete"
+							]
+						]
+					}	
+				]
+			}
+		]
+	}
+}

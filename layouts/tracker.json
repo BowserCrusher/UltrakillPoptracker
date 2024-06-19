@@ -1,0 +1,111 @@
+{
+	"tracker_default": {
+		"type": "container",
+		"background": "#000000",
+		"content": {
+			"type": "dock",
+			"dropshadow": true,
+			"content": [
+				{
+					"type": "dock",
+					"dock": "bottom",
+					"content": [
+						{
+							"type": "group",
+							"header": "Weapons",
+							"dock": "left",
+							"margin": "0,0,3,0",
+							"content": {
+								"type": "layout",
+								"h_alignment": "center",
+								"v_alignment": "center",
+								"key": "weapons_grid"
+							}
+						},
+						{
+							"type": "group",
+							"header": "Levels",
+							"dock": "left",
+							"margin": "0,0,3,0",
+							"content": {
+								"type": "layout",
+								"h_alignment": "center",
+								"v_alignment": "center",
+								"key": "levels_grid"
+							}
+						},
+						{
+							"type": "group",
+							"header": "Layers",
+							"dock": "left",
+							"margin": "0,0,3,0",
+							"content": {
+								"type": "layout",
+								"h_alignment": "center",
+								"v_alignment": "center",
+								"key": "layers_grid"
+							}
+						},
+						{
+							"type": "group",
+							"header": "Skulls",
+							"dock": "left",
+							"margin": "0,0,3,0",
+							"content": {
+								"type": "layout",
+								"h_alignment": "center",
+								"v_alignment": "center",
+								"key": "skulls_grid"
+							}
+						},
+						{
+							"type": "group",
+							"header": "Switches",
+							"dock": "left",
+							"margin": "0,0,3,0",
+							"content": {
+								"type": "layout",
+								"h_alignment": "center",
+								"v_alignment": "center",
+								"key": "switches_grid"
+							}
+						},
+						{
+							"type": "group",
+							"header": "Movement",
+							"dock": "left",
+							"margin": "0,0,3,0",
+							"content": {
+								"type": "layout",
+								"h_alignment": "center",
+								"v_alignment": "center",
+								"key": "movement_grid"
+							}
+						},
+						{
+							"type": "group",
+							"header": "Settings",
+							"dock": "left",
+							"margin": "0,0,3,0",
+							"content": {
+								"type": "layout",
+								"h_alignment": "center",
+								"v_alignment": "center",
+								"key": "settings_grid"
+							}
+						}
+					]
+				},
+				{
+				    "type": "dock",
+				    "content": {
+					  "type": "map",
+					  "maps": [
+						  "levelselect"
+					  ]
+					}
+				}
+			]
+		}
+	}
+}
