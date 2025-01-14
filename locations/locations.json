@@ -990,6 +990,10 @@
 						"access_rules": ["$can_break_wall"]
 					},
 					{
+						"name": "Weapon",
+						"access_rules": []
+					},
+					{
 						"name": "Cleared 2-2",
 						"access_rules": [],
 						"visibility_rules": ["$goal_not_22"],
