@@ -134,6 +134,12 @@ function has_shoalt1_fire2()
 	)
 end
 
+function has_shoany0_fire2()
+	return(
+		has_shostd0_fire2() or has_shoalt0_fire2()
+	)
+end
+
 function has_shoany1_fire2()
 	return(
 		has_shostd1_fire2() or has_shoalt1_fire2()
@@ -227,6 +233,12 @@ end
 function can_break_glass()
 	return(
 		has_rai() or has_rock() or has("arm1") or has_revstd_fire2() or has_revalt() or has_shostd_fire2() or has_shoalt() or pro_boost()
+	)
+end
+
+function can_break_far_glass()
+	return(
+		has_rai() or has_rock() or has_revstd_fire2() or has_revalt() or has_shoany0_fire2() or pro_boost()
 	)
 end
 
@@ -369,13 +381,14 @@ end
 
 function challenge_0_3()
 	return(
-		(slam_storage() and can_break_glass()) or 
-		(has_shoalt1_fire2() and (has_rai() or has_rock() or has("arm1") or has_revstd_fire2() or has_revalt() or has_shostd_fire2() or pro_boost())) or 
-		((has_shostd0_fire2() or pro_boost()) and wall_jump2()) or 
-		(has_shostd1_fire2() and pro_boost()) or 
-		has_shoalt0_fire2() or 
-		has_rock0_fire2() or 
-		has("rai2")
+		can_break_far_glass() and (
+			slam_storage() or
+			has_shoalt0_fire2() or
+			has_shoany1_fire2() or 
+			(has_shostd0_fire2() and wall_jump2()) or
+			has_rock0_fire2() or
+			has("rai2")
+		)
 	)
 end
 
@@ -385,7 +398,7 @@ function level_0_5()
 	)
 end
 
-function jump_1_1()
+function switch_1_1()
 	return(
 		has("slam") or has_rock() or has_shoany_fire2() or pro_boost() or has("rai2")
 	)
@@ -409,35 +422,51 @@ end
 
 function secret1_2_1()
 	return(
-		has_shoany_fire2() or pro_boost() or has("rai2") or has_rock() or has("slide") or wall_jump3() or dash1()
+		slam_storage() or (
+		can_break_wall() and (
+		dash1() or has_shoany0_fire2() or has_shoany1_fire2() or pro_boost() or has("rai2") or has_rock() or has("slide") or wall_jump3()
+		)
+		)
 	)
 end
 
 function secret3_2_1()
 	return(
-		((dash2() or (wall_jump1() and dash1())) and (has_shoalt0_fire2() or has_shoany1_fire2() or has("rai2"))) or has_rock0_fire2()
+		((dash2() or (wall_jump1() and dash1())) and 
+		(has_shoalt0_fire2() or has_shoany1_fire2() or has("rai2"))
+		) 
+		or has_rock0_fire2()
 	)
 end
 
-function bridge_and_tower_2_1()
+function tower_2_1()
 	return(
 		has("slam") or has("rai2") or has_rock() or (wall_jump1() and dash1()) or has_shostd_fire2() or has_shoalt() or pro_boost()
 	)
 end
 
 function challenge_2_1()
+	--[[
 	if not(
-		(has_rai() or has_rock() or has("arm1") or has_naistd1_fire2() or has_revalt() or has_shostd0_fire2() or pro_boost()) and 
-		(dash1() or has_shostd0_fire2() or pro_boost() or has("rai2") or has_rock() or has("slide") or wall_jump3()) or 
-		(has_shostd0_fire2() and (has("rai0") or has("arm1") or has_naistd1_fire2() or has_revalt() or dash1() or has("slide") or wall_jump3()))
+		(has_rai() or has_rock() or has("arm1") or has_rev1_fire2() or has_revalt() or has_shostd0_fire2() or has_shoalt() or has_naistd1_fire2() or pro_boost()) and 
+		(dash1() or has_shostd0_fire2() or pro_boost() or has_rock() or has("slide") or wall_jump3()) or 
+		(has_shostd1_fire2() and (has("rai0") or has("arm1") or has_revalt() or has_naistd1_fire2() or dash1() or has("slide") or wall_jump3()))
 	)
 	then 
 		return false
 	else 
 		return(
-			has_rock0_fire2() or slam_storage() or (wall_jump3() and dash2() and (has_shoany1_fire2() or has("rai2")))
+			has_rock0_fire2() or slam_storage() or (wall_jump3() and dash2() and (has_shoalt0_fire2() and has_shoany1_fire2() or has("rai2")))
 	)
-	end
+	end ]]--
+	return (
+		(
+		(has_rai() or has_rock() or has("arm1") or has_revany2_fire2() or has_revalt() or has_shostd0_fire2() or has_shoalt() or has_naistd1_fire2() or pro_boost()) and 
+		(dash1() or has_shostd0_fire2() or pro_boost() or has_rock() or has("slide") or wall_jump3()) or 
+		(has_shostd1_fire2() and (has("rai0") or has("arm1") or has_revalt() or has_naistd1_fire2() or dash1() or has("slide") or wall_jump3()))
+		) and
+		(has_rock0_fire2() or slam_storage() or (wall_jump3() and dash2() and (has_shoalt0_fire2() and has_shoany1_fire2() or has("rai2"))))
+	)
 end
 
 function secret1_2_2()
@@ -447,6 +476,7 @@ function secret1_2_2()
 end
 
 function challenge_2_2()
+	--[[
 	if not(
 		has_rev() or has_shostd() or has_nai() or has("rai0") or has("slide") or dash1() or can_punch()
 	)
@@ -459,6 +489,12 @@ function challenge_2_2()
 			has_rock0_fire2()
 		)
 	end
+	--]]
+	return (
+		(has_rev() or has_shostd() or has_nai() or has("rai0") or has("slide") or dash1() or has("arm2")) and 
+		(has_rev() or has_naiany0() or has_naistd1_fire2() or has_naistd2() or pro_boost() or has_rock()) and
+		(has("slide") or dash1() or has_rock0_fire2())
+	)
 end
 
 function secret3_2_3()
@@ -475,25 +511,26 @@ end
 
 function secret4_4_1()
 	return(
-		(wall_jump2() and has("slam")) or has_rock0_fire2() or has_shoalt0_fire2() or has_shoany1_fire2() or has("rai2")
+		slam_storage() or has_rock0_fire2() or has_shoalt0_fire2() or has_shoany1_fire2() or has("rai2")
 	)
 end
 
 function secret5_4_1()
 	return(
-		(jump_gen1() and can_break_wall()) or has("slam") or has_shostd_fire2() or has_shoalt() or pro_boost() or has_rock() or has("rai2")
+		(jump_gen1() and can_break_wall()) or (has("slam") or has_shostd_fire2() or has_shoalt() or pro_boost() or has_rock() or has("rai2"))
 	)
 end
 
 function challenge_4_1()
 	return(
-		has_rock0_fire2() or (wall_jump2() and dash2() and has("slam")) or ((has("rai2") or has_shoany1_fire2() or has_shoalt0_fire2()) and (wall_jump1() or has("slam")))
+		has_rock0_fire2() or slam_storage() or 
+		((has("rai2") or has_shoany1_fire2() or has_shoalt0_fire2()) and (wall_jump1() or has("slam")))
 	)
 end
 
 function level_4_3()
 	return(
-		can_punch() or has("rai2") or has_sho0_fire2() or pro_boost()
+		can_punch() or has("rai2") or has_shoany0_fire2() or pro_boost()
 	)
 end
 
@@ -511,13 +548,13 @@ end
 
 function level_5_1()
 	return(
-		(has("slam") and wall_jump3() and dash2()) or has_rock0_fire2() or has("arm2")
+		has("slide") and (has("slam") and wall_jump3() and dash2()) or has_rock0_fire2() or has("arm2")
 	)
 end
 
 function challenge_5_1()
 	return(
-		(has("arm2") or has_rock0_fire2()) and has("slide") and level_5_1() and has_fist() 
+		(has("arm2") or has_rock0_fire2()) and level_5_1() and has_fist() 
 	)
 end
 
@@ -533,8 +570,18 @@ end
 
 function level_6_2()
 	return(
-		has("slam") or wall_jump2() or has_shoalt0_fire2() or has_shoany1_fire2() or has("rai2") or has_rock0_fire2()
+		has("slam") or slam_storage() or wall_jump2() or has_shoalt0_fire2() or has_shoany1_fire2() or has("rai2") or has_rock0_fire2()
 	)
+end
+
+function start_not_01()
+	local start = Tracker:FindObjectForCode("start").CurrentStage
+	if (start == 0)
+	then 
+		return false
+	else
+		return true
+	end
 end
 
 function shop_access()
@@ -546,11 +593,14 @@ function shop_access()
 		has("4_1_access") or has("4_2_access") or has("4_3_access") or has("4_4_access") or
 		has("5_1_access") or has("5_2_access") or has("5_3_access") or has("5_4_access") or
 		has("6_1_access") or has("6_2_access") or
-		has("7_1_access") or has("7_2_access") or has("7_3_access") or has("7_4_access")
+		has("7_1_access") or has("7_2_access") or has("7_3_access") or has("7_4_access") or
+		has("l0_access") or has("l1_access") or has("l2_access") or has("l3_access") or 
+		has("l4_access") or has("l5_access") or has("l6_access") or has("l7_access") or
+		start_not_01()
 	)
 end
 
-function goal_not_1()
+function goal_not_01()
 	local goal = Tracker:FindObjectForCode("goal").CurrentStage
 	if (goal == 0)
 	then
@@ -560,7 +610,7 @@ function goal_not_1()
 	end
 end
 
-function goal_not_2()
+function goal_not_02()
 	local goal = Tracker:FindObjectForCode("goal").CurrentStage
 	if (goal == 1)
 	then
@@ -570,7 +620,7 @@ function goal_not_2()
 	end
 end
 
-function goal_not_3()
+function goal_not_03()
 	local goal = Tracker:FindObjectForCode("goal").CurrentStage
 	if (goal == 2)
 	then
@@ -580,7 +630,7 @@ function goal_not_3()
 	end
 end
 
-function goal_not_4()
+function goal_not_04()
 	local goal = Tracker:FindObjectForCode("goal").CurrentStage
 	if (goal == 3)
 	then
@@ -590,7 +640,7 @@ function goal_not_4()
 	end
 end
 
-function goal_not_5()
+function goal_not_05()
 	local goal = Tracker:FindObjectForCode("goal").CurrentStage
 	if (goal == 4)
 	then
@@ -600,7 +650,7 @@ function goal_not_5()
 	end
 end
 
-function goal_not_6()
+function goal_not_0s()
 	local goal = Tracker:FindObjectForCode("goal").CurrentStage
 	if (goal == 5)
 	then
@@ -610,7 +660,7 @@ function goal_not_6()
 	end
 end
 
-function goal_not_p1()
+function goal_not_11()
 	local goal = Tracker:FindObjectForCode("goal").CurrentStage
 	if (goal == 6)
 	then
@@ -620,7 +670,7 @@ function goal_not_p1()
 	end
 end
 
-function goal_not_p2()
+function goal_not_12()
 	local goal = Tracker:FindObjectForCode("goal").CurrentStage
 	if (goal == 7)
 	then
@@ -630,9 +680,287 @@ function goal_not_p2()
 	end
 end
 
-function goal_not_7()
+function goal_not_13()
 	local goal = Tracker:FindObjectForCode("goal").CurrentStage
 	if (goal == 8)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_14()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 9)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_1s()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 10)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_21()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 11)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_22()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 12)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_23()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 13)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_24()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 14)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_2s()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 15)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_31()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 16)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_32()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 17)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_41()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 18)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_42()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 19)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_43()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 20)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_44()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 21)
+	then
+		return false
+	else
+		return true
+	end
+end
+function goal_not_4s()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 22)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_51()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 23)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_52()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 24)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_53()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 25)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_54()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 26)
+	then
+		return false
+	else
+		return true
+	end
+end
+function goal_not_5s()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 27)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_61()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 28)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_62()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 29)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_71()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 30)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_72()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 31)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_73()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 32)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_74()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 33)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_7s()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 34)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_p1()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 35)
+	then
+		return false
+	else
+		return true
+	end
+end
+
+function goal_not_p2()
+	local goal = Tracker:FindObjectForCode("goal").CurrentStage
+	if (goal == 36)
 	then
 		return false
 	else

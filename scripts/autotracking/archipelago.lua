@@ -34,7 +34,60 @@ function dump_table(o, depth)
 end
 
 function updateSettings(slot_data)
-	Tracker:FindObjectForCode("goal").CurrentStage = slot_data["goal"]
+	--Tracker:FindObjectForCode("start").CurrentStage = slot_data["start"]
+	--Tracker:FindObjectForCode("goal").CurrentStage = slot_data["goal"]
+	local start_map = {
+		["0-1"] = 0,
+		["0-2"] = 1,
+		["1-1"] = 2,
+		["1-2"] = 3,
+		["1-3"] = 4,
+		["2-1"] = 5,
+		["2-3"] = 6,
+		["3-1"] = 7,
+		["4-2"] = 8
+	}
+	Tracker:FindObjectForCode("start").CurrentStage = start_map[slot_data["start"]]
+	local goal_map = {
+		["0-1"] = 0,
+		["0-2"] = 1,
+		["0-3"] = 2,
+		["0-4"] = 3,
+		["0-5"] = 4,
+		["0-S"] = 5,
+		["1-1"] = 6,
+		["1-2"] = 7,
+		["1-3"] = 8,
+		["1-4"] = 9,
+		["1-S"] = 10,
+		["2-1"] = 11,
+		["2-2"] = 12,
+		["2-3"] = 13,
+		["2-4"] = 14,
+		["2-S"] = 15,
+		["3-1"] = 16,
+		["3-2"] = 17,
+		["4-1"] = 18,
+		["4-2"] = 19,
+		["4-3"] = 20,
+		["4-4"] = 21,
+		["4-S"] = 22,
+		["5-1"] = 23,
+		["5-2"] = 24,
+		["5-3"] = 25,
+		["5-4"] = 26,
+		["5-S"] = 27,
+		["6-1"] = 28,
+		["6-2"] = 29,
+		["7-1"] = 30,
+		["7-2"] = 31,
+		["7-3"] = 32,
+		["7-4"] = 33,
+		["7-S"] = 34,
+		["P-1"] = 35,
+		["P-1"] = 36
+	}
+	Tracker:FindObjectForCode("goal").CurrentStage = goal_map[slot_data["goal"]]
 	Tracker:FindObjectForCode("goalamount").AcquiredCount = slot_data["goal_requirement"]
 	Tracker:FindObjectForCode("boss").CurrentStage = slot_data["boss_rewards"]
 	Tracker:FindObjectForCode("challenge").Active = slot_data["challenge_rewards"]

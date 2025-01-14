@@ -236,8 +236,6 @@
 		"type": "toggle",
 		"img": "images/levels/0-1.png",
 		"codes": "0_1_access",
-		"initial_active_state": true,
-		"allow_disabled": false
 	},
 	{
 		"name": "0-2: THE MEATGRINDER",
@@ -654,6 +652,12 @@
 		"codes": "7_s_rskull"
 	},
 	{
+		"name": "Blue Skull (P-2)",
+		"type": "toggle",
+		"img": "images/keys/P-2Blue.png",
+		"codes": "p_2_bskull"
+	},
+	{
 		"name": "Limbo Switch I",
 		"type": "toggle",
 		"img": "images/switches/LimboSwitch1.png",
@@ -732,11 +736,73 @@
 		"codes": "clashitem"
 	},
 	{
+		"name": "Start",
+		"type": "progressive",
+		"loop": true,
+		"allow_disabled": false,
+		"stages": [
+			{
+				"img": "images/levels/0-1.png",
+				"name": "Start: 0-1",
+				"codes": "start,start01",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/0-2.png",
+				"name": "Start: 0-2",
+				"codes": "start,start02",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/1-1.png",
+				"name": "Start: 1-1",
+				"codes": "start,start11",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/1-2.png",
+				"name": "Start: 1-2",
+				"codes": "start,start12",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/1-3.png",
+				"name": "Start: 1-3",
+				"codes": "start,start13",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/2-1.png",
+				"name": "Start: 2-1",
+				"codes": "start,start21",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/2-3.png",
+				"name": "Start: 2-3",
+				"codes": "start,start23",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/3-1.png",
+				"name": "Start: 3-1",
+				"codes": "start,start31",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/4-2.png",
+				"name": "Start: 4-2",
+				"codes": "start,start42",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
 		"name": "Goal Amount",
 		"type": "consumable",
-		"max_quantity": 33,
+		"max_quantity": 36,
 		"initial_quantity": 15,
-		"min_quantity": 1,
+		"min_quantity": 5,
 		"allow_disabled": false,
 		"img": "images/other/GoalAmount.png",
 		"codes": "goalamount"
@@ -746,42 +812,216 @@
 		"type": "progressive",
 		"loop": true,
 		"allow_disabled": false,
-		"initial_stage_idx": 5,
+		"initial_stage_idx": 33,
 		"stages": [
+			{
+				"img": "images/levels/0-1.png",
+				"name": "Goal: 0-1",
+				"codes": "goal,goal01",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/0-2.png",
+				"name": "Goal: 0-2",
+				"codes": "goal,goal02",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/0-3.png",
+				"name": "Goal: 0-3",
+				"codes": "goal,goal03",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/0-4.png",
+				"name": "Goal: 0-4",
+				"codes": "goal,goal04",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/0-5.png",
+				"name": "Goal: 0-5",
+				"codes": "goal,goal05",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/0-S.png",
+				"name": "Goal: 0-S",
+				"codes": "goal,goal0s",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/1-1.png",
+				"name": "Goal: 1-1",
+				"codes": "goal,goal11",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/1-2.png",
+				"name": "Goal: 1-2",
+				"codes": "goal,goal12",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/1-3.png",
+				"name": "Goal: 1-3",
+				"codes": "goal,goal13",
+				"inherit_codes": false
+			},
 			{
 				"img": "images/levels/1-4.png",
 				"name": "Goal: 1-4",
-				"codes": "goal,goal1",
+				"codes": "goal,goal14",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/1-S.png",
+				"name": "Goal: 1-S",
+				"codes": "goal,goal1s",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/2-1.png",
+				"name": "Goal: 2-1",
+				"codes": "goal,goal21",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/2-2.png",
+				"name": "Goal: 2-2",
+				"codes": "goal,goal22",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/2-3.png",
+				"name": "Goal: 2-3",
+				"codes": "goal,goal23",
 				"inherit_codes": false
 			},
 			{
 				"img": "images/levels/2-4.png",
 				"name": "Goal: 2-4",
-				"codes": "goal,goal2",
+				"codes": "goal,goal24",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/2-S.png",
+				"name": "Goal: 2-S",
+				"codes": "goal,goal2s",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/3-1.png",
+				"name": "Goal: 3-1",
+				"codes": "goal,goal31",
 				"inherit_codes": false
 			},
 			{
 				"img": "images/levels/3-2.png",
 				"name": "Goal: 3-2",
-				"codes": "goal,goal3",
+				"codes": "goal,goal32",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/4-1.png",
+				"name": "Goal: 4-1",
+				"codes": "goal,goal41",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/4-2.png",
+				"name": "Goal: 4-2",
+				"codes": "goal,goal42",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/4-3.png",
+				"name": "Goal: 4-3",
+				"codes": "goal,goal43",
 				"inherit_codes": false
 			},
 			{
 				"img": "images/levels/4-4.png",
 				"name": "Goal: 4-4",
-				"codes": "goal,goal4",
+				"codes": "goal,goal44",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/4-S.png",
+				"name": "Goal: 4-S",
+				"codes": "goal,goal4s",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/5-1.png",
+				"name": "Goal: 5-1",
+				"codes": "goal,goal51",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/5-2.png",
+				"name": "Goal: 5-2",
+				"codes": "goal,goal52",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/5-3.png",
+				"name": "Goal: 5-3",
+				"codes": "goal,goal53",
 				"inherit_codes": false
 			},
 			{
 				"img": "images/levels/5-4.png",
 				"name": "Goal: 5-4",
-				"codes": "goal,goal5",
+				"codes": "goal,goal54",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/5-S.png",
+				"name": "Goal: 5-S",
+				"codes": "goal,goal5s",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/6-1.png",
+				"name": "Goal: 6-1",
+				"codes": "goal,goal61",
 				"inherit_codes": false
 			},
 			{
 				"img": "images/levels/6-2.png",
 				"name": "Goal: 6-2",
-				"codes": "goal,goal6",
+				"codes": "goal,goal62",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/7-1.png",
+				"name": "Goal: 7-1",
+				"codes": "goal,goal71",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/7-2.png",
+				"name": "Goal: 7-2",
+				"codes": "goal,goal72",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/7-3.png",
+				"name": "Goal: 7-3",
+				"codes": "goal,goal73",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/7-4.png",
+				"name": "Goal: 7-4",
+				"codes": "goal,goal74",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/7-S.png",
+				"name": "Goal: 7-S",
+				"codes": "goal,goal7s",
 				"inherit_codes": false
 			},
 			{
@@ -794,12 +1034,6 @@
 				"img": "images/levels/P-2.png",
 				"name": "Goal: P-2",
 				"codes": "goal,goalp2",
-				"inherit_codes": false
-			},
-			{
-				"img": "images/levels/7-4.png",
-				"name": "Goal: 7-4",
-				"codes": "goal,goal7",
 				"inherit_codes": false
 			}
 		]

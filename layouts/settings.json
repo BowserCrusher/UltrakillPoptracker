@@ -16,6 +16,7 @@
 						"h_alignment": "left",
 						"rows": [
 							[
+								"start",
 								"goal",
 								"goalamount",
 								"boss",
