@@ -235,7 +235,7 @@
 		"name": "0-1: INTO THE FIRE",
 		"type": "toggle",
 		"img": "images/levels/0-1.png",
-		"codes": "0_1_access",
+		"codes": "0_1_access"
 	},
 	{
 		"name": "0-2: THE MEATGRINDER",
@@ -476,54 +476,63 @@
 	{
 		"name": "Blue Skull (0-2)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/0-2Blue.png",
 		"codes": "0_2_bskull"
 	},
 	{
 		"name": "Blue Skull (0-S)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/0-SBlue.png",
 		"codes": "0_s_bskull"
 	},
 	{
 		"name": "Red Skull (0-S)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/0-SRed.png",
 		"codes": "0_s_rskull"
 	},
 	{
 		"name": "Blue Skull (1-1)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/1-1Blue.png",
 		"codes": "1_1_bskull"
 	},
 	{
 		"name": "Red Skull (1-1)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/1-1Red.png",
 		"codes": "1_1_rskull"
 	},
 	{
 		"name": "Blue Skull (1-2)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/1-2Blue.png",
 		"codes": "1_2_bskull"
 	},
 	{
 		"name": "Red Skull (1-2)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/1-2Red.png",
 		"codes": "1_2_rskull"
 	},
 	{
 		"name": "Blue Skull (1-3)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/1-3Blue.png",
 		"codes": "1_3_bskull"
 	},
 	{
 		"name": "Red Skull (1-3)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/1-3Red.png",
 		"codes": "1_3_rskull"
 	},
@@ -531,55 +540,63 @@
 		"name": "Blue Skull (1-4)",
 		"type": "consumable",
 		"max_quantity": 4,
-		"initial_quantity": 0,
+		"initial_quantity": 4,
 		"img": "images/keys/1-4Blue.png",
 		"codes": "1_4_bskull"
 	},
 	{
 		"name": "Blue Skull (2-3)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/2-3Blue.png",
 		"codes": "2_3_bskull"
 	},
 	{
 		"name": "Red Skull (2-3)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/2-3Red.png",
 		"codes": "2_3_rskull"
 	},
 	{
 		"name": "Blue Skull (2-4)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/2-4Blue.png",
 		"codes": "2_4_bskull"
 	},
 	{
 		"name": "Red Skull (2-4)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/2-4Red.png",
 		"codes": "2_4_rskull"
 	},
 	{
 		"name": "Blue Skull (4-2)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/4-2Blue.png",
 		"codes": "4_2_bskull"
 	},
 	{
 		"name": "Red Skull (4-2)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/4-2Red.png",
 		"codes": "4_2_rskull"
 	},
 	{
 		"name": "Blue Skull (4-3)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/4-3Blue.png",
 		"codes": "4_3_bskull"
 	},
 	{
 		"name": "Blue Skull (4-4)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/4-4Blue.png",
 		"codes": "4_4_bskull"
 	},
@@ -587,73 +604,84 @@
 		"name": "Blue Skull (5-1)",
 		"type": "consumable",
 		"max_quantity": 3,
-		"initial_quantity": 0,
+		"initial_quantity": 3,
 		"img": "images/keys/5-1Blue.png",
 		"codes": "5_1_bskull"
 	},
 	{
 		"name": "Blue Skull (5-2)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/5-2Blue.png",
 		"codes": "5_2_bskull"
 	},
 	{
 		"name": "Red Skull (5-2)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/5-2Red.png",
 		"codes": "5_2_rskull"
 	},
 	{
 		"name": "Blue Skull (5-3)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/5-3Blue.png",
 		"codes": "5_3_bskull"
 	},
 	{
 		"name": "Red Skull (5-3)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/5-3Red.png",
 		"codes": "5_3_rskull"
 	},
 	{
 		"name": "Red Skull (6-1)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/6-1Red.png",
 		"codes": "6_1_rskull"
 	},
 	{
 		"name": "Blue Skull (7-1)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/7-1Blue.png",
 		"codes": "7_1_bskull"
 	},
 	{
 		"name": "Red Skull (7-1)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/7-1Red.png",
 		"codes": "7_1_rskull"
 	},
 	{
 		"name": "Red Skull (7-2)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/7-2Red.png",
 		"codes": "7_2_rskull"
 	},
 	{
 		"name": "Blue Skull (7-S)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/7-SBlue.png",
 		"codes": "7_s_bskull"
 	},
 	{
 		"name": "Red Skull (7-S)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/7-SRed.png",
 		"codes": "7_s_rskull"
 	},
 	{
 		"name": "Blue Skull (P-2)",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/keys/P-2Blue.png",
 		"codes": "p_2_bskull"
 	},
@@ -1157,22 +1185,8 @@
 	},
 	{
 		"name": "Randomize Skulls",
-		"type": "progressive",
-		"loop": false,
-		"allow_disabled": false,
-		"stages": [
-			{
-				"img": "images/keys/RedOff.png",
-				"name": "Randomize Skulls - Disabled",
-				"codes": "skulls, skullsoff",
-				"inherit_codes": false
-			},
-			{
-				"img": "images/keys/Red.png",
-				"name": "Randomize Skulls - Enabled",
-				"codes": "skulls, skullson",
-				"inherit_codes": false
-			}
-		]
+		"type": "toggle",
+		"img": "images/keys/Red.png",
+		"codes": "skulls"
 	}
 ]

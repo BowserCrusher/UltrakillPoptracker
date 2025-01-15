@@ -143,9 +143,36 @@ function updateSettings(slot_data)
 		Tracker:FindObjectForCode("vswitches").CurrentStage = 1
 	end
 	if slot_data["randomize_skulls"] == false then
-		Tracker:FindObjectForCode("skulls").CurrentStage = 0
-	else
-		Tracker:FindObjectForCode("skulls").CurrentStage = 1
+		Tracker:FindObjectForCode("0_2_bskull").Active = true
+		Tracker:FindObjectForCode("0_s_bskull").Active = true
+		Tracker:FindObjectForCode("0_s_rskull").Active = true
+		Tracker:FindObjectForCode("1_1_bskull").Active = true
+		Tracker:FindObjectForCode("1_1_rskull").Active = true
+		Tracker:FindObjectForCode("1_2_bskull").Active = true
+		Tracker:FindObjectForCode("1_2_rskull").Active = true
+		Tracker:FindObjectForCode("1_3_bskull").Active = true
+		Tracker:FindObjectForCode("1_3_rskull").Active = true
+		Tracker:FindObjectForCode("1_4_bskull").AcquiredCount = 4
+		Tracker:FindObjectForCode("2_3_bskull").Active = true
+		Tracker:FindObjectForCode("2_3_rskull").Active = true
+		Tracker:FindObjectForCode("2_4_bskull").Active = true
+		Tracker:FindObjectForCode("2_4_rskull").Active = true
+		Tracker:FindObjectForCode("4_2_bskull").Active = true
+		Tracker:FindObjectForCode("4_2_rskull").Active = true
+		Tracker:FindObjectForCode("4_3_bskull").Active = true
+		Tracker:FindObjectForCode("4_4_bskull").Active = true
+		Tracker:FindObjectForCode("5_1_bskull").AcquiredCount = 3
+		Tracker:FindObjectForCode("5_2_rskull").Active = true
+		Tracker:FindObjectForCode("5_2_bskull").Active = true
+		Tracker:FindObjectForCode("5_3_bskull").Active = true
+		Tracker:FindObjectForCode("5_3_rskull").Active = true
+		Tracker:FindObjectForCode("6_1_rskull").Active = true
+		Tracker:FindObjectForCode("7_1_bskull").Active = true
+		Tracker:FindObjectForCode("7_1_rskull").Active = true
+		Tracker:FindObjectForCode("7_2_rskull").Active = true
+		Tracker:FindObjectForCode("7_s_bskull").Active = true
+		Tracker:FindObjectForCode("7_s_rskull").Active = true
+		Tracker:FindObjectForCode("p_2_bskull").Active = true
 	end
 end
 

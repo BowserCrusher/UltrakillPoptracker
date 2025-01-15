@@ -253,26 +253,6 @@
 			},
 			{
 				"name": "0-S SOMETHING WICKED",
-				"visibility_rules": ["skullsoff"],
-				"access_rules": ["goal0s,$goal_reach"],
-				"sections": [
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal0s,$goal_reach"],
-						"access_rules": ["$has_fist"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x": 626,
-						"y": 14
-					}
-				]
-			},
-			{
-				"name": "0-S SOMETHING WICKED (Skulls)",
-				"visibility_rules": ["skullson"],
 				"access_rules": ["goal0s,$goal_reach"],
 				"sections": [
 					{
@@ -291,71 +271,6 @@
 			},
 			{
 				"name": "1-1 HEART OF THE SUNRISE",
-				"visibility_rules": ["skullsoff"],
-				"access_rules": ["1_1_access,$goal_not_11","l1_access,$goal_not_11","goal11,$goal_reach","start11"],
-				"sections": [
-					{
-						"name": "Secret #1",
-						"access_rules": []
-					},
-					{
-						"name": "Secret #2",
-						"access_rules": []
-					},
-					{
-						"name": "Secret #3",
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "Secret #4",
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "Secret #5",
-						"access_rules": ["$has_fist,$jump_gen1"]
-					},
-					{
-						"name": "Weapon",
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "Switch",
-						"visibility_rules": ["lswitchon"],
-						"access_rules": ["$has_fist,$switch_1_1"]
-					},
-					{
-						"name": "Cleared 1-1",
-						"visibility_rules": ["$goal_not_11"],
-						"access_rules": ["$has_fist","$has_revany1_fire2"],
-						"hosted_item": "lvlcomplete"
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal11,$goal_reach"],
-						"access_rules": ["$has_fist","$has_revany1_fire2"]
-					},
-					{
-						"name": "Complete the level in under 10 seconds",
-						"visibility_rules": ["challenge"],
-						"access_rules": ["$has_revany1_fire2"]
-					},
-					{
-						"name": "P Rank",
-						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon,$has_fist"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x":101,
-						"y":326
-					}
-				]
-			},
-			{
-				"name": "1-1 HEART OF THE SUNRISE (Skulls)",
-				"visibility_rules": ["skullson"],
 				"access_rules": ["1_1_access,$goal_not_11","l1_access,$goal_not_11","goal11,$goal_reach","start11"],
 				"sections": [
 					{
@@ -419,72 +334,6 @@
 			},
 			{
 				"name": "1-2 THE BURNING WORLD",
-				"visibility_rules": ["skullsoff"],
-				"access_rules": ["1_2_access,$goal_not_12","l1_access,$goal_not_12","goal12,$goal_reach","start12"],
-				"sections": [
-					{
-						"name": "Secret #1",
-						"access_rules": []
-					},
-					{
-						"name": "Secret #2",
-						"access_rules": []
-					},
-					{
-						"name": "Secret #3",
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "Secret #4",
-						"access_rules": ["$has_fist","$can_zap"]
-					},
-					{
-						"name": "Secret #5",
-						"access_rules": ["$has_fist","$can_zap"]
-					},
-					{
-						"name": "Defeat the Very Cancerous Rodent",
-						"visibility_rules": ["bossex"],
-						"access_rules": ["$can_break_wall_cancerous_rodent,$has_fist","$can_break_wall_cancerous_rodent,$can_zap"]
-					},
-					{
-						"name": "Switch",
-						"visibility_rules": ["lswitchon"],
-						"access_rules": ["$can_break_wall_cancerous_rodent,$has_fist","$can_break_wall_cancerous_rodent,$can_zap"]
-					},
-					{
-						"name": "Cleared 1-2",
-						"visibility_rules": ["$goal_not_12"],
-						"access_rules": ["$has_fist","$can_zap"],
-						"hosted_item": "lvlcomplete"
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal12,$goal_reach"],
-						"access_rules": ["$has_fist","$can_zap"]
-					},
-					{
-						"name": "Do not pick up any skulls",
-						"visibility_rules": ["challenge"],
-						"access_rules": ["$can_zap"]
-					},
-					{
-						"name": "P Rank",
-						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon, $has_fist"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x": 275,
-						"y": 326
-					}
-				]
-			},
-			{
-				"name": "1-2 THE BURNING WORLD (Skulls)",
-				"visibility_rules": ["skullson"],
 				"access_rules": ["1_2_access,$goal_not_12","l1_access,$goal_not_12","goal12,$goal_reach","start12"],
 				"sections": [
 					{
@@ -549,67 +398,6 @@
 			},
 			{
 				"name": "1-3 HALLS OF SACRED REMAINS",
-				"visibility_rules": ["skullsoff"],
-				"access_rules": ["1_3_access,$goal_not_13","l1_access,$goal_not_13","goal13,$goal_reach","start13"],
-				"sections": [
-					{
-						"name": "Secret #1",
-						"access_rules": ["$can_break_glass"]
-					},
-					{
-						"name": "Secret #2",
-						"access_rules": []
-					},
-					{
-						"name": "Secret #3",
-						"access_rules": []
-					},
-					{
-						"name": "Secret #4",
-						"access_rules": ["slide"]
-					},
-					{
-						"name": "Secret #5",
-						"access_rules": ["slide"]
-					},
-					{
-						"name": "Switch",
-						"visibility_rules": ["lswitchon"],
-						"access_rules": ["$has_fist,$good_weapon"]
-					},
-					{
-						"name": "Cleared 1-3",
-						"visibility_rules": ["$goal_not_13"],
-						"access_rules": ["$has_fist"],
-						"hosted_item": "lvlcomplete"
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal13,$goal_reach"],
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "Beat the secret encounter",
-						"visibility_rules": ["challenge"],
-						"access_rules": ["$has_fist,$good_weapon"]
-					},
-					{
-						"name": "P Rank",
-						"visibility_rules": ["prank"],
-						"access_rules": ["$has_fist,$good_weapon"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x": 451,
-						"y": 326
-					}
-				]
-			},
-			{
-				"name": "1-3 HALLS OF SACRED REMAINS (Skulls)",
-				"visibility_rules": ["skullson"],
 				"access_rules": ["1_3_access,$goal_not_13","l1_access,$goal_not_13","goal13,$goal_reach","start13"],
 				"sections": [
 					{
@@ -669,183 +457,23 @@
 			},
 			{
 				"name": "1-4 CLAIRE DE LUNE",
-				"visibility_rules": ["skullsoff, lswitchoff"],
 				"access_rules": ["1_4_access,$goal_not_14","l1_access,$goal_not_14","goal14,$goal_reach"],
 				"sections": [
 					{
 						"name": "V2's Arm",
-						"access_rules": [""]
+						"access_rules": []
 					},
 					{
 						"name": "Secret Weapon",
-						"access_rules": ["1_1_access,1_2_access,1_3_access,$switch_1_1,$can_break_glass,$can_break_wall_cancerous_rodent,$good_weapon,$has_fist",
-						"l1_access,$switch_1_1,$can_break_glass,$can_break_wall_cancerous_rodent,$good_weapon,$has_fist"]
-					},
-					{
-						"name": "Defeat V2",
-						"visibility_rules": ["bossstd"],
-						"access_rules": ["$good_weapon"]
-					},
-					{
-						"name": "Assemble Hank",
-						"visibility_rules": ["hank"],
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "Cleared 1-4",
-						"visibility_rules": ["$goal_not_14"],
-						"access_rules": [""],
-						"hosted_item": "lvlcomplete"
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal14,$goal_reach"],
-						"access_rules": [""]
-					},
-					{
-						"name": "Do not pick up any skulls",
-						"visibility_rules": ["challenge"],
-						"access_rules": ["$good_weapon"]
-					},
-					{
-						"name": "P Rank",
-						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x": 628,
-						"y": 326
-					}
-				]
-			},
-			{
-				"name": "1-4 CLAIRE DE LUNE (Skulls)",
-				"visibility_rules": ["skullson, lswitchoff"],
-				"access_rules": ["1_4_access,$goal_not_14","l1_access,$goal_not_14","goal14,$goal_reach"],
-				"sections": [
-					{
-						"name": "V2's Arm",
-						"access_rules": [""]
-					},
-					{
-						"name": "Secret Weapon",
+						"visibility_rules": ["lswitchoff"],
 						"access_rules": ["1_1_access,1_2_access,1_3_access,$switch_1_1,$can_break_glass,$can_break_wall_cancerous_rodent,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,1_2_bskull,1_2_rskull",
 						"1_1_access,1_2_access,1_3_access,$switch_1_1,$can_break_glass,$can_break_wall_cancerous_rodent,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,$can_zap",
 						"l1_access,$switch_1_1,$can_break_glass,$can_break_wall_cancerous_rodent,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,1_2_bskull,1_2_rskull",
 						"l1_access,$switch_1_1,$can_break_glass,$can_break_wall_cancerous_rodent,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,$can_zap"]
 					},
 					{
-						"name": "Defeat V2",
-						"visibility_rules": ["bossstd"],
-						"access_rules": ["$good_weapon"]
-					},
-					{
-						"name": "Assemble Hank",
-						"visibility_rules": ["hank"],
-						"access_rules": ["$has_fist,$has_1_4_skull"]
-					},
-					{
-						"name": "Cleared 1-4",
-						"visibility_rules": ["$goal_not_14"],
-						"access_rules": [""],
-						"hosted_item": "lvlcomplete"
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal14,$goal_reach"],
-						"access_rules": [""]
-					},
-					{
-						"name": "Do not pick up any skulls",
-						"visibility_rules": ["challenge"],
-						"access_rules": ["$good_weapon"]
-					},
-					{
-						"name": "P Rank",
-						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x": 628,
-						"y": 326
-					}
-				]
-			},
-			{
-				"name": "1-4 CLAIRE DE LUNE (Switch)",
-				"visibility_rules": ["skullsoff,lswitchon"],
-				"access_rules": ["1_4_access,$goal_not_14","l1_access,$goal_not_14","goal14,$goal_reach"],
-				"sections": [
-					{
-						"name": "V2's Arm",
-						"access_rules": [""]
-					},
-					{
-						"name": "Secret Weapon",
-						"access_rules": ["lswitch1,lswitch2,lswitch3,lswitch4"]
-					},
-					{
-						"name": "Defeat V2",
-						"visibility_rules": ["bossstd"],
-						"access_rules": ["$good_weapon"]
-					},
-					{
-						"name": "Switch",
-						"visibility_rules": ["lswitches"],
-						"access_rules": []
-					},
-					{
-						"name": "Assemble Hank",
-						"visibility_rules": ["hank"],
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "Cleared 1-4",
-						"visibility_rules": ["$goal_not_14"],
-						"access_rules": [""],
-						"hosted_item": "lvlcomplete"
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal14,$goal_reach"],
-						"access_rules": [""]
-					},
-					{
-						"name": "Do not pick up any skulls",
-						"visibility_rules": ["challenge"],
-						"access_rules": ["$good_weapon"]
-					},
-					{
-						"name": "P Rank",
-						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x": 628,
-						"y": 326
-					}
-				]
-			},
-			{
-				"name": "1-4 CLAIRE DE LUNE (Skulls, Switch)",
-				"visibility_rules": ["skullson,lswitchon"],
-				"access_rules": ["1_4_access,$goal_not_14","l1_access,$goal_not_14","goal14,$goal_reach"],
-				"sections": [
-					{
-						"name": "V2's Arm",
-						"access_rules": [""]
-					},
-					{
-						"name": "Secret Weapon",
+						"name": "Secret Weapon (Switch)",
+						"visibility_rules": ["lswitchon"],
 						"access_rules": ["lswitch1,lswitch2,lswitch3,lswitch4"]
 					},
 					{
@@ -1025,62 +653,6 @@
 			},
 			{
 				"name": "2-3 SHEER HEART ATTACK",
-				"visibility_rules": ["skullsoff"],
-				"access_rules": ["2_3_access,$goal_not_23", "l2_access,$goal_not_23", "goal23,$goal_reach", "start23"],
-				"sections": [
-					{
-						"name": "Secret #1",
-						"access_rules": []
-					},
-					{
-						"name": "Secret #2",
-						"access_rules": ["slide"]
-					},
-					{
-						"name": "Secret #3",
-						"access_rules": ["$has_fist,$secret3_2_3"]
-					},
-					{
-						"name": "Secret #4",
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "Secret #5",
-						"access_rules": ["slide"]
-					},
-					{
-						"name": "Cleared 2-3",
-						"visibility_rules": ["$goal_not_23"],
-						"access_rules": ["$has_fist"],
-						"hosted_item": "lvlcomplete"
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal23,$goal_reach"],
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "Don't touch any water",
-						"visibility_rules": ["challenge"],
-						"access_rules": ["$secret3_2_3,slide,$has_fist,$can_break_wall"]
-					},
-					{
-						"name": "P Rank",
-						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon,$has_fist"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x": 451,
-						"y": 521
-					}
-				]
-			},
-{
-				"name": "2-3 SHEER HEART ATTACK (Skulls)",
-				"visibility_rules": ["skullson"],
 				"access_rules": ["2_3_access,$goal_not_23", "l2_access,$goal_not_23", "goal23,$goal_reach", "start23"],
 				"sections": [
 					{
@@ -1135,47 +707,6 @@
 			},
 			{
 				"name": "2-4 COURT OF THE CORPSE KING",
-				"visibility_rules": ["skullsoff"],
-				"access_rules": ["2_4_access,$goal_not_24", "l2_access,$goal_not_24", "goal24,$goal_reach"],
-				"sections": [
-					{
-						"name": "Defeat the Corpse of King Minos",
-						"visibility_rules": ["bossstd"],
-						"access_rules": ["$has_fist, $good_weapon"]
-					},
-					{
-						"name": "Cleared 2-4",
-						"visibility_rules": ["$goal_not_24"],
-						"access_rules": ["$has_fist"],
-						"hosted_item": "lvlcomplete"
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal24,$goal_reach"],
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "Parry a punch",
-						"visibility_rules": ["challenge"],
-						"access_rules": ["$has_fist,arm0"]
-					},
-					{
-						"name": "P Rank",
-						"visibility_rules": ["prank"],
-						"access_rules": ["$has_fist,$good_weapon"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x": 628,
-						"y": 521
-					}
-				]
-			},
-			{
-				"name": "2-4 COURT OF THE CORPSE KING (Skulls)",
-				"visibility_rules": ["skullson"],
 				"access_rules": ["2_4_access,$goal_not_24", "l2_access,$goal_not_24", "goal24,$goal_reach"],
 				"sections": [
 					{
@@ -1380,62 +911,6 @@
 			},
 			{
 				"name": "4-2 GOD DAMN THE SUN",
-				"visibility_rules": ["skullsoff"],
-				"access_rules": ["4_2_access,$goal_not_42", "l4_access,$goal_not_42", "goal42,$goal_reach", "start42"],
-				"sections": [
-					{
-						"name": "Secret #1",
-						"access_rules": []
-					},
-					{
-						"name": "Secret #2",
-						"access_rules": []
-					},
-					{
-						"name": "Secret #3",
-						"access_rules": []
-					},
-					{
-						"name": "Secret #4",
-						"access_rules": ["$jump_gen2","$has_revany2_fire2"]
-					},
-					{
-						"name": "Secret #5",
-						"access_rules": []
-					},
-					{
-						"name": "Cleared 4-2",
-						"visibility_rules": ["$goal_not_42"],
-						"access_rules": ["$has_fist"],
-						"hosted_item": "lvlcomplete"
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal42,$goal_reach"],
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "Kill the Insurrectionist in under 10 seconds",
-						"visibility_rules": ["challenge"],
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "P Rank",
-						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon, $has_fist"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x":1005,
-						"y":326
-					}
-				]
-			},
-			{
-				"name": "4-2 GOD DAMN THE SUN (Skulls)",
-				"visibility_rules": ["skullson"],
 				"access_rules": ["4_2_access,$goal_not_42", "l4_access,$goal_not_42", "goal42,$goal_reach", "start42"],
 				"sections": [
 					{
@@ -1490,67 +965,6 @@
 			},
 			{
 				"name": "4-3 A SHOT IN THE DARK",
-				"visibility_rules": ["skullsoff"],
-				"access_rules": ["4_3_access,$goal_not_43", "l4_access,$goal_not_43", "goal43,$goal_reach"],
-				"sections": [
-					{
-						"name": "Secret #1",
-						"access_rules": ["$level_4_3"]
-					},
-					{
-						"name": "Secret #2",
-						"access_rules": ["$level_4_3,slide"]
-					},
-					{
-						"name": "Secret #3",
-						"access_rules": ["$level_4_3"]
-					},
-					{
-						"name": "Secret #4",
-						"access_rules": ["$level_4_3,$can_break_wall"]
-					},
-					{
-						"name": "Secret #5",
-						"access_rules": ["$level_4_3,slide"]
-					},
-					{
-						"name": "Defeat the Mysterious Druid Knight (& Owl)",
-						"visibility_rules": ["bossex"],
-						"access_rules": ["$level_4_3,$can_break_wall,$can_punch"]
-					},
-					{
-						"name": "Cleared 4-3",
-						"visibility_rules": ["$goal_not_43"],
-						"access_rules": ["$level_4_3,$has_fist"],
-						"hosted_item": "lvlcomplete"
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal43,$goal_reach"],
-						"access_rules": ["$level_4_3,$has_fist"]
-					},
-					{
-						"name": "Don't pick up the torch",
-						"visibility_rules": ["challenge"],
-						"access_rules": ["$has_shoany0_fire2,$has_fist","$pro_boost,$has_fist"]
-					},
-					{
-						"name": "P Rank",
-						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon,$level_4_3,$has_fist"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x":1179,
-						"y":326
-					}
-				]
-			},
-			{
-				"name": "4-3 A SHOT IN THE DARK (Skulls)",
-				"visibility_rules": ["skullson"],
 				"access_rules": ["4_3_access,$goal_not_43", "l4_access,$goal_not_43", "goal43,$goal_reach"],
 				"sections": [
 					{
@@ -1610,56 +1024,6 @@
 			},
 			{
 				"name": "4-4 CLAIRE DE SOLEIL",
-				"visibility_rules": ["skullsoff"],
-				"access_rules": ["4_4_access,$goal_not_44", "l4_access,$goal_not_44", "goal44,$goal_reach"],
-				"sections": [
-					{
-						"name": "V2's Other Arm",
-						"visibility_rules": [],
-						"access_rules": ["$good_weapon, $level_4_4"]
-					},
-					{
-						"name": "Secret Weapon",
-						"access_rules": ["arm2,$can_zap"]
-					},
-					{
-						"name": "Defeat V2",
-						"visibility_rules": ["bossstd"],
-						"access_rules": ["$good_weapon, $level_4_4"]
-					},
-					{
-						"name": "Cleared 4-4",
-						"visibility_rules": ["$goal_not_44"],
-						"access_rules": ["arm2, $level_4_4, $good_weapon"],
-						"hosted_item": "lvlcomplete"
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal44,$goal_reach"],
-						"access_rules": ["arm2, $level_4_4, $good_weapon"]
-					},
-					{
-						"name": "Reach the boss room in 18 seconds",
-						"visibility_rules": ["challenge"],
-						"access_rules": ["$good_weapon,arm2,$dash3"]
-					},
-					{
-						"name": "P Rank",
-						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon, $level_4_4, arm2"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x":1357 ,
-						"y":326 
-					}
-				]
-			},
-			{
-				"name": "4-4 CLAIRE DE SOLEIL (Skulls)",
-				"visibility_rules": ["skullson"],
 				"access_rules": ["4_4_access,$goal_not_44", "l4_access,$goal_not_44", "goal44,$goal_reach"],
 				"sections": [
 					{
@@ -1731,62 +1095,6 @@
 			},
 			{
 				"name": "5-1 IN THE WAKE OF POSEIDON",
-				"visibility_rules": ["skullsoff"],
-				"access_rules": ["5_1_access,$goal_not_51", "l5_access,$goal_not_51", "goal51,$goal_reach"],
-				"sections": [
-					{
-						"name": "Secret #1",
-						"access_rules": ["$level_5_1"]
-					},
-					{
-						"name": "Secret #2",
-						"access_rules": ["$level_5_1"]
-					},
-					{
-						"name": "Secret #3",
-						"access_rules": ["$level_5_1"]
-					},
-					{
-						"name": "Secret #4",
-						"access_rules": ["$level_5_1"]
-					},
-					{
-						"name": "Secret #5",
-						"access_rules": ["$level_5_1,$has_fist"]
-					},
-					{
-						"name": "Cleared 5-1",
-						"visibility_rules": ["$goal_not_51"],
-						"access_rules": ["$level_5_1,$has_fist"],
-						"hosted_item": "lvlcomplete"
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal51,$goal_reach"],
-						"access_rules": ["$level_5_1,$has_fist"]
-					},
-					{
-						"name": "Don't touch any water",
-						"visibility_rules": ["challenge"],
-						"access_rules": ["$challenge_5_1"]
-					},
-					{
-						"name": "P Rank",
-						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon,$level_5_1,$has_fist"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x":830,
-						"y":521
-					}
-				]
-			},
-			{
-				"name": "5-1 IN THE WAKE OF POSEIDON (Skulls)",
-				"visibility_rules": ["skullson"],
 				"access_rules": ["5_1_access,$goal_not_51", "l5_access,$goal_not_51", "goal51,$goal_reach"],
 				"sections": [
 					{
@@ -1841,62 +1149,6 @@
 			},
 			{
 				"name": "5-2 WAVES OF THE STARLESS SEA",
-				"visibility_rules": ["skullsoff"],
-				"access_rules": ["5_2_access,$goal_not_52", "l5_access,$goal_not_52", "goal52,$goal_reach"],
-				"sections": [
-					{
-						"name": "Secret #1",
-						"access_rules": ["slide","$has_rock0_fire2"]
-					},
-					{
-						"name": "Secret #2",
-						"access_rules": ["slam","$dash1"]
-					},
-					{
-						"name": "Secret #3",
-						"access_rules": ["slam,$jump_gen2","$dash1,$jump_gen2"]
-					},
-					{
-						"name": "Secret #4",
-						"access_rules": ["slam,$jump_gen2","$dash1,$jump_gen2"]
-					},
-					{
-						"name": "Secret #5",
-						"access_rules": ["$has_fist,$can_break_idol,slam","$has_fist,$can_break_idol,$dash1"]
-					},
-					{
-						"name": "Cleared 5-2",
-						"visibility_rules": ["$goal_not_52"],
-						"access_rules": ["$has_fist,$can_break_idol,slam","$has_fist,$can_break_idol,$dash1"],
-						"hosted_item": "lvlcomplete"
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal52,$goal_reach"],
-						"access_rules": ["$has_fist,$can_break_idol,slam","$has_fist,$can_break_idol,$dash1"]
-					},
-					{
-						"name": "Don't fight the ferryman",
-						"visibility_rules": ["challenge"],
-						"access_rules": ["$has_fist,$can_break_idol,slam,$has_revany1_fire2","$has_fist,$can_break_idol,$dash1,$has_revany1_fire2"]
-					},
-					{
-						"name": "P Rank",
-						"visibility_rules": ["prank"],
-						"access_rules": ["$has_fist,$can_break_idol,slam,$good_weapon","$has_fist,$can_break_idol,$dash1,$good_weapon"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x":1005,
-						"y":521
-					}
-				]
-			},
-			{
-				"name": "5-2 WAVES OF THE STARLESS SEA (Skulls)",
-				"visibility_rules": ["skullson"],
 				"access_rules": ["5_2_access,$goal_not_52", "l5_access,$goal_not_52", "goal52,$goal_reach"],
 				"sections": [
 					{
@@ -1951,71 +1203,6 @@
 			},
 			{
 				"name": "5-3 SHIP OF FOOLS",
-				"visibility_rules": ["skullsoff"],
-				"access_rules": ["5_3_access,$goal_not_53", "l5_access,$goal_not_53", "goal53,$goal_reach"],
-				"sections": [
-					{
-						"name": "Secret #1",
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "Secret #2",
-						"access_rules": []
-					},
-					{
-						"name": "Secret #3",
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "Secret #4",
-						"access_rules": ["$has_fist,$can_break_idol"]
-					},
-					{
-						"name": "Secret #5",
-						"access_rules": ["$has_fist,$can_break_idol"]
-					},
-					{
-						"name": "Weapon",
-						"access_rules": ["$has_fist,$can_break_idol"]
-					},
-					{
-						"name": "Assemble Hank Jr.",
-						"visibility_rules": ["hank"],
-						"access_rules": ["$has_fist,$can_break_idol"]
-					},
-					{
-						"name": "Cleared 5-3",
-						"visibility_rules": ["$goal_not_53"],
-						"access_rules": ["$has_fist,$can_break_idol"],
-						"hosted_item": "lvlcomplete"
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal53,$goal_reach"],
-						"access_rules": ["$has_fist,$can_break_idol"]
-					},
-					{
-						"name": "Don't touch any water",
-						"visibility_rules": ["challenge"],
-						"access_rules": ["$has_fist,$can_break_idol,slide,$dash3,$jump_gen2"]
-					},
-					{
-						"name": "P Rank",
-						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon,$has_fist,$can_break_idol"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x":1179,
-						"y":521
-					}
-				]
-			},
-			{
-				"name": "5-3 SHIP OF FOOLS (Skulls)",
-				"visibility_rules": ["skullson"],
 				"access_rules": ["5_3_access,$goal_not_53", "l5_access,$goal_not_53", "goal53,$goal_reach"],
 				"sections": [
 					{
@@ -2118,8 +1305,7 @@
 			},
 			{
 				"name": "5-S I ONLY SAY MORNIN",
-				"visibility_rules": ["skullsoff"],
-				"access_rules": ["5_1_access,$level_5_1,$has_fist,$goal_not_5s","l5_access,$level_5_1,$has_fist,$goal_not_5s", "goal5s,$goal_reach"],
+				"access_rules": ["5_1_access,$level_5_1,slide,$has_fist,$has_5_1_skull,$goal_not_5s","l5_access,$level_5_1,slide,$has_fist,$has_5_1_skull,$goal_not_5s","goal5s,$goal_reach"],
 				"sections": [
 					{
 						"name": "Funny Stupid Fish (Friend)",
@@ -2179,73 +1365,6 @@
 					{
 						"name": "Shark",
 						"visibility_rules": ["fish"],
-						"access_rules": []
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal5s,$goal_reach"],
-						"access_rules": []
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x":1358,
-						"y":425
-					}
-				]
-			},
-			{
-				"name": "5-S I ONLY SAY MORNIN (Skulls)",
-				"visibility_rules": ["skullson,fish"],
-				"access_rules": ["5_1_access,$level_5_1,slide,$has_fist,$has_5_1_skull","l5_access,$level_5_1,slide,$has_fist,$has_5_1_skull"],
-				"sections": [
-					{
-						"name": "Funny Stupid Fish (Friend)",
-						"access_rules": []
-					},
-					{
-						"name": "PITR Fish",
-						"access_rules": []
-					},
-					{
-						"name": "Trout",
-						"access_rules": []
-					},
-					{
-						"name": "Metal Fish",
-						"access_rules": []
-					},
-					{
-						"name": "Chomper",
-						"access_rules": []
-					},
-					{
-						"name": "Bomb Fish",
-						"access_rules": []
-					},
-					{
-						"name": "Eyeball",
-						"access_rules": []
-					},
-					{
-						"name": "Frog (?)",
-						"access_rules": []
-					},
-					{
-						"name": "Dope Fish",
-						"access_rules": []
-					},
-					{
-						"name": "Stickfish",
-						"access_rules": []
-					},
-					{
-						"name": "Cooked Fish",
-						"access_rules": []
-					},
-					{
-						"name": "Shark",
 						"access_rules": []
 					},
 					{
@@ -2264,62 +1383,6 @@
 			},
 			{
 				"name": "6-1 CRY FOR THE WEEPER",
-				"visibility_rules": ["skullsoff"],
-				"access_rules": ["6_1_access,$goal_not_61", "l6_access,$goal_not_61", "goal61,$goal_reach"],
-				"sections": [
-					{
-						"name": "Secret #1",
-						"access_rules": []
-					},
-					{
-						"name": "Secret #2",
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "Secret #3",
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "Secret #4",
-						"access_rules": ["$has_fist,$jump_gen1"]
-					},
-					{
-						"name": "Secret #5",
-						"access_rules": ["$has_fist,$can_break_idol,$jump_gen2"]
-					},
-					{
-						"name": "Cleared 6-1",
-						"visibility_rules": ["$goal_not_61"],
-						"access_rules": ["$has_fist,$can_break_idol,$jump_gen1"],
-						"hosted_item": "lvlcomplete"
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal61,$goal_reach"],
-						"access_rules": ["$has_fist,$can_break_idol,$jump_gen1"]
-					},
-					{
-						"name": "Beat the secret encounter",
-						"visibility_rules": ["challenge"],
-						"access_rules": ["$has_fist,$jump_gen1"]
-					},
-					{
-						"name": "P Rank",
-						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon,$has_fist,$can_break_idol,$jump_gen1"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x":900,
-						"y":734
-					}
-				]
-			},
-			{
-				"name": "6-1 CRY FOR THE WEEPER (Skulls)",
-				"visibility_rules": ["skullson"],
 				"access_rules": ["6_1_access,$goal_not_61", "l6_access,$goal_not_61", "goal61,$goal_reach"],
 				"sections": [
 					{
@@ -2413,62 +1476,6 @@
 			},
 			{
 				"name": "7-1 GARDEN OF FORKING PATHS",
-				"visibility_rules": ["skullsoff"],
-				"access_rules": ["7_1_access,$goal_not_71", "l7_access,$goal_not_71", "goal71,$goal_reach"],
-				"sections": [
-					{
-						"name": "Secret #1",
-						"access_rules": ["$jump_gen2"]
-					},
-					{
-						"name": "Secret #2",
-						"access_rules": ["slide,$jump_gen1"]
-					},
-					{
-						"name": "Secret #3",
-						"access_rules": ["$has_fist,$jump_gen1"]
-					},
-					{
-						"name": "Secret #4",
-						"access_rules": ["$has_fist,$jump_gen2"]
-					},
-					{
-						"name": "Secret #5",
-						"access_rules": ["$has_fist,$jump_gen2"]
-					},
-					{
-						"name": "Cleared 7-1",
-						"visibility_rules": ["$goal_not_71"],
-						"access_rules": ["$has_fist,$jump_gen1"],
-						"hosted_item": "lvlcomplete"
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal71,$goal_reach"],
-						"access_rules": ["$has_fist,$jump_gen1"]
-					},
-					{
-						"name": "Beat the secret encounter",
-						"visibility_rules": ["challenge"],
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "P Rank",
-						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon,$has_fist,$jump_gen1"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x":1550,
-						"y":326
-					}
-				]
-			},
-			{
-				"name": "7-1 GARDEN OF FORKING PATHS (Skulls)",
-				"visibility_rules": ["skullson"],
 				"access_rules": ["7_1_access,$goal_not_71", "l7_access,$goal_not_71", "goal71,$goal_reach"],
 				"sections": [
 					{
@@ -2523,196 +1530,6 @@
 			},
 			{
 				"name": "7-2 LIGHT UP THE NIGHT",
-				"visibility_rules": ["skullsoff,vswitchoff"],
-				"access_rules": ["7_2_access,$goal_not_72", "l7_access,$goal_not_72", "goal72,$goal_reach"],
-				"sections": [
-					{
-						"name": "Secret #1",
-						"access_rules": ["arm2,$wall_jump1","arm2,$dash1", "arm2,$has_rock0_fire2"]
-					},
-					{
-						"name": "Secret #2",
-						"access_rules": ["arm2"]
-					},
-					{
-						"name": "Secret #3",
-						"access_rules": ["arm2"]
-					},
-					{
-						"name": "Secret #4",
-						"access_rules": ["arm2"]
-					},
-					{
-						"name": "Secret #5",
-						"access_rules": ["arm2"]
-					},
-					{
-						"name": "Secret Weapon",
-						"access_rules": ["arm2,$dash1"]
-					},
-					{
-						"name": "Cleared 7-2",
-						"visibility_rules": ["$goal_not_72"],
-						"access_rules": ["arm2"],
-						"hosted_item": "lvlcomplete"
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal72,$goal_reach"],
-						"access_rules": ["arm2"]
-					},
-					{
-						"name": "Don't kill any enemies",
-						"visibility_rules": ["challenge"],
-						"access_rules": ["arm2,$can_break_wall"]
-					},
-					{
-						"name": "P Rank",
-						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon,arm2"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x":1723,
-						"y":326
-					}
-				]
-			},
-			{
-				"name": "7-2 LIGHT UP THE NIGHT (Skulls)",
-				"visibility_rules": ["skullson,vswitchoff"],
-				"access_rules": ["7_2_access,$goal_not_72", "l7_access,$goal_not_72", "goal72,$goal_reach"],
-				"sections": [
-					{
-						"name": "Secret #1",
-						"access_rules": ["arm2,$wall_jump1","arm2,$dash1", "arm2,$has_rock0_fire2"]
-					},
-					{
-						"name": "Secret #2",
-						"access_rules": ["arm2"]
-					},
-					{
-						"name": "Secret #3",
-						"access_rules": ["arm2"]
-					},
-					{
-						"name": "Secret #4",
-						"access_rules": ["arm2"]
-					},
-					{
-						"name": "Secret #5",
-						"access_rules": ["arm2"]
-					},
-					{
-						"name": "Secret Weapon",
-						"access_rules": ["arm2,$dash1,7_2_rskull"]
-					},
-					{
-						"name": "Cleared 7-2",
-						"visibility_rules": ["$goal_not_72"],
-						"access_rules": ["arm2,7_2_rskull"],
-						"hosted_item": "lvlcomplete"
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal72,$goal_reach"],
-						"access_rules": ["arm2,7_2_rskull"]
-					},
-					{
-						"name": "Don't kill any enemies",
-						"visibility_rules": ["challenge"],
-						"access_rules": ["arm2,$can_break_wall,7_2_rskull"]
-					},
-					{
-						"name": "P Rank",
-						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon,arm2,7_2_rskull"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x":1723,
-						"y":326
-					}
-				]
-			},
-			{
-				"name": "7-2 LIGHT UP THE NIGHT (Switch)",
-				"visibility_rules": ["skullsoff,vswitchon"],
-				"access_rules": ["7_2_access,$goal_not_72", "l7_access,$goal_not_72", "goal72,$goal_reach"],
-				"sections": [
-					{
-						"name": "Secret #1",
-						"access_rules": ["arm2,$wall_jump1","arm2,$dash1", "arm2,$has_rock0_fire2"]
-					},
-					{
-						"name": "Secret #2",
-						"access_rules": ["arm2"]
-					},
-					{
-						"name": "Secret #3",
-						"access_rules": ["arm2"]
-					},
-					{
-						"name": "Secret #4",
-						"access_rules": ["arm2"]
-					},
-					{
-						"name": "Secret #5",
-						"access_rules": ["arm2"]
-					},
-					{
-						"name": "Switch #1",
-						"access_rules": ["arm2,$dash1"]
-					},
-					{
-						"name": "Switch #2",
-						"access_rules": ["arm2,$dash1"]
-					},
-					{
-						"name": "Switch #3",
-						"access_rules": ["arm2,$dash1"]
-					},
-					{
-						"name": "Secret Weapon",
-						"access_rules": ["arm2,vswitch1,vswitch2,vswitch3"]
-					},
-					{
-						"name": "Cleared 7-2",
-						"visibility_rules": ["$goal_not_72"],
-						"access_rules": ["arm2"],
-						"hosted_item": "lvlcomplete"
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal72,$goal_reach"],
-						"access_rules": ["arm2"]
-					},
-					{
-						"name": "Don't kill any enemies",
-						"visibility_rules": ["challenge"],
-						"access_rules": ["arm2,$can_break_wall"]
-					},
-					{
-						"name": "P Rank",
-						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon,arm2"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x":1723,
-						"y":326
-					}
-				]
-			},
-			{
-				"name": "7-2 LIGHT UP THE NIGHT (Skulls, Switch)",
-				"visibility_rules": ["skullson,vswitchon"],
 				"access_rules": ["7_2_access,$goal_not_72", "l7_access,$goal_not_72", "goal72,$goal_reach"],
 				"sections": [
 					{
@@ -2749,6 +1566,12 @@
 					},
 					{
 						"name": "Secret Weapon",
+						"visibility_rules": ["vswitchoff"],
+						"access_rules": ["arm2,$dash1,7_2_rskull"]
+					},
+					{
+						"name": "Secret Weapon (Switch)",
+						"visibility_rules": ["vswitchon"],
 						"access_rules": ["arm2,vswitch1,vswitch2,vswitch3"]
 					},
 					{
@@ -2876,51 +1699,6 @@
 			},
 			{
 				"name": "7-S HELL BATH NO FURY",
-				"visibility_rules": ["skullsoff"],
-				"access_rules": ["7_3_access,$goal_not_7s", "l7_access,$goal_not_7s", "goal7s,$goal_reach"],
-				"sections": [
-					{
-						"name": "Cleaned Courtyard",
-						"visibility_rules": ["clean"],
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "Cleaned Library",
-						"visibility_rules": ["clean"],
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "Cleaned Lobby",
-						"visibility_rules": ["clean"],
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "Cleaned Lounge",
-						"visibility_rules": ["clean"],
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "Cleaned Side Room",
-						"visibility_rules": ["clean"],
-						"access_rules": ["$has_fist"]
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goal7s,$goal_reach"],
-						"access_rules": ["$has_fist"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x":2077,
-						"y":221
-					}
-				]
-			},
-			{
-				"name": "7-S HELL BATH NO FURY (Skulls)",
-				"visibility_rules": ["skullson"],
 				"access_rules": ["7_3_access,$goal_not_7s","l7_access,$goal_not_7s", "goal7s,$goal_reach"],
 				"sections": [
 					{
@@ -2993,37 +1771,6 @@
 			},
 			{
 				"name": "P-2 WAIT OF THE WORLD",
-				"visibility_rules": ["skullsoff"],
-				"access_rules": ["p_2_access,$goal_not_p2", "l6_access,$goal_not_p2", "goalp2,$goal_reach"],
-				"sections": [
-					{
-						"name": "Cleared P-2",
-						"visibility_rules": ["$goal_not_p2"],
-						"access_rules": ["$has_fist,$good_weapon,slide,$dash2"],
-						"hosted_item": "lvlcomplete"
-					},
-					{
-						"name": "Goal Cleared",
-						"visibility_rules": ["goalp2,$goal_reach"],
-						"access_rules": ["$has_fist,$good_weapon,slide,$dash2"]
-					},
-					{
-						"name": "P Rank",
-						"visibility_rules": ["prank"],
-						"access_rules": ["$has_fist,$good_weapon,slide,$dash3"]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "levelselect",
-						"x": 1880,
-						"y": 109
-					}
-				]
-			},
-			{
-				"name": "P-2 WAIT OF THE WORLD (Skulls)",
-				"visibility_rules": ["skullson"],
 				"access_rules": ["p_2_access,$goal_not_p2", "l6_access,$goal_not_p2", "goalp2,$goal_reach"],
 				"sections": [
 					{
