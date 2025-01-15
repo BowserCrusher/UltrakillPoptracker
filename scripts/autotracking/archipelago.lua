@@ -98,6 +98,25 @@ function updateSettings(slot_data)
 	Tracker:FindObjectForCode("clean").Active = slot_data["cleaning_rewards"]
 	Tracker:FindObjectForCode("chess").Active = slot_data["chess_rewards"]
 	Tracker:FindObjectForCode("rockrace").Active = slot_data["rocket_race_rewards"]
+	if slot_data["randomize_secondary_fire"] == false then
+		Tracker:FindObjectForCode("rev0_fire2").Active = true
+		Tracker:FindObjectForCode("rev1_fire2").Active = true
+		Tracker:FindObjectForCode("rev2_fire2").Active = true
+		Tracker:FindObjectForCode("sho0_fire2").Active = true
+		Tracker:FindObjectForCode("sho1_fire2").Active = true
+		Tracker:FindObjectForCode("sho2_fire2").Active = true
+		Tracker:FindObjectForCode("nai0_fire2").Active = true
+		Tracker:FindObjectForCode("nai1_fire2").Active = true
+		Tracker:FindObjectForCode("nai2_fire2").Active = true
+		Tracker:FindObjectForCode("rock0_fire2").Active = true
+		Tracker:FindObjectForCode("rock1_fire2").Active = true
+		Tracker:FindObjectForCode("rock2_fire2").Active = true
+	end
+	Tracker:FindObjectForCode("arm0").Active = slot_data["start_with_arm"]
+	Tracker:FindObjectForCode("dash").AcquiredCount = slot_data["starting_stamina"]
+	Tracker:FindObjectForCode("walljump").AcquiredCount = slot_data["starting_walljumps"]
+	Tracker:FindObjectForCode("slide").Active = slot_data["start_with_slide"]
+	Tracker:FindObjectForCode("slam").Active = slot_data["start_with_slam"]
 	if slot_data["revolver_form"] == 0 then
 		Tracker:FindObjectForCode("revstd").Active = true
 	else
