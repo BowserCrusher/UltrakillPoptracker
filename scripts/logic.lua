@@ -446,6 +446,19 @@ function tower_2_1()
 end
 
 function challenge_2_1()
+	--[[
+	if not(
+		(has_rai() or has_rock() or has("arm1") or has_rev1_fire2() or has_revalt() or has_shostd0_fire2() or has_shoalt() or has_naistd1_fire2() or pro_boost()) and 
+		(dash1() or has_shostd0_fire2() or pro_boost() or has_rock() or has("slide") or wall_jump3()) or 
+		(has_shostd1_fire2() and (has("rai0") or has("arm1") or has_revalt() or has_naistd1_fire2() or dash1() or has("slide") or wall_jump3()))
+	)
+	then 
+		return false
+	else 
+		return(
+			has_rock0_fire2() or slam_storage() or (wall_jump3() and dash2() and (has_shoalt0_fire2() and has_shoany1_fire2() or has("rai2")))
+	)
+	end ]]--
 	return (
 		(
 		(has_rai() or has_rock() or has("arm1") or has_revany2_fire2() or has_revalt() or has_shostd0_fire2() or has_shoalt() or has_naistd1_fire2() or pro_boost()) and 
@@ -463,6 +476,20 @@ function secret1_2_2()
 end
 
 function challenge_2_2()
+	--[[
+	if not(
+		has_rev() or has_shostd() or has_nai() or has("rai0") or has("slide") or dash1() or can_punch()
+	)
+	then 
+		return false
+	else
+		return (
+			((has_rev() or has_naiany0() or has_naistd1_fire2() or has_naistd2() or pro_boost() or has("arm2") or has_rock()) and (has("slide") or dash1())) or
+			(has_shostd() and has("slide") and dash1()) or 
+			has_rock0_fire2()
+		)
+	end
+	--]]
 	return (
 		(has_rev() or has_shostd() or has_nai() or has("rai0") or has("slide") or dash1() or has("arm2")) and 
 		(has_rev() or has_naiany0() or has_naistd1_fire2() or has_naistd2() or pro_boost() or has_rock()) and
@@ -508,12 +535,6 @@ function level_4_3()
 end
 
 function level_4_4()
-	return(
-		has("arm2") or (dash1() and wall_jump1()) or wall_jump2() or has("slam") or has_rock0_fire2()
-	)
-end
-
-function level_4_4skull()
 	return(
 		(has("arm2") and has("4_4_bskull")) or (dash1() and wall_jump1()) or wall_jump2() or has("slam") or has_rock0_fire2()
 	)
