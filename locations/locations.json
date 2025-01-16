@@ -299,7 +299,7 @@
 					},
 					{
 						"name": "Switch",
-						"visibility_rules": ["lswitchon"],
+						"visibility_rules": ["lswitches"],
 						"access_rules": ["$has_fist,$switch_1_1,1_1_rskull,1_1_bskull"]
 					},
 					{
@@ -363,7 +363,7 @@
 					},
 					{
 						"name": "Switch",
-						"visibility_rules": ["lswitchon"],
+						"visibility_rules": ["lswitches"],
 						"access_rules": ["$can_break_wall_cancerous_rodent,$has_fist,1_2_bskull,1_2_rskull","$can_break_wall_cancerous_rodent,$can_zap"]
 					},
 					{
@@ -422,7 +422,7 @@
 					},
 					{
 						"name": "Switch",
-						"visibility_rules": ["lswitchon"],
+						"visibility_rules": ["lswitches"],
 						"access_rules": ["$has_fist,1_3_bskull,1_3_rskull,$good_weapon"]
 					},
 					{
@@ -465,16 +465,11 @@
 					},
 					{
 						"name": "Secret Weapon",
-						"visibility_rules": ["lswitchoff"],
-						"access_rules": ["1_1_access,1_2_access,1_3_access,$switch_1_1,$can_break_glass,$can_break_wall_cancerous_rodent,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,1_2_bskull,1_2_rskull",
-						"1_1_access,1_2_access,1_3_access,$switch_1_1,$can_break_glass,$can_break_wall_cancerous_rodent,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,$can_zap",
-						"l1_access,$switch_1_1,$can_break_glass,$can_break_wall_cancerous_rodent,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,1_2_bskull,1_2_rskull",
-						"l1_access,$switch_1_1,$can_break_glass,$can_break_wall_cancerous_rodent,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,$can_zap"]
-					},
-					{
-						"name": "Secret Weapon (Switch)",
-						"visibility_rules": ["lswitchon"],
-						"access_rules": ["lswitch1,lswitch2,lswitch3,lswitch4"]
+						"access_rules": ["1_1_access,1_2_access,1_3_access,$switch_1_1,$can_break_glass,$can_break_wall_cancerous_rodent,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,1_2_bskull,1_2_rskull,$lswitches_off",
+						"1_1_access,1_2_access,1_3_access,$switch_1_1,$can_break_glass,$can_break_wall_cancerous_rodent,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,$can_zap,$lswitches_off",
+						"l1_access,$switch_1_1,$can_break_glass,$can_break_wall_cancerous_rodent,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,1_2_bskull,1_2_rskull,$lswitches_off",
+						"l1_access,$switch_1_1,$can_break_glass,$can_break_wall_cancerous_rodent,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,$can_zap,$lswitches_off",
+						"lswitch1,lswitch2,lswitch3,lswitch4,lswitches"]
 					},
 					{
 						"name": "Defeat V2",
@@ -1554,25 +1549,23 @@
 					},
 					{
 						"name": "Switch #1",
+						"visibility_rules": ["vswitches"],
 						"access_rules": ["arm2,$dash1"]
 					},
 					{
 						"name": "Switch #2",
+						"visibility_rules": ["vswitches"],
 						"access_rules": ["arm2,$dash1"]
 					},
 					{
 						"name": "Switch #3",
+						"visibility_rules": ["vswitches"],
 						"access_rules": ["arm2,$dash1,7_2_rskull"]
 					},
 					{
 						"name": "Secret Weapon",
-						"visibility_rules": ["vswitchoff"],
-						"access_rules": ["arm2,$dash1,7_2_rskull"]
-					},
-					{
-						"name": "Secret Weapon (Switch)",
-						"visibility_rules": ["vswitchon"],
-						"access_rules": ["arm2,vswitch1,vswitch2,vswitch3"]
+						"access_rules": ["arm2,$dash1,7_2_rskull,$vswitches_off",
+						"arm2,vswitch1,vswitch2,vswitch3,vswitches"]
 					},
 					{
 						"name": "Cleared 7-2",

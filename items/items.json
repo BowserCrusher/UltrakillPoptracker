@@ -1146,43 +1146,15 @@
 	},
 	{
 		"name": "Randomize Limbo Switches",
-		"type": "progressive",
-		"loop": false,
-		"allow_disabled": false,
-		"stages": [
-			{
-				"img": "images/switches/SwitchOff.png",
-				"name": "Randomize Limbo Switches - Disabled",
-				"codes": "lswitches,lswitchoff",
-				"inherit_codes": false
-			},
-			{
-				"img": "images/switches/LimboSwitch1.png",
-				"name": "Randomize Limbo Switches - Enabled",
-				"codes": "lswitches, lswitchon",
-				"inherit_codes": false
-			}
-		]
+		"type": "toggle",
+		"img": "images/switches/LimboSwitch1.png",
+		"codes": "lswitches"
 	},
 	{
 		"name": "Randomize Violence Switches",
-		"type": "progressive",
-		"loop": false,
-		"allow_disabled": false,
-		"stages": [
-			{
-				"img": "images/switches/SwitchOff.png",
-				"name": "Randomize Violence Switches - Disabled",
-				"codes": "vswitches,vswitchoff",
-				"inherit_codes": false
-			},
-			{
-				"img": "images/switches/ViolenceSwitch1.png",
-				"name": "Randomize Violence Switches - Enabled",
-				"codes": "vswitches, vswitchon",
-				"inherit_codes": false
-			}
-		]
+		"type": "toggle",
+		"img": "images/switches/ViolenceSwitch1.png",
+		"codes": "vswitches"
 	},
 	{
 		"name": "Randomize Skulls",

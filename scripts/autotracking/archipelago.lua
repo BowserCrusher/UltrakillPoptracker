@@ -144,16 +144,8 @@ function updateSettings(slot_data)
 	else
 		Tracker:FindObjectForCode("naialt").Active = true
 	end
-	if slot_data["randomize_limbo_switches"] == false then
-		Tracker:FindObjectForCode("lswitches").CurrentStage = 0
-	else
-		Tracker:FindObjectForCode("lswitches").CurrentStage = 1
-	end
-	if slot_data["randomize_violence_switches"] == false then
-		Tracker:FindObjectForCode("vswitches").CurrentStage = 0
-	else
-		Tracker:FindObjectForCode("vswitches").CurrentStage = 1
-	end
+	Tracker:FindObjectForCode("lswitches").Active = slot_data["randomize_limbo_switches"]
+	Tracker:FindObjectForCode("vswitches").Active = slot_data["randomize_violence_switches"]
 	if slot_data["randomize_skulls"] == false then
 		Tracker:FindObjectForCode("0_2_bskull").Active = true
 		Tracker:FindObjectForCode("0_s_bskull").Active = true

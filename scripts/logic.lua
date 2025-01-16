@@ -410,6 +410,14 @@ function can_break_wall_cancerous_rodent()
 	)
 end
 
+function lswitches_off()
+	return not has("lswitches")
+end
+
+function vswitches_off()
+	return not has("vswitches")
+end
+
 function has_1_4_skull()
 	local skullCount = Tracker:ProviderCountForCode("1_4_bskull")
 	if skullCount > 0
@@ -446,19 +454,6 @@ function tower_2_1()
 end
 
 function challenge_2_1()
-	--[[
-	if not(
-		(has_rai() or has_rock() or has("arm1") or has_rev1_fire2() or has_revalt() or has_shostd0_fire2() or has_shoalt() or has_naistd1_fire2() or pro_boost()) and 
-		(dash1() or has_shostd0_fire2() or pro_boost() or has_rock() or has("slide") or wall_jump3()) or 
-		(has_shostd1_fire2() and (has("rai0") or has("arm1") or has_revalt() or has_naistd1_fire2() or dash1() or has("slide") or wall_jump3()))
-	)
-	then 
-		return false
-	else 
-		return(
-			has_rock0_fire2() or slam_storage() or (wall_jump3() and dash2() and (has_shoalt0_fire2() and has_shoany1_fire2() or has("rai2")))
-	)
-	end ]]--
 	return (
 		(
 		(has_rai() or has_rock() or has("arm1") or has_revany2_fire2() or has_revalt() or has_shostd0_fire2() or has_shoalt() or has_naistd1_fire2() or pro_boost()) and 
