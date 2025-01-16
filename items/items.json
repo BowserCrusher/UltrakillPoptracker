@@ -234,6 +234,7 @@
 	{
 		"name": "0-1: INTO THE FIRE",
 		"type": "toggle",
+		"initial_active_state": true,
 		"img": "images/levels/0-1.png",
 		"codes": "0_1_access"
 	},

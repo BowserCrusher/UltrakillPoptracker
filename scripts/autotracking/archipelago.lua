@@ -47,7 +47,19 @@ function updateSettings(slot_data)
 		["3-1"] = 7,
 		["4-2"] = 8
 	}
+	local start_access_map = {
+		["0-1"] = "0_1_access",
+		["0-2"] = "0_2_access",
+		["1-1"] = "1_1_access",
+		["1-2"] = "1_2_access",
+		["1-3"] = "1_3_access",
+		["2-1"] = "2_2_access",
+		["2-3"] = "2_3_access",
+		["3-1"] = "3_1_access",
+		["4-2"] = "4_2_access"
+	}
 	Tracker:FindObjectForCode("start").CurrentStage = start_map[slot_data["start"]]
+	Tracker:FindObjectForCode(start_access_map[slot_data["start"]]).Active = true
 	local goal_map = {
 		["0-1"] = 0,
 		["0-2"] = 1,
