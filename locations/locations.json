@@ -6,7 +6,7 @@
 		"children": [
 			{
 				"name": "0-1 INTO THE FIRE",
-				"access_rules": ["0_1_access,$goal_not_01", "l0_access,$goal_not_01", "goal01,$goal_reach", "start01"],
+				"access_rules": ["0_1_access", "l0_access,$goal_not|goal01", "goal01,$goal_reach", "start01"],
 				"sections": [
 					{
 						"name": "Secret #1",
@@ -34,7 +34,7 @@
 					},
 					{
 						"name": "Cleared 0-1",
-						"visibility_rules": ["$goal_not_01"],
+						"visibility_rules": ["$goal_not|goal01"],
 						"access_rules": [],
 						"hosted_item": "lvlcomplete"
 					},
@@ -64,7 +64,7 @@
 			},
 			{
 				"name": "0-2 THE MEATGRINDER",
-				"access_rules": ["0_2_access,$goal_not_02", "l0_access,$goal_not_02", "goal02,$goal_reach", "start02"],
+				"access_rules": ["0_2_access", "l0_access,$goal_not|goal02", "goal02,$goal_reach", "start02"],
 				"sections": [
 					{
 						"name": "Secret #1",
@@ -88,7 +88,7 @@
 					},
 					{
 						"name": "Cleared 0-2",
-						"visibility_rules": ["$goal_not_02"],
+						"visibility_rules": ["$goal_not|goal02"],
 						"access_rules": [],
 						"hosted_item": "lvlcomplete"
 					},
@@ -118,7 +118,7 @@
 			},
 			{
 				"name": "0-3 DOUBLE DOWN",
-				"access_rules": ["0_3_access,$goal_not_03", "l0_access,$goal_not_03", "goal03,$goal_reach"],
+				"access_rules": ["0_3_access", "l0_access,$goal_not|goal03", "goal03,$goal_reach"],
 				"sections": [
 					{
 						"name": "Secret #1",
@@ -138,7 +138,7 @@
 					},
 					{
 						"name": "Cleared 0-3",
-						"visibility_rules": ["goal_not_03"],
+						"visibility_rules": ["goal_not|goal03"],
 						"access_rules": ["$good_weapon,$can_break_wall","$good_weapon,$challenge_0_3"],
 						"hosted_item": "lvlcomplete"
 					},
@@ -168,7 +168,7 @@
 			},
 			{
 				"name": "0-4 A ONE-MACHINE ARMY",
-				"access_rules": ["0_4_access,$goal_not_04", "l0_access,$goal_not_04", "goal04,$goal_reach"],
+				"access_rules": ["0_4_access", "l0_access,$goal_not|goal04", "goal04,$goal_reach"],
 				"sections": [
 					{
 						"name": "Secret #1",
@@ -184,7 +184,7 @@
 					},
 					{
 						"name": "Cleared 0-4",
-						"visibility_rules":["$goal_not_04"],
+						"visibility_rules":["$goal_not|goal04"],
 						"access_rules": [],
 						"hosted_item": "lvlcomplete"
 					},
@@ -214,7 +214,7 @@
 			},
 			{
 				"name": "0-5 CERBERUS",
-				"access_rules": ["0_5_access,$goal_not_05", "l0_access,$goal_not_05", "goal05,$goal_reach"],
+				"access_rules": ["0_5_access", "l0_access,$goal_not|goal05", "goal05,$goal_reach"],
 				"sections": [
 					{
 						"name": "Defeat the Cerberi",
@@ -223,7 +223,7 @@
 					},
 					{
 						"name": "Cleared 0-5",
-						"visibility_rules": ["$goal_not_05"],
+						"visibility_rules": ["$goal_not|goal05"],
 						"access_rules": ["$level_0_5"],
 						"hosted_item": "lvlcomplete"
 					},
@@ -271,7 +271,7 @@
 			},
 			{
 				"name": "1-1 HEART OF THE SUNRISE",
-				"access_rules": ["1_1_access,$goal_not_11","l1_access,$goal_not_11","goal11,$goal_reach","start11"],
+				"access_rules": ["1_1_access","l1_access,$goal_not|goal11","goal11,$goal_reach","start11"],
 				"sections": [
 					{
 						"name": "Secret #1",
@@ -304,7 +304,7 @@
 					},
 					{
 						"name": "Cleared 1-1",
-						"visibility_rules": ["$goal_not_11"],
+						"visibility_rules": ["$goal_not|goal11"],
 						"access_rules": ["$has_fist,1_1_rskull,1_1_bskull","$has_revany1_fire2"],
 						"hosted_item": "lvlcomplete"
 					},
@@ -334,7 +334,7 @@
 			},
 			{
 				"name": "1-2 THE BURNING WORLD",
-				"access_rules": ["1_2_access,$goal_not_12","l1_access,$goal_not_12","goal12,$goal_reach","start12"],
+				"access_rules": ["1_2_access","l1_access,$goal_not|goal12","goal12,$goal_reach","start12"],
 				"sections": [
 					{
 						"name": "Secret #1",
@@ -368,7 +368,7 @@
 					},
 					{
 						"name": "Cleared 1-2",
-						"visibility_rules": ["$goal_not_12"],
+						"visibility_rules": ["$goal_not|goal12"],
 						"access_rules": ["$has_fist,1_2_bskull,1_2_rskull","$can_zap"],
 						"hosted_item": "lvlcomplete"
 					},
@@ -398,7 +398,7 @@
 			},
 			{
 				"name": "1-3 HALLS OF SACRED REMAINS",
-				"access_rules": ["1_3_access,$goal_not_13","l1_access,$goal_not_13","goal13,$goal_reach","start13"],
+				"access_rules": ["1_3_access","l1_access,$goal_not|goal13","goal13,$goal_reach","start13"],
 				"sections": [
 					{
 						"name": "Secret #1",
@@ -427,7 +427,7 @@
 					},
 					{
 						"name": "Cleared 1-3",
-						"visibility_rules": ["$goal_not_13"],
+						"visibility_rules": ["$goal_not|goal13"],
 						"access_rules": ["$has_fist,1_3_bskull","$has_fist,1_3_rskull"],
 						"hosted_item": "lvlcomplete"
 					},
@@ -457,7 +457,7 @@
 			},
 			{
 				"name": "1-4 CLAIRE DE LUNE",
-				"access_rules": ["1_4_access,$goal_not_14","l1_access,$goal_not_14","goal14,$goal_reach"],
+				"access_rules": ["1_4_access","l1_access,$goal_not|goal14","goal14,$goal_reach"],
 				"sections": [
 					{
 						"name": "V2's Arm",
@@ -493,7 +493,7 @@
 					},
 					{
 						"name": "Cleared 1-4",
-						"visibility_rules": ["$goal_not_14"],
+						"visibility_rules": ["$goal_not|goal14"],
 						"access_rules": [""],
 						"hosted_item": "lvlcomplete"
 					},
@@ -541,7 +541,7 @@
 			},
 			{
 				"name": "2-1 BRIDGEBURNER",
-				"access_rules": ["2_1_access,$goal_not_21", "l2_access,$goal_not_21", "goal21,$goal_reach", "start21"],
+				"access_rules": ["2_1_access", "l2_access,$goal_not|goal21", "goal21,$goal_reach", "start21"],
 				"sections": [
 					{
 						"name": "Secret #1",
@@ -565,7 +565,7 @@
 					},
 					{
 						"name": "Cleared 2-1",
-						"visibility_rules": ["$goal_not_21"],
+						"visibility_rules": ["$goal_not|goal21"],
 						"access_rules": ["$tower_2_1"],
 						"hosted_item": "lvlcomplete"
 					},
@@ -595,7 +595,7 @@
 			},
 			{
 				"name": "2-2 DEATH AT 20,000 VOLTS",
-				"access_rules": ["2_2_access,$goal_not_22", "l2_access,$goal_not_22", "goal22,$goal_reach"],
+				"access_rules": ["2_2_access", "l2_access,$goal_not|goal22", "goal22,$goal_reach"],
 				"sections": [
 					{
 						"name": "Secret #1",
@@ -623,7 +623,7 @@
 					},
 					{
 						"name": "Cleared 2-2",
-						"visibility_rules": ["$goal_not_22"],
+						"visibility_rules": ["$goal_not|goal22"],
 						"access_rules": [],
 						"hosted_item": "lvlcomplete"
 					},
@@ -653,7 +653,7 @@
 			},
 			{
 				"name": "2-3 SHEER HEART ATTACK",
-				"access_rules": ["2_3_access,$goal_not_23", "l2_access,$goal_not_23", "goal23,$goal_reach", "start23"],
+				"access_rules": ["2_3_access", "l2_access,$goal_not|goal23", "goal23,$goal_reach", "start23"],
 				"sections": [
 					{
 						"name": "Secret #1",
@@ -677,7 +677,7 @@
 					},
 					{
 						"name": "Cleared 2-3",
-						"visibility_rules": ["$goal_not_23"],
+						"visibility_rules": ["$goal_not|goal23"],
 						"access_rules": ["$has_fist,2_3_bskull,2_3_rskull","$secret3_2_3,$has_fist,2_3_bskull,slide"],
 						"hosted_item": "lvlcomplete"
 					},
@@ -707,7 +707,7 @@
 			},
 			{
 				"name": "2-4 COURT OF THE CORPSE KING",
-				"access_rules": ["2_4_access,$goal_not_24", "l2_access,$goal_not_24", "goal24,$goal_reach"],
+				"access_rules": ["2_4_access", "l2_access,$goal_not|goal24", "goal24,$goal_reach"],
 				"sections": [
 					{
 						"name": "Defeat the Corpse of King Minos",
@@ -716,7 +716,7 @@
 					},
 					{
 						"name": "Cleared 2-4",
-						"visibility_rules": ["$goal_not_24"],
+						"visibility_rules": ["$goal_not|goal24"],
 						"access_rules": ["$has_fist,2_4_bskull,2_4_rskull"],
 						"hosted_item": "lvlcomplete"
 					},
@@ -764,7 +764,7 @@
 			},
 			{
 				"name": "3-1 BELLY OF THE BEAST",
-				"access_rules": ["3_1_access,$goal_not_31","l3_access,$goal_not_31","goal31,$goal_reach", "start31"],
+				"access_rules": ["3_1_access","l3_access,$goal_not|goal31","goal31,$goal_reach", "start31"],
 				"sections": [
 					{
 						"name": "Secret #1",
@@ -788,7 +788,7 @@
 					},
 					{
 						"name": "Cleared 3-1",
-						"visibility_rules": ["$goal_not_31"],
+						"visibility_rules": ["$goal_not|goal31"],
 						"access_rules": [],
 						"hosted_item": "lvlcomplete"
 					},
@@ -818,7 +818,7 @@
 			},
 			{
 				"name": "3-2 IN THE FLESH",
-				"access_rules": ["3_2_access,$goal_not_32","l3_access,$goal_not_32", "goal32,$goal_reach"],
+				"access_rules": ["3_2_access","l3_access,$goal_not|goal32", "goal32,$goal_reach"],
 				"sections": [
 					{
 						"name": "Defeat Gabriel",
@@ -827,7 +827,7 @@
 					},
 					{
 						"name": "Cleared 3-2",
-						"visibility_rules": ["$goal_not_32"],
+						"visibility_rules": ["$goal_not|goal32"],
 						"access_rules": ["slide,$jump_3_2"],
 						"hosted_item": "lvlcomplete"
 					},
@@ -857,7 +857,7 @@
 			},
 			{
 				"name": "4-1 SLAVES TO POWER",
-				"access_rules": ["4_1_access,$goal_not_41", "l4_access,$goal_not_41", "goal41,$goal_reach"],
+				"access_rules": ["4_1_access", "l4_access,$goal_not|goal41", "goal41,$goal_reach"],
 				"sections": [
 					{
 						"name": "Secret #1",
@@ -881,7 +881,7 @@
 					},
 					{
 						"name": "Cleared 4-1",
-						"visibility_rules": ["$goal_not_41"],
+						"visibility_rules": ["$goal_not|goal41"],
 						"access_rules": [],
 						"hosted_item": "lvlcomplete"
 					},
@@ -911,7 +911,7 @@
 			},
 			{
 				"name": "4-2 GOD DAMN THE SUN",
-				"access_rules": ["4_2_access,$goal_not_42", "l4_access,$goal_not_42", "goal42,$goal_reach", "start42"],
+				"access_rules": ["4_2_access", "l4_access,$goal_not|goal42", "goal42,$goal_reach", "start42"],
 				"sections": [
 					{
 						"name": "Secret #1",
@@ -935,7 +935,7 @@
 					},
 					{
 						"name": "Cleared 4-2",
-						"visibility_rules": ["$goal_not_42"],
+						"visibility_rules": ["$goal_not|goal42"],
 						"access_rules": ["$has_fist,$jump_gen2","$has_fist,$has_revany2_fire2","$has_fist,4_2_bskull,4_2_rskull"],
 						"hosted_item": "lvlcomplete"
 					},
@@ -965,7 +965,7 @@
 			},
 			{
 				"name": "4-3 A SHOT IN THE DARK",
-				"access_rules": ["4_3_access,$goal_not_43", "l4_access,$goal_not_43", "goal43,$goal_reach"],
+				"access_rules": ["4_3_access", "l4_access,$goal_not|goal43", "goal43,$goal_reach"],
 				"sections": [
 					{
 						"name": "Secret #1",
@@ -994,7 +994,7 @@
 					},
 					{
 						"name": "Cleared 4-3",
-						"visibility_rules": ["$goal_not_43"],
+						"visibility_rules": ["$goal_not|goal43"],
 						"access_rules": ["$level_4_3,$has_fist"],
 						"hosted_item": "lvlcomplete"
 					},
@@ -1024,7 +1024,7 @@
 			},
 			{
 				"name": "4-4 CLAIRE DE SOLEIL",
-				"access_rules": ["4_4_access,$goal_not_44", "l4_access,$goal_not_44", "goal44,$goal_reach"],
+				"access_rules": ["4_4_access", "l4_access,$goal_not|goal44", "goal44,$goal_reach"],
 				"sections": [
 					{
 						"name": "V2's Other Arm",
@@ -1042,7 +1042,7 @@
 					},
 					{
 						"name": "Cleared 4-4",
-						"visibility_rules": ["$goal_not_44"],
+						"visibility_rules": ["$goal_not|goal44"],
 						"access_rules": ["arm2, $level_4_4skull, $good_weapon"],
 						"hosted_item": "lvlcomplete"
 					},
@@ -1072,7 +1072,7 @@
 			},
 			{
 				"name": "4-S CLASH OF THE BRANDICOOT",
-				"access_rules": ["4_2_access,$goal_not_4s", "l4_access,$goal_not_4s", "goal4s,$goal_reach", "start42,$goal_not_4s"],
+				"access_rules": ["4_2_access,$goal_not|goal4s", "l4_access,$goal_not|goal4s", "goal4s,$goal_reach", "start42,$goal_not|goal4s"],
 				"sections": [
 					{
 						"name": "Destroy all crates",
@@ -1095,7 +1095,7 @@
 			},
 			{
 				"name": "5-1 IN THE WAKE OF POSEIDON",
-				"access_rules": ["5_1_access,$goal_not_51", "l5_access,$goal_not_51", "goal51,$goal_reach"],
+				"access_rules": ["5_1_access", "l5_access,$goal_not|goal51", "goal51,$goal_reach"],
 				"sections": [
 					{
 						"name": "Secret #1",
@@ -1119,7 +1119,7 @@
 					},
 					{
 						"name": "Cleared 5-1",
-						"visibility_rules": ["$goal_not_51"],
+						"visibility_rules": ["$goal_not|goal51"],
 						"access_rules": ["$level_5_1,$has_fist,$has_5_1_skull"],
 						"hosted_item": "lvlcomplete"
 					},
@@ -1149,7 +1149,7 @@
 			},
 			{
 				"name": "5-2 WAVES OF THE STARLESS SEA",
-				"access_rules": ["5_2_access,$goal_not_52", "l5_access,$goal_not_52", "goal52,$goal_reach"],
+				"access_rules": ["5_2_access", "l5_access,$goal_not|goal52", "goal52,$goal_reach"],
 				"sections": [
 					{
 						"name": "Secret #1",
@@ -1173,7 +1173,7 @@
 					},
 					{
 						"name": "Cleared 5-2",
-						"visibility_rules": ["$goal_not_52"],
+						"visibility_rules": ["$goal_not|goal52"],
 						"access_rules": ["$has_fist,$can_break_idol,slam,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$dash1,5_2_bskull,5_2_rskull"],
 						"hosted_item": "lvlcomplete"
 					},
@@ -1203,7 +1203,7 @@
 			},
 			{
 				"name": "5-3 SHIP OF FOOLS",
-				"access_rules": ["5_3_access,$goal_not_53", "l5_access,$goal_not_53", "goal53,$goal_reach"],
+				"access_rules": ["5_3_access", "l5_access,$goal_not|goal53", "goal53,$goal_reach"],
 				"sections": [
 					{
 						"name": "Secret #1",
@@ -1236,7 +1236,7 @@
 					},
 					{
 						"name": "Cleared 5-3",
-						"visibility_rules": ["$goal_not_53"],
+						"visibility_rules": ["$goal_not|goal53"],
 						"access_rules": ["$has_fist,$can_break_idol,5_3_bskull", "$has_fist,$can_break_idol,5_3_rskull"],
 						"hosted_item": "lvlcomplete"
 					},
@@ -1266,7 +1266,7 @@
 			},
 			{
 				"name": "5-4 LEVIATHAN",
-				"access_rules": ["5_4_access,$goal_not_54", "l5_access,$goal_not_54", "goal54,$goal_reach"],
+				"access_rules": ["5_4_access", "l5_access,$goal_not|goal54", "goal54,$goal_reach"],
 				"sections": [
 					{
 						"name": "Defeat the Leviathan",
@@ -1275,7 +1275,7 @@
 					},
 					{
 						"name": "Cleared 5-4",
-						"visibility_rules": ["$goal_not_54"],
+						"visibility_rules": ["$goal_not|goal54"],
 						"access_rules": [""],
 						"hosted_item": "lvlcomplete"
 					},
@@ -1305,7 +1305,7 @@
 			},
 			{
 				"name": "5-S I ONLY SAY MORNIN",
-				"access_rules": ["5_1_access,$level_5_1,slide,$has_fist,$has_5_1_skull,$goal_not_5s","l5_access,$level_5_1,slide,$has_fist,$has_5_1_skull,$goal_not_5s","goal5s,$goal_reach"],
+				"access_rules": ["5_1_access,$level_5_1,slide,$has_fist,$has_5_1_skull,$goal_not|goal5s","l5_access,$level_5_1,slide,$has_fist,$has_5_1_skull,$goal_not|goal5s","goal5s,$goal_reach"],
 				"sections": [
 					{
 						"name": "Funny Stupid Fish (Friend)",
@@ -1383,7 +1383,7 @@
 			},
 			{
 				"name": "6-1 CRY FOR THE WEEPER",
-				"access_rules": ["6_1_access,$goal_not_61", "l6_access,$goal_not_61", "goal61,$goal_reach"],
+				"access_rules": ["6_1_access", "l6_access,$goal_not|goal61", "goal61,$goal_reach"],
 				"sections": [
 					{
 						"name": "Secret #1",
@@ -1407,7 +1407,7 @@
 					},
 					{
 						"name": "Cleared 6-1",
-						"visibility_rules": ["$goal_not_61"],
+						"visibility_rules": ["$goal_not|goal61"],
 						"access_rules": ["$has_fist,$can_break_idol,$jump_gen1,6_1_rskull"],
 						"hosted_item": "lvlcomplete"
 					},
@@ -1437,7 +1437,7 @@
 			},
 			{
 				"name": "6-2 AESTHETICS OF HATE",
-				"access_rules": ["6_2_access,$goal_not_62","l6_access,$goal_not_62", "goal62,$goal_reach"],
+				"access_rules": ["6_2_access","l6_access,$goal_not|goal62", "goal62,$goal_reach"],
 				"sections": [
 					{
 						"name": "Defeat Gabriel",
@@ -1446,7 +1446,7 @@
 					},
 					{
 						"name": "Cleared 6-2",
-						"visibility_rules": ["$goal_not_62"],
+						"visibility_rules": ["$goal_not|goal62"],
 						"access_rules": ["$level_6_2,$good_weapon"],
 						"hosted_item": "lvlcomplete"
 					},
@@ -1476,7 +1476,7 @@
 			},
 			{
 				"name": "7-1 GARDEN OF FORKING PATHS",
-				"access_rules": ["7_1_access,$goal_not_71", "l7_access,$goal_not_71", "goal71,$goal_reach"],
+				"access_rules": ["7_1_access", "l7_access,$goal_not|goal71", "goal71,$goal_reach"],
 				"sections": [
 					{
 						"name": "Secret #1",
@@ -1500,7 +1500,7 @@
 					},
 					{
 						"name": "Cleared 7-1",
-						"visibility_rules": ["$goal_not_71"],
+						"visibility_rules": ["$goal_not|goal71"],
 						"access_rules": ["$has_fist,$jump_gen1,7_1_rskull,7_1_bskull"],
 						"hosted_item": "lvlcomplete"
 					},
@@ -1530,7 +1530,7 @@
 			},
 			{
 				"name": "7-2 LIGHT UP THE NIGHT",
-				"access_rules": ["7_2_access,$goal_not_72", "l7_access,$goal_not_72", "goal72,$goal_reach"],
+				"access_rules": ["7_2_access", "l7_access,$goal_not|goal72", "goal72,$goal_reach"],
 				"sections": [
 					{
 						"name": "Secret #1",
@@ -1576,7 +1576,7 @@
 					},
 					{
 						"name": "Cleared 7-2",
-						"visibility_rules": ["$goal_not_72"],
+						"visibility_rules": ["$goal_not|goal72"],
 						"access_rules": ["arm2,7_2_rskull"],
 						"hosted_item": "lvlcomplete"
 					},
@@ -1606,7 +1606,7 @@
 			},
 			{
 				"name": "7-3 NO SOUND, NO MEMORY",
-				"access_rules": ["7_3_access,$goal_not_73", "l7_access,$goal_not_73", "goal73,$goal_reach"],
+				"access_rules": ["7_3_access", "l7_access,$goal_not|goal73", "goal73,$goal_reach"],
 				"sections": [
 					{
 						"name": "Secret #1",
@@ -1630,7 +1630,7 @@
 					},
 					{
 						"name": "Cleared 7-3",
-						"visibility_rules": ["$goal_not_73"],
+						"visibility_rules": ["$goal_not|goal73"],
 						"access_rules": [],
 						"hosted_item": "lvlcomplete"
 					},
@@ -1660,7 +1660,7 @@
 			},
 			{
 				"name": "7-4 ...LIKE ANTENNAS TO HEAVEN",
-				"access_rules": ["7_4_access,$goal_not_74", "l7_access,$goal_not_74", "goal74,$goal_reach"],
+				"access_rules": ["7_4_access", "l7_access,$goal_not|goal74", "goal74,$goal_reach"],
 				"sections": [
 					{
 						"name": "Defeat 1000-THR \"Earthmover\"",
@@ -1669,7 +1669,7 @@
 					},
 					{
 						"name": "Cleared 7-4",
-						"visibility_rules": ["$goal_not_74"],
+						"visibility_rules": ["$goal_not|goal74"],
 						"access_rules": ["slide,$can_break_idol,arm2,$good_weapon","slide,$can_break_idol,$slam_storage,$good_weapon"],
 						"hosted_item": "lvlcomplete"
 					},
@@ -1699,7 +1699,7 @@
 			},
 			{
 				"name": "7-S HELL BATH NO FURY",
-				"access_rules": ["7_3_access,$goal_not_7s","l7_access,$goal_not_7s", "goal7s,$goal_reach"],
+				"access_rules": ["7_3_access,$goal_not|goal7s","l7_access,$goal_not|goal7s", "goal7s,$goal_reach"],
 				"sections": [
 					{
 						"name": "Cleaned Courtyard",
@@ -1742,11 +1742,11 @@
 			},
 			{
 				"name": "P-1 SOUL SURVIVOR",
-				"access_rules": ["p_1_access,$goal_not_p1", "l3_access,$goal_not_p1", "goalp1,$goal_reach"],
+				"access_rules": ["p_1_access", "l3_access,$goal_not|goalp1", "goalp1,$goal_reach"],
 				"sections": [
 					{
 						"name": "Cleared P-1",
-						"visibility_rules": ["$goal_not_p1"],
+						"visibility_rules": ["$goal_not|goalp1"],
 						"access_rules": ["$has_fist,$good_weapon,slide,$dash2"],
 						"hosted_item": "lvlcomplete"
 					},
@@ -1771,11 +1771,11 @@
 			},
 			{
 				"name": "P-2 WAIT OF THE WORLD",
-				"access_rules": ["p_2_access,$goal_not_p2", "l6_access,$goal_not_p2", "goalp2,$goal_reach"],
+				"access_rules": ["p_2_access", "l6_access,$goal_not|goalp2", "goalp2,$goal_reach"],
 				"sections": [
 					{
 						"name": "Cleared P-2",
-						"visibility_rules": ["$goal_not_p2"],
+						"visibility_rules": ["$goal_not|goalp2"],
 						"access_rules": ["$has_fist,$good_weapon,slide,$dash2,p_2_bskull"],
 						"hosted_item": "lvlcomplete"
 					},
