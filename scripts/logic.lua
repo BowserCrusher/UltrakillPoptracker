@@ -365,8 +365,7 @@ end
 function goal_reach()
 	local levelCount = Tracker:ProviderCountForCode("lvlcomplete")
 	local levelReq = Tracker:ProviderCountForCode("goalamount")
-	if (levelCount + 1 - levelReq > 0)
-	then
+	if (levelCount + 1 - levelReq > 0) then
 		return true
 	else
 		return false
@@ -471,20 +470,6 @@ function secret1_2_2()
 end
 
 function challenge_2_2()
-	--[[
-	if not(
-		has_rev() or has_shostd() or has_nai() or has("rai0") or has("slide") or dash1() or can_punch()
-	)
-	then 
-		return false
-	else
-		return (
-			((has_rev() or has_naiany0() or has_naistd1_fire2() or has_naistd2() or pro_boost() or has("arm2") or has_rock()) and (has("slide") or dash1())) or
-			(has_shostd() and has("slide") and dash1()) or 
-			has_rock0_fire2()
-		)
-	end
-	--]]
 	return (
 		(has_rev() or has_shostd() or has_nai() or has("rai0") or has("slide") or dash1() or has("arm2")) and 
 		(has_rev() or has_naiany0() or has_naistd1_fire2() or has_naistd2() or pro_boost() or has_rock()) and
@@ -537,7 +522,7 @@ end
 
 function level_5_1()
 	return(
-		has("slide") and (has("slam") and wall_jump3() and dash2()) or has_rock0_fire2() or has("arm2")
+		has("slide") and ((has("slam") and wall_jump3() and dash2()) or has_rock0_fire2() or has("arm2"))
 	)
 end
 
