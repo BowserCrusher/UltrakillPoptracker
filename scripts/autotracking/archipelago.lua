@@ -42,10 +42,9 @@ function updateSettings(slot_data)
 		["1-1"] = 2,
 		["1-2"] = 3,
 		["1-3"] = 4,
-		["2-1"] = 5,
-		["2-3"] = 6,
-		["3-1"] = 7,
-		["4-2"] = 8
+		["2-3"] = 5,
+		["3-1"] = 6,
+		["4-2"] = 7
 	}
 	local start_access_map = {
 		["0-1"] = "0_1_access",
@@ -96,8 +95,10 @@ function updateSettings(slot_data)
 		["7-3"] = 32,
 		["7-4"] = 33,
 		["7-S"] = 34,
-		["P-1"] = 35,
-		["P-1"] = 36
+		["0-E"] = 35,
+		["1-E"] = 36,
+		["P-1"] = 37,
+		["P-2"] = 38
 	}
 	Tracker:FindObjectForCode("goal").CurrentStage = goal_map[slot_data["goal"]]
 	Tracker:FindObjectForCode("goalamount").AcquiredCount = slot_data["goal_requirement"]
@@ -176,6 +177,10 @@ function updateSettings(slot_data)
 		Tracker:FindObjectForCode("7_2_rskull").Active = true
 		Tracker:FindObjectForCode("7_s_bskull").Active = true
 		Tracker:FindObjectForCode("7_s_rskull").Active = true
+		Tracker:FindObjectForCode("0_e_bskull").Active = true
+		Tracker:FindObjectForCode("0_e_rskull").Active = true
+		Tracker:FindObjectForCode("1_e_bskull").Active = true
+		Tracker:FindObjectForCode("1_e_rskull").Active = true
 		Tracker:FindObjectForCode("p_2_bskull").Active = true
 	end
 end

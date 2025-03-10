@@ -244,7 +244,7 @@ end
 
 function can_break_wall()
 	return(
-		has_rai() or has_rock() or has("arm1") or has_naistd1_fire2() or has_revalt() or has_shostd_fire2() or has_shoalt() or pro_boost()
+		has_rai() or has_rock() or has("arm1") or has_rev2_fire2() or has_naistd1_fire2() or has_revalt() or has_shostd_fire2() or has_shoalt() or pro_boost()
 	)
 end
 
@@ -374,7 +374,9 @@ end
 
 function secret3_0_2()
 	return (
-		has_rock() or has("rai2") or (has_sho0_fire2() and (has("shostd") or has("shoalt"))) or pro_boost() or (dash1() and wall_jump1()) or wall_jump2() or (slam_storage() and has("slide"))
+		has("slide") and (
+			has_rock() or has("rai2") or has_shoany0_fire2() or pro_boost() or (wall_jump1() and dash1()) or wall_jump2() or slam_storage()
+		)
 	)
 end
 
@@ -427,6 +429,7 @@ function has_1_4_skull()
 	end
 end
 
+--[[
 function secret1_2_1()
 	return(
 		slam_storage() or (
@@ -436,13 +439,20 @@ function secret1_2_1()
 		)
 	)
 end
+]]--
 
 function secret3_2_1()
 	return(
-		((dash2() or (wall_jump1() and dash1())) and 
-		(has_shoalt0_fire2() or has_shoany1_fire2() or has("rai2"))
-		) 
-		or has_rock0_fire2()
+		exit_2_1() and (
+			has_shoalt0_fire2() or has_shoalt1_fire2() or has("rai2") or has_rock0_fire2()
+		)
+	)
+end
+
+
+function exit_2_1()
+	return(
+		has("slam") or has("rai2") or has_rock() or wall_jump1() or has_shostd_fire2() or has_shoalt() or pro_boost()
 	)
 end
 
@@ -454,12 +464,11 @@ end
 
 function challenge_2_1()
 	return (
-		(
-		(has_rai() or has_rock() or has("arm1") or has_revany2_fire2() or has_revalt() or has_shostd0_fire2() or has_shoalt() or has_naistd1_fire2() or pro_boost()) and 
-		(dash1() or has_shostd0_fire2() or pro_boost() or has_rock() or has("slide") or wall_jump3()) or 
-		(has_shostd1_fire2() and (has("rai0") or has("arm1") or has_revalt() or has_naistd1_fire2() or dash1() or has("slide") or wall_jump3()))
-		) and
-		(has_rock0_fire2() or slam_storage() or (wall_jump3() and dash2() and (has_shoalt0_fire2() and has_shoany1_fire2() or has("rai2"))))
+		can_break_wall() and (
+			has_rock0_fire2() or slam_storage() or (
+				wall_jump3() and dash2() and (has_shoalt0_fire2() or has_shoany1_fire2() or has("rai2"))
+			)
+		)
 	)
 end
 
@@ -483,11 +492,13 @@ function secret3_2_3()
 	)
 end
 
+--[[
 function jump_3_2()
 	return(
 		has("slam") or has("rai2") or has_rock() or wall_jump1() or dash1() or has_shostd_fire2() or has_shoalt() or pro_boost()
 	)
 end
+--]]
 
 function secret4_4_1()
 	return(
@@ -503,8 +514,16 @@ end
 
 function challenge_4_1()
 	return(
-		has_rock0_fire2() or slam_storage() or 
+		has_rock0_fire2() or (slam_storage() and can_break_wall()) or 
 		((has("rai2") or has_shoany1_fire2() or has_shoalt0_fire2()) and (wall_jump1() or has("slam")))
+	)
+end
+
+function secret_exit_4_2()
+	return (
+		has_fist() and (
+			has("slam") or wall_jump3() or has_rock() or has_shoany0_fire2() or has_shoany1_fire2() or pro_boost() or has("rai2") or has_rev2_fire2() or (has_shoalt() and wall_jump2())
+		)
 	)
 end
 
@@ -540,6 +559,12 @@ function has_5_1_skull()
 	else
 		return false
 	end
+end
+
+function challenge_6_1()
+	return(
+		has_shoany0_fire2() or has_shoany1_fire2() or pro_boost() or has("rai2") or has_rock0_fire2()
+	)
 end
 
 function level_6_2()

@@ -64,7 +64,13 @@
 								"7_s_rskull"
 							],
 							[
+								"0_e_bskull",
+								"1_e_bskull",
 								"p_2_bskull"
+							],
+							[
+								"0_e_rskull",
+								"1_e_rskull",
 							]
 						]
 					}

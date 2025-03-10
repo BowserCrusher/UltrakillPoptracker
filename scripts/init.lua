@@ -4,9 +4,9 @@ IS_UNLABELLED = variant:find("maps-u")
 Tracker:AddItems("items/items.json")
 -- Logic
 ScriptHost:LoadScript("scripts/logic.lua")
-Tracker:AddMaps("maps/maps.json")
 
 -- Maps
+Tracker:AddMaps("maps/maps.json")
 
 -- Locations
 Tracker:AddLocations("locations/locations.json")

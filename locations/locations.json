@@ -122,14 +122,22 @@
 				"sections": [
 					{
 						"name": "Secret #1",
-						"access_rules": ["$jump_gen1"]
+						"access_rules": ["slide"]
 					},
 					{
 						"name": "Secret #2",
-						"access_rules": ["$can_break_wall","$challenge_0_3"]
+						"access_rules": ["$jump_gen1"]
 					},
 					{
 						"name": "Secret #3",
+						"access_rules": ["$can_break_wall","$challenge_0_3"]
+					},
+					{
+						"name": "Secret #4",
+						"access_rules": ["$can_break_glass"]
+					},
+					{
+						"name": "Secret #5",
 						"access_rules": ["$can_break_wall"]
 					},
 					{
@@ -180,7 +188,15 @@
 					},
 					{
 						"name": "Secret #3",
+						"access_rules": []
+					},
+					{
+						"name": "Secret #4",
 						"access_rules": ["slide"]
+					},
+					{
+						"name": "Secret #5",
+						"access_rules": []
 					},
 					{
 						"name": "Cleared 0-4",
@@ -342,7 +358,7 @@
 					},
 					{
 						"name": "Secret #2",
-						"access_rules": []
+						"access_rules": ["$can_break_wall"]
 					},
 					{
 						"name": "Secret #3",
@@ -354,7 +370,7 @@
 					},
 					{
 						"name": "Secret #5",
-						"access_rules": ["$has_fist,1_2_bskull,1_2_rskull","$can_zap"]
+						"access_rules": ["$has_fist,1_2_bskull,1_2_rskull,$jump_gen1","$can_zap,$jump_gen1"]
 					},
 					{
 						"name": "Defeat the Very Cancerous Rodent",
@@ -380,7 +396,7 @@
 					{
 						"name": "Do not pick up any skulls",
 						"visibility_rules": ["challenge"],
-						"access_rules": ["$can_zap"]
+						"access_rules": ["$can_zap,$can_break_wall"]
 					},
 					{
 						"name": "P Rank",
@@ -536,15 +552,15 @@
 			},
 			{
 				"name": "2-1 BRIDGEBURNER",
-				"access_rules": ["2_1_access,$goal_not|goal21", "l2_access,$goal_not|goal21", "goal21,$goal_reach", "start21"],
+				"access_rules": ["2_1_access,$goal_not|goal21", "l2_access,$goal_not|goal21", "goal21,$goal_reach"],
 				"sections": [
 					{
 						"name": "Secret #1",
-						"access_rules": ["$secret1_2_1,$can_break_wall", "$slam_storage"]
+						"access_rules": ["$can_break_wall"]
 					},
 					{
 						"name": "Secret #2",
-						"access_rules": []
+						"access_rules": ["$exit_2_1"]
 					},
 					{
 						"name": "Secret #3",
@@ -818,28 +834,28 @@
 					{
 						"name": "Defeat Gabriel",
 						"visibility_rules": ["bossstd"],
-						"access_rules": ["$good_weapon,slide,$jump_3_2"]
+						"access_rules": ["$good_weapon,slide"]
 					},
 					{
 						"name": "Cleared 3-2",
 						"visibility_rules": ["$goal_not|goal32"],
-						"access_rules": ["slide,$jump_3_2"],
+						"access_rules": ["slide"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal32,$goal_reach"],
-						"access_rules": ["slide,$jump_3_2"]
+						"access_rules": ["slide"]
 					},
 					{
 						"name": "Drop Gabriel in a pit",
 						"visibility_rules": ["challenge"],
-						"access_rules": ["$good_weapon,slide,$jump_3_2,$wall_jump1"]
+						"access_rules": ["$good_weapon,slide,$wall_jump1"]
 					},
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon,slide,$jump_3_2"]
+						"access_rules": ["$good_weapon,slide"]
 					}
 				],
 				"map_locations": [
@@ -931,7 +947,7 @@
 					{
 						"name": "Cleared 4-2",
 						"visibility_rules": ["$goal_not|goal42"],
-						"access_rules": ["$has_fist,$jump_gen2","$has_fist,$has_revany2_fire2","$has_fist,4_2_bskull,4_2_rskull"],
+						"access_rules": ["$secret_exit_4_2","$has_fist,4_2_bskull,4_2_rskull"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
@@ -1072,7 +1088,7 @@
 					{
 						"name": "Destroy all crates",
 						"visibility_rules": ["clash"],
-						"access_rules": ["$jump_gen2,$has_fist","$has_revany2_fire2,$has_fist"]
+						"access_rules": ["$secret_exit_4_2"]
 					},
 					{
 						"name": "Goal Cleared",
@@ -1206,7 +1222,7 @@
 					},
 					{
 						"name": "Secret #2",
-						"access_rules": []
+						"access_rules": ["$has_shoany0_fire2","$pro_boost","$has_naialt","rai2","$has_rock"]
 					},
 					{
 						"name": "Secret #3",
@@ -1300,7 +1316,7 @@
 			},
 			{
 				"name": "5-S I ONLY SAY MORNIN",
-				"access_rules": ["5_1_access,$level_5_1,slide,$has_fist,$has_5_1_skull,$goal_not|goal5s","l5_access,$level_5_1,slide,$has_fist,$has_5_1_skull,$goal_not|goal5s","goal5s,$goal_reach"],
+				"access_rules": ["5_1_access,$level_5_1,slide,$has_fist,$has_5_1_skull,$jump_gen1,$goal_not|goal5s","l5_access,$level_5_1,slide,$has_fist,$has_5_1_skull,$jump_gen1,$goal_not|goal5s","goal5s,$goal_reach"],
 				"sections": [
 					{
 						"name": "Funny Stupid Fish (Friend)",
@@ -1414,7 +1430,7 @@
 					{
 						"name": "Beat the secret encounter",
 						"visibility_rules": ["challenge"],
-						"access_rules": ["$has_fist,$jump_gen1,6_1_rskull"]
+						"access_rules": ["$has_fist,6_1_rskull,$challenge_6_1"]
 					},
 					{
 						"name": "P Rank",
@@ -1619,7 +1635,7 @@
 					},
 					{
 						"name": "Secret #5",
-						"access_rules": ["slide"]
+						"access_rules": []
 					},
 					{
 						"name": "Cleared 7-3",
@@ -1730,6 +1746,64 @@
 						"map": "levelselect",
 						"x":2077,
 						"y":221
+					}
+				]
+			},
+			{
+				"name": "0-E THIS HEAT, AN EVIL HEAT",
+				"access_rules": ["0_e_access,$goal_not|goal0e", "l0_access,$goal_not|goal0e", "goal0e,$goal_reach"],
+				"sections": [
+					{
+						"name": "Cleared 0-E",
+						"visibility_rules": ["$goal_not|goal0e"],
+						"access_rules": ["$has_fist,$good_weapon,$can_break_glass,$dash2,0_e_bskull,0_e_rskull"],
+						"hosted_item": "lvlcomplete"
+					},
+					{
+						"name": "Goal Cleared",
+						"visibility_rules": ["goal0e,$goal_reach"],
+						"access_rules": ["$has_fist,$good_weapon,$can_break_glass,$dash2,0_e_bskull,0_e_rskull"],
+					},
+					{
+						"name": "P Rank",
+						"visibility_rules": ["prank"],
+						"access_rules": ["$has_fist,$good_weapon,$can_break_glass,$dash3,0_e_bskull,0_e_rskull"],
+					}
+				],
+				"map_locations" : [
+					{
+						"map": "levelselect",
+						"x": 2271,
+						"y":  297
+					}
+				]
+			},
+			{
+				"name": "1-E ...THEN FELL THE ASHES",
+				"access_rules": ["1_e_access,$goal_not|goal1e", "l1_access,$goal_not|goal1e", "goal1e,$goal_reach"],
+				"sections": [
+					{
+						"name": "Cleared 1-E",
+						"visibility_rules": ["$goal_not|goal1e"],
+						"access_rules": ["$has_fist,$good_weapon,arm2,$can_break_wall,$dash2,1_e_bskull,1_e_rskull"],
+						"hosted_item": "lvlcomplete"
+					},
+					{
+						"name": "Goal Cleared",
+						"visibility_rules": ["goal1e,$goal_reach"],
+						"access_rules": ["$has_fist,$good_weapon,arm2,$can_break_wall,$dash2,1_e_bskull,1_e_rskull"],
+					},
+					{
+						"name": "P Rank",
+						"visibility_rules": ["prank"],
+						"access_rules": ["$has_fist,$good_weapon,arm2,$can_break_wall,$dash3,1_e_bskull,1_e_rskull"],
+					}
+				],
+				"map_locations" : [
+					{
+						"map": "levelselect",
+						"x": 2459,
+						"y": 297
 					}
 				]
 			},
