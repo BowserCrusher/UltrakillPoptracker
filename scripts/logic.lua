@@ -244,7 +244,7 @@ end
 
 function can_break_wall()
 	return(
-		has_rai() or has_rock() or has("arm1") or has_rev2_fire2() or has_naistd1_fire2() or has_revalt() or has_shostd_fire2() or has_shoalt() or pro_boost()
+		has_rai() or has_rock() or has("arm1") or has_naistd1_fire2() or has_revalt() or has_shostd_fire2() or has_shoalt() or pro_boost()
 	)
 end
 
@@ -429,18 +429,6 @@ function has_1_4_skull()
 	end
 end
 
---[[
-function secret1_2_1()
-	return(
-		slam_storage() or (
-		can_break_wall() and (
-		dash1() or has_shoany0_fire2() or has_shoany1_fire2() or pro_boost() or has("rai2") or has_rock() or has("slide") or wall_jump3()
-		)
-		)
-	)
-end
-]]--
-
 function secret3_2_1()
 	return(
 		exit_2_1() and (
@@ -491,14 +479,6 @@ function secret3_2_3()
 		has("slam") or has("rai2") or wall_jump1() or has_shostd_fire2() or has_shoalt() or has_rock() or pro_boost()
 	)
 end
-
---[[
-function jump_3_2()
-	return(
-		has("slam") or has("rai2") or has_rock() or wall_jump1() or dash1() or has_shostd_fire2() or has_shoalt() or pro_boost()
-	)
-end
---]]
 
 function secret4_4_1()
 	return(

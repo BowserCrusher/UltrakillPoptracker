@@ -366,32 +366,32 @@
 					},
 					{
 						"name": "Secret #4",
-						"access_rules": ["$has_fist,1_2_bskull,1_2_rskull","$can_zap"]
+						"access_rules": ["$has_fist,1_2_bskull,1_2_rskull","$can_break_wall,$can_zap"]
 					},
 					{
 						"name": "Secret #5",
-						"access_rules": ["$has_fist,1_2_bskull,1_2_rskull,$jump_gen1","$can_zap,$jump_gen1"]
+						"access_rules": ["$has_fist,1_2_bskull,1_2_rskull,$jump_gen1","$can_break_wall,$can_zap,$jump_gen1"]
 					},
 					{
 						"name": "Defeat the Very Cancerous Rodent",
 						"visibility_rules": ["bossex"],
-						"access_rules": ["$can_break_wall_cancerous_rodent,$has_fist,1_2_bskull,1_2_rskull","$can_break_wall_cancerous_rodent,$can_zap"]
+						"access_rules": ["$can_break_wall_cancerous_rodent,$has_fist,1_2_bskull,1_2_rskull","$can_break_wall_cancerous_rodent,$can_break_wall,$can_zap"]
 					},
 					{
 						"name": "Switch",
 						"visibility_rules": ["lswitches"],
-						"access_rules": ["$can_break_wall_cancerous_rodent,$has_fist,1_2_bskull,1_2_rskull","$can_break_wall_cancerous_rodent,$can_zap"]
+						"access_rules": ["$can_break_wall_cancerous_rodent,$has_fist,1_2_bskull,1_2_rskull","$can_break_wall_cancerous_rodent,$can_break_wall,$can_zap"]
 					},
 					{
 						"name": "Cleared 1-2",
 						"visibility_rules": ["$goal_not|goal12"],
-						"access_rules": ["$has_fist,1_2_bskull,1_2_rskull","$can_zap"],
+						"access_rules": ["$has_fist,1_2_bskull,1_2_rskull","$can_break_wall,$can_zap"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal12,$goal_reach"],
-						"access_rules": ["$has_fist,1_2_bskull,1_2_rskull","$can_zap"]
+						"access_rules": ["$has_fist,1_2_bskull,1_2_rskull","$can_break_wall,$can_zap"]
 					},
 					{
 						"name": "Do not pick up any skulls",
@@ -568,7 +568,7 @@
 					},
 					{
 						"name": "Secret #4",
-						"access_rules": []
+						"access_rules": ["$exit_2_1"]
 					},
 					{
 						"name": "Secret #5",
@@ -834,28 +834,28 @@
 					{
 						"name": "Defeat Gabriel",
 						"visibility_rules": ["bossstd"],
-						"access_rules": ["$good_weapon,slide"]
+						"access_rules": ["$good_weapon,slide","$good_weapon,$has_naialt"]
 					},
 					{
 						"name": "Cleared 3-2",
 						"visibility_rules": ["$goal_not|goal32"],
-						"access_rules": ["slide"],
+						"access_rules": ["slide","$has_naialt"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal32,$goal_reach"],
-						"access_rules": ["slide"]
+						"access_rules": ["slide","$has_naialt"]
 					},
 					{
 						"name": "Drop Gabriel in a pit",
 						"visibility_rules": ["challenge"],
-						"access_rules": ["$good_weapon,slide,$wall_jump1"]
+						"access_rules": ["$good_weapon,slide,$wall_jump1","$good_weapon,$has_naialt,$wall_jump1"]
 					},
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon,slide"]
+						"access_rules": ["$good_weapon,slide","$good_weapon,$has_naialt"]
 					}
 				],
 				"map_locations": [
