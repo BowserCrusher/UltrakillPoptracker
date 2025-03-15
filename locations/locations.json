@@ -58,7 +58,7 @@
 					{
 						"map": "levelselect",
 						"x": 76,
-						"y": 117
+						"y": 136
 					}
 				]
 			},
@@ -111,8 +111,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x": 221,
-						"y": 117
+						"x": 231,
+						"y": 136
 					}
 				]
 			},
@@ -169,8 +169,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x":363,
-						"y":117
+						"x":388,
+						"y":136
 					}
 				]
 			},
@@ -223,8 +223,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x": 503,
-						"y": 117
+						"x": 543,
+						"y": 136
 					}
 				]
 			},
@@ -262,8 +262,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x": 641,
-						"y": 117
+						"x": 702,
+						"y": 136
 					}
 				]
 			},
@@ -280,8 +280,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x": 626,
-						"y": 14
+						"x": 674,
+						"y": 18
 					}
 				]
 			},
@@ -343,8 +343,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x":101,
-						"y":326
+						"x":96,
+						"y":362
 					}
 				]
 			},
@@ -407,8 +407,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x": 275,
-						"y": 326
+						"x": 291,
+						"y": 362
 					}
 				]
 			},
@@ -466,8 +466,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x": 451,
-						"y": 326
+						"x": 484,
+						"y": 362
 					}
 				]
 			},
@@ -527,8 +527,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x": 628,
-						"y": 326
+						"x": 678,
+						"y": 362
 					}
 				]
 			},
@@ -545,8 +545,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x": 626,
-						"y": 221
+						"x": 668,
+						"y": 243
 					}
 				]
 			},
@@ -599,8 +599,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x":101,
-						"y":521
+						"x":96,
+						"y":598
 					}
 				]
 			},
@@ -657,8 +657,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x": 275,
-						"y": 521
+						"x": 291,
+						"y": 598
 					}
 				]
 			},
@@ -711,8 +711,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x": 451,
-						"y": 521
+						"x": 484,
+						"y": 598
 					}
 				]
 			},
@@ -750,8 +750,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x": 628,
-						"y": 521
+						"x": 678,
+						"y": 598
 					}
 				]
 			},
@@ -768,8 +768,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x": 626,
-						"y": 420
+						"x": 668,
+						"y": 475
 					}
 				]
 			},
@@ -822,8 +822,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x":184,
-						"y":734
+						"x":193,
+						"y":828
 					}
 				]
 			},
@@ -861,8 +861,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x": 536,
-						"y": 734
+						"x": 589,
+						"y": 828
 					}
 				]
 			},
@@ -915,8 +915,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x":830,
-						"y":326
+						"x":877,
+						"y":362
 					}
 				]
 			},
@@ -969,8 +969,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x":1005,
-						"y":326
+						"x":1073,
+						"y":362
 					}
 				]
 			},
@@ -1028,8 +1028,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x":1179,
-						"y":326
+						"x":1266,
+						"y":362
 					}
 				]
 			},
@@ -1076,8 +1076,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x":1357 ,
-						"y":326 
+						"x":1463,
+						"y":362 
 					}
 				]
 			},
@@ -1099,8 +1099,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x":1358,
-						"y":221
+						"x":1452,
+						"y":243
 					}
 				]
 			},
@@ -1153,8 +1153,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x":830,
-						"y":521
+						"x":877,
+						"y":598
 					}
 				]
 			},
@@ -1207,8 +1207,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x":1005,
-						"y":521
+						"x":1073,
+						"y":598
 					}
 				]
 			},
@@ -1270,8 +1270,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x":1179,
-						"y":521
+						"x":1266,
+						"y":598
 					}
 				]
 			},
@@ -1309,8 +1309,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x": 1357,
-						"y": 521
+						"x": 1463,
+						"y": 598
 					}
 				]
 			},
@@ -1387,8 +1387,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x":1358,
-						"y":425
+						"x":1452,
+						"y":475
 					}
 				]
 			},
@@ -1441,8 +1441,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x":900,
-						"y":734
+						"x":975,
+						"y":828
 					}
 				]
 			},
@@ -1480,8 +1480,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x": 1260,
-						"y": 734
+						"x": 1364,
+						"y": 828
 					}
 				]
 			},
@@ -1534,8 +1534,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x":1550,
-						"y":326
+						"x":1660,
+						"y":362
 					}
 				]
 			},
@@ -1608,8 +1608,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x":1723,
-						"y":326
+						"x":1847,
+						"y":362
 					}
 				]
 			},
@@ -1662,8 +1662,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x":1902,
-						"y":326
+						"x":2047,
+						"y":362
 					}
 				]
 			},
@@ -1701,8 +1701,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x": 2077,
-						"y": 326
+						"x": 2244,
+						"y": 362
 					}
 				]
 			},
@@ -1744,8 +1744,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x":2077,
-						"y":221
+						"x":2233,
+						"y":243
 					}
 				]
 			},
@@ -1756,25 +1756,25 @@
 					{
 						"name": "Cleared 0-E",
 						"visibility_rules": ["$goal_not|goal0e"],
-						"access_rules": ["$has_fist,$good_weapon,$can_break_glass,$dash2,0_e_bskull,0_e_rskull"],
+						"access_rules": ["arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_glass,$dash2,0_e_bskull,0_e_rskull"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal0e,$goal_reach"],
-						"access_rules": ["$has_fist,$good_weapon,$can_break_glass,$dash2,0_e_bskull,0_e_rskull"],
+						"access_rules": ["arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_glass,$dash2,0_e_bskull,0_e_rskull"],
 					},
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["$has_fist,$good_weapon,$can_break_glass,$dash3,0_e_bskull,0_e_rskull"],
+						"access_rules": ["arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_glass,$dash3,0_e_bskull,0_e_rskull"],
 					}
 				],
 				"map_locations" : [
 					{
 						"map": "levelselect",
-						"x": 2271,
-						"y":  297
+						"x": 2420,
+						"y":  468
 					}
 				]
 			},
@@ -1785,25 +1785,25 @@
 					{
 						"name": "Cleared 1-E",
 						"visibility_rules": ["$goal_not|goal1e"],
-						"access_rules": ["$has_fist,$good_weapon,arm2,$can_break_wall,$dash2,1_e_bskull,1_e_rskull"],
+						"access_rules": ["arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_wall,$dash2,1_e_bskull,1_e_rskull"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal1e,$goal_reach"],
-						"access_rules": ["$has_fist,$good_weapon,arm2,$can_break_wall,$dash2,1_e_bskull,1_e_rskull"],
+						"access_rules": ["arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_wall,$dash2,1_e_bskull,1_e_rskull"],
 					},
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["$has_fist,$good_weapon,arm2,$can_break_wall,$dash3,1_e_bskull,1_e_rskull"],
+						"access_rules": ["arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_wall,$dash3,1_e_bskull,1_e_rskull"],
 					}
 				],
 				"map_locations" : [
 					{
 						"map": "levelselect",
-						"x": 2459,
-						"y": 297
+						"x": 2582,
+						"y": 468
 					}
 				]
 			},
@@ -1814,25 +1814,25 @@
 					{
 						"name": "Cleared P-1",
 						"visibility_rules": ["$goal_not|goalp1"],
-						"access_rules": ["$has_fist,$good_weapon,slide,$dash2"],
+						"access_rules": ["arm0,arm1,$has_weapon_types_2,slide,$dash2"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goalp1,$goal_reach"],
-						"access_rules": ["$has_fist,$good_weapon,slide,$dash2"]
+						"access_rules": ["arm0,arm1,$has_weapon_types_2,slide,$dash2"]
 					},
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["$has_fist,$good_weapon,slide,$dash3"]
+						"access_rules": ["arm0,arm1,$has_weapon_types_2,slide,$dash3"]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x": 1715,
-						"y": 109
+						"x": 2500,
+						"y": 169
 					}
 				]
 			},
@@ -1843,25 +1843,25 @@
 					{
 						"name": "Cleared P-2",
 						"visibility_rules": ["$goal_not|goalp2"],
-						"access_rules": ["$has_fist,$good_weapon,slide,$dash2,p_2_bskull"],
+						"access_rules": ["arm0,arm1,$has_weapon_types_2,slide,$dash2,p_2_bskull"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goalp2,$goal_reach"],
-						"access_rules": ["$has_fist,$good_weapon,slide,$dash2,p_2_bskull"]
+						"access_rules": ["arm0,arm1,$has_weapon_types_2,slide,$dash2,p_2_bskull"]
 					},
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["$has_fist,$good_weapon,slide,$dash3,p_2_bskull"]
+						"access_rules": ["arm0,arm1,$has_weapon_types_2,slide,$dash3,p_2_bskull"]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x": 1880,
-						"y": 109
+						"x": 2732,
+						"y": 169
 					}
 				]
 			},
@@ -1913,8 +1913,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x": 918,
-						"y": 84
+						"x": 1155,
+						"y": 98
 					}
 				]
 			},
@@ -1936,8 +1936,8 @@
 				"map_locations": [
 					{
 						"map": "levelselect",
-						"x": 1359,
-						"y": 104
+						"x": 1953,
+						"y": 98
 					}
 				]
 			}

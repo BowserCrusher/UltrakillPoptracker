@@ -62,6 +62,12 @@ function has_rev()
 	)
 end
 
+function has_revany0_fire2()
+	return(
+		has_rev0_fire2() and (has("revstd") or has("revalt"))
+	)
+end
+
 function has_revany1_fire2()
 	return(
 		has_rev1_fire2() and (has("revstd") or has("revalt"))
@@ -83,6 +89,12 @@ end
 function has_sho1_fire2()
 	return(
 		has("sho1") and has("sho1_fire2")
+	)
+end
+
+function has_sho2_fire2()
+	return(
+		has("sho2") and has("sho2_fire2")
 	)
 end
 
@@ -122,6 +134,12 @@ function has_shostd1_fire2()
 	)
 end
 
+function has_shostd2_fire2()
+	return(
+		has("shostd") and has_sho2_fire2()
+	)
+end
+
 function has_shoalt0_fire2()
 	return(
 		has("shoalt") and has_sho0_fire2()
@@ -134,6 +152,12 @@ function has_shoalt1_fire2()
 	)
 end
 
+function has_shoalt2_fire2()
+	return (
+		has("shoalt") and has_sho2_fire2()
+	)
+end
+
 function has_shoany0_fire2()
 	return(
 		has_shostd0_fire2() or has_shoalt0_fire2()
@@ -143,6 +167,12 @@ end
 function has_shoany1_fire2()
 	return(
 		has_shostd1_fire2() or has_shoalt1_fire2()
+	)
+end
+
+function has_shoany2_fire2()
+	return(
+		has_shostd2_fire2() or has_shoalt2_fire2()
 	)
 end
 
@@ -164,9 +194,21 @@ function has_naistd()
 	)
 end
 
+function has_naistd0_fire2()
+	return(
+		has("naistd") and has("nai0") and has("nai0_fire2")
+	)
+end
+
 function has_naistd1_fire2()
 	return(
 		has("naistd") and has("nai1") and has("nai1_fire2")
+	)
+end
+
+function has_naistd2_fire2()
+	return(
+		has("naistd") and has("nai2") and has("nai1_fire2")
 	)
 end
 
@@ -182,9 +224,39 @@ function has_naialt()
 	)
 end
 
+function has_naialt0_fire2()
+	return(
+		has("naialt") and has("nai0") and has("nai0_fire2")
+	)
+end
+
+function has_naialt1_fire2()
+	return(
+		has("naialt") and has("nai1") and has("nai1_fire2")
+	)
+end
+
+function has_naialt2_fire2()
+	return(
+		has("naialt") and has("nai2") and has("nai2_fire2")
+	)
+end
+
 function has_naiany0()
 	return (
 		has("nai0") and (has("naistd") or has("naialt"))
+	)
+end
+
+function has_naiany0_fire2()
+	return(
+		has("nai0") and has("nai0_fire2") and (has("naistd") or has("naialt"))
+	)
+end
+
+function has_naiany1_fire2()
+	return(
+		has("nai1") and has("nai1_fire2") and (has("naistd") or has("naialt"))
 	)
 end
 
@@ -212,10 +284,74 @@ function has_rock0_fire2()
 	)
 end
 
+function has_rock1_fire2()
+	return(
+		has("rock1") and has("rock1_fire2")
+	)
+end
+
+function has_rock2_fire2()
+	return(
+		has("rock2") and has("rock2_fire2")
+	)
+end
+
 function has_rock()
 	return(
 		has("rock0") or has("rock1") or has("rock2")
 	)
+end
+
+function has_weapon_types_2()
+	local type_count = 0
+	if has_revany0_fire2() or has_revany1_fire2() or has_revany2_fire2()
+	then
+		type_count = type_count + 1
+	end
+	if has_shoany0_fire2() or has_shoany1_fire2() or has_shoany2_fire2()
+	then
+		type_count = type_count + 1
+	end
+	if has_naiany0_fire2() or has_naiany1_fire2() or has_naiany2_fire2()
+	then
+		type_count = type_count + 1
+	end
+	if has_rock0_fire2() or has_rock1_fire2() or has_rock2_fire2()
+	then
+		type_count = type_count + 1
+	end
+	if type_count > 1
+	then 
+		return true
+	else
+		return false
+	end
+end
+
+function has_weapon_types_3()
+	local type_count = 0
+	if has_revany0_fire2() or has_revany1_fire2() or has_revany2_fire2()
+	then
+		type_count = type_count + 1
+	end
+	if has_shoany0_fire2() or has_shoany1_fire2() or has_shoany2_fire2()
+	then
+		type_count = type_count + 1
+	end
+	if has_naiany0_fire2() or has_naiany1_fire2() or has_naiany2_fire2()
+	then
+		type_count = type_count + 1
+	end
+	if has_rock0_fire2() or has_rock1_fire2() or has_rock2_fire2()
+	then
+		type_count = type_count + 1
+	end
+	if type_count > 2
+	then 
+		return true
+	else
+		return false
+	end
 end
 
 function pro_boost()
