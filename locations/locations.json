@@ -22,7 +22,7 @@
 					},
 					{
 						"name": "Secret #4",
-						"access_rules": ["$jump_gen1"]
+						"access_rules": []
 					},
 					{
 						"name": "Secret #5",
@@ -366,7 +366,7 @@
 					},
 					{
 						"name": "Secret #4",
-						"access_rules": ["$has_fist,1_2_bskull,1_2_rskull","$can_break_wall,$can_zap"]
+						"access_rules": ["slide,$has_fist,1_2_bskull,1_2_rskull","slide,$can_break_wall,$can_zap"]
 					},
 					{
 						"name": "Secret #5",
