@@ -3,7 +3,7 @@
 		{
 			"package_version": "0.4.4",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.4.4/UltrakillPoptracker.zip",
-			"sha256": "7C96789DDAB893D7323C8278BD95B260DB88F2CB9F49011D3C87A5D8C08AF169",
+			"sha256": "7c96789ddab893d7323c8278bd95b260db88f2cb9f49011d3c87a5d8c08af169",
 			"changelog": [
 				"Updated Encore level icons",
 				"Minor 0-3 bug fix"
@@ -12,7 +12,7 @@
 		{
 			"package_version": "0.4.3",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.4.3/UltrakillPoptracker.zip",
-			"sha256": "E7A1C7B949DB7389F95B1639E4982198F8E29793A9278BF38E8C9D4B758429B1",
+			"sha256": "e7a1c7b949db7389f95b1639e4982198f8e29793a9278bf38e8c9d4b758429b1",
 			"changelog": [
 				"Minor logic updates"
 			]
@@ -20,7 +20,7 @@
 		{
 			"package_version": "0.4.2",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.4.2/UltrakillPoptracker.zip",
-			"sha256": "4A01CF4A3CE5801F69085D96D9D678AEE57D5889F858C6BA332AFD6175A4FB56",
+			"sha256": "4a01cf4a3ce5801f69085d96d9d678aee57d5889f858c6ba332afd6175a4fb56",
 			"changelog": [
 				"Updated Encore and Prime Sanctum logic",
 				"Updated map image to use rework icons"
@@ -29,7 +29,7 @@
 		{
 			"package_version": "0.4.1",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.4.1/UltrakillPoptracker.zip",
-			"sha256": "CE69BB5DF250580CD7B4555A92158BFFC6D344E377771DD30527126293D4BD03",
+			"sha256": "ce69bb5df250580cd7b4555a92158bffc6d344e377771dd30527126293d4bd03",
 			"changelog": [
 				"Fixed logic errors"
 			]
@@ -37,7 +37,7 @@
 		{
 			"package_version": "0.4",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.4/UltrakillPoptracker.zip",
-			"sha256": "AC8AA0C6C8FE8E0C1C80A1D09F467856ED46F6C836AB74D4551C9CC34780591E",
+			"sha256": "ac8aa0c6c8fe8e0c1c80a1d09f467856ed46f6c836ab74d4551c9cc34780591e",
 			"changelog": [
 				"Updated logic to work with revamp",
 				"Removed 2-1 as starting level option",
@@ -48,7 +48,7 @@
 		{
 			"package_version": "0.3.2",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.3.2/UltrakillPoptracker.zip",
-			"sha256": "106B24F2BE20077408D387FA37636E25406FAA71BB8857BC15994217AD85FF17",
+			"sha256": "106b24f2be20077408d387fa37636e25406faa71bb8857bc15994217ad85ff17",
 			"changelog": [
 				"All icons/keys updated to use in-game font",
 				"Start level is highlighted in the levels tab",
@@ -58,7 +58,7 @@
 		{
 			"package_version": "0.3.1",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.3.1/UltrakillPoptracker.zip",
-			"sha256": "D1102C4963D09938B88F38639279F7F09532C10BBA34D523E3F0E6569368069C",
+			"sha256": "d1102c4963d09938b88f38639279f7f09532c10bba34d523e3f0e6569368069c",
 			"changelog": [
 				"Randomize Secondary Fire when set to false now gives all secondary fires instead of removing them",
 				"Start with arm, slide, and slam, when true now gives the items on tracker",
@@ -68,7 +68,7 @@
 		{
 			"package_version": "0.3",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.3/UltrakillPoptracker.zip",
-			"sha256": "C2786D8BCEAE07CF67B94C336C574A7F9DE1477859C010D759AF9719B8FAC7C6",
+			"sha256": "c2786d8bceae07cf67b94c336c574a7f9de1477859c010d759af9719b8fac7c6",
 			"changelog": [
 				"Added option to select starting level",
 				"More options added to goal level",
@@ -79,7 +79,7 @@
 		{
 			"package_version": "0.2.1",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.2.1/UltrakillPoptracker.zip",
-			"sha256": "398E19FE427D235E0301C16EFF37C4A3CFFB97DB460955222E587129E78C8E27",
+			"sha256": "398e19fe427d235e0301c16eff37c4a3cffb97db460955222e587129e78c8e27",
 			"changelog": [
 				"Fixed an issue where the locations for 7-S with skull randomized not being tracked"
 			]
@@ -87,7 +87,7 @@
 		{
 			"package_version": "0.2",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.2/UltrakillPoptracker.zip",
-			"sha256": "6A0B3E762C7A00AC30964E21D254034D5DED51384FA164CB9D7FC0B06CF6B533",
+			"sha256": "6a0b3e762c7a00ac30964e21d254034d5ded51384fa164cb9d7fc0b06cf6b533",
 			"changelog": [
 				"Added Autotracking for starting weapon varient and settings"
 			]
@@ -95,7 +95,7 @@
 		{
 			"package_version": "0.1",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.1.zip",
-			"sha256": "07BBC631D50B461C3B115F022D9FD04F85CF0CC6962BFFC2AACA64BFFF47B952",
+			"sha256": "07bbc631d50b461c3b115f022d9fd04f85cf0cc6962bffc2aaca64bfff47b952",
 			"changelog": [
 				"Initial Release"
 			]
