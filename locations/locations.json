@@ -146,7 +146,7 @@
 					},
 					{
 						"name": "Cleared 0-3",
-						"visibility_rules": ["goal_not|goal03"],
+						"visibility_rules": ["$goal_not|goal03"],
 						"access_rules": ["$good_weapon,$can_break_wall","$good_weapon,$challenge_0_3"],
 						"hosted_item": "lvlcomplete"
 					},
