@@ -10,5 +10,5 @@
             "flags": ["ap"]
         }
     },
-    "versions_url": ""
+    "versions_url": "https://raw.githubusercontent.com/BowserCrusher/UltrakillPoptracker/main/versions.json"
 }
