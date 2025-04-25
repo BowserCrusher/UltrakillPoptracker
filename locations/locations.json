@@ -233,11 +233,6 @@
 				"access_rules": ["0_5_access,$goal_not|goal05", "l0_access,$goal_not|goal05", "goal05,$goal_reach"],
 				"sections": [
 					{
-						"name": "Defeat the Cerberi",
-						"visibility_rules": ["bossstd"],
-						"access_rules": ["$level_0_5"]
-					},
-					{
 						"name": "Cleared 0-5",
 						"visibility_rules": ["$goal_not|goal05"],
 						"access_rules": ["$level_0_5"],
@@ -373,11 +368,6 @@
 						"access_rules": ["$has_fist,1_2_bskull,1_2_rskull,$jump_gen1","$can_break_wall,$can_zap,$jump_gen1"]
 					},
 					{
-						"name": "Defeat the Very Cancerous Rodent",
-						"visibility_rules": ["bossex"],
-						"access_rules": ["$can_break_wall_cancerous_rodent,$has_fist,1_2_bskull,1_2_rskull","$can_break_wall_cancerous_rodent,$can_break_wall,$can_zap"]
-					},
-					{
 						"name": "Switch",
 						"visibility_rules": ["lswitches"],
 						"access_rules": ["$can_break_wall_cancerous_rodent,$has_fist,1_2_bskull,1_2_rskull","$can_break_wall_cancerous_rodent,$can_break_wall,$can_zap"]
@@ -486,11 +476,6 @@
 						"l1_access,$switch_1_1,$can_break_glass,$can_break_wall_cancerous_rodent,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,1_2_bskull,1_2_rskull,$lswitches_off",
 						"l1_access,$switch_1_1,$can_break_glass,$can_break_wall_cancerous_rodent,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,$can_zap,$lswitches_off",
 						"lswitch1,lswitch2,lswitch3,lswitch4,lswitches"]
-					},
-					{
-						"name": "Defeat V2",
-						"visibility_rules": ["bossstd"],
-						"access_rules": ["$good_weapon"]
 					},
 					{
 						"name": "Switch",
@@ -721,11 +706,6 @@
 				"access_rules": ["2_4_access,$goal_not|goal24", "l2_access,$goal_not|goal24", "goal24,$goal_reach"],
 				"sections": [
 					{
-						"name": "Defeat the Corpse of King Minos",
-						"visibility_rules": ["bossstd"],
-						"access_rules": ["$has_fist,2_4_bskull,2_4_rskull,$good_weapon"]
-					},
-					{
 						"name": "Cleared 2-4",
 						"visibility_rules": ["$goal_not|goal24"],
 						"access_rules": ["$has_fist,2_4_bskull,2_4_rskull"],
@@ -831,11 +811,6 @@
 				"name": "3-2 IN THE FLESH",
 				"access_rules": ["3_2_access,$goal_not|goal32","l3_access,$goal_not|goal32", "goal32,$goal_reach"],
 				"sections": [
-					{
-						"name": "Defeat Gabriel",
-						"visibility_rules": ["bossstd"],
-						"access_rules": ["$good_weapon,slide","$good_weapon,$has_naialt"]
-					},
 					{
 						"name": "Cleared 3-2",
 						"visibility_rules": ["$goal_not|goal32"],
@@ -999,11 +974,6 @@
 						"access_rules": ["$level_4_3,slide"]
 					},
 					{
-						"name": "Defeat the Mysterious Druid Knight (& Owl)",
-						"visibility_rules": ["bossex"],
-						"access_rules": ["$level_4_3,$can_break_wall,$can_punch,4_3_bskull"]
-					},
-					{
 						"name": "Cleared 4-3",
 						"visibility_rules": ["$goal_not|goal43"],
 						"access_rules": ["$level_4_3,$has_fist"],
@@ -1045,11 +1015,6 @@
 					{
 						"name": "Secret Weapon",
 						"access_rules": ["arm2,$can_zap,4_4_bskull"]
-					},
-					{
-						"name": "Defeat V2",
-						"visibility_rules": ["bossstd"],
-						"access_rules": ["$good_weapon, $level_4_4"]
 					},
 					{
 						"name": "Cleared 4-4",
@@ -1164,44 +1129,44 @@
 				"sections": [
 					{
 						"name": "Secret #1",
-						"access_rules": ["slide","$has_rock0_fire2"]
+						"access_rules": ["slide","$has_rock"]
 					},
 					{
 						"name": "Secret #2",
-						"access_rules": ["slam","$dash1"]
+						"access_rules": ["slam","$dash1","$has_rock"]
 					},
 					{
 						"name": "Secret #3",
-						"access_rules": ["slam,$jump_gen2","$dash1,$jump_gen2"]
+						"access_rules": ["slam,$jump_gen2","$dash1,$jump_gen2","$has_rock"]
 					},
 					{
 						"name": "Secret #4",
-						"access_rules": ["slam,$jump_gen2","$dash1,$jump_gen2"]
+						"access_rules": ["slam,$jump_gen2","$dash1,$jump_gen2","$has_rock"]
 					},
 					{
 						"name": "Secret #5",
-						"access_rules": ["$has_fist,$can_break_idol,slam,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$dash1,5_2_bskull,5_2_rskull"]
+						"access_rules": ["$has_fist,$can_break_idol,slam,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$dash1,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$has_rock,5_2_bskull,5_2_rskull"]
 					},
 					{
 						"name": "Cleared 5-2",
 						"visibility_rules": ["$goal_not|goal52"],
-						"access_rules": ["$has_fist,$can_break_idol,slam,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$dash1,5_2_bskull,5_2_rskull"],
+						"access_rules": ["$has_fist,$can_break_idol,slam,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$dash1,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$has_rock,5_2_bskull,5_2_rskull"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal52,$goal_reach"],
-						"access_rules": ["$has_fist,$can_break_idol,slam,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$dash1,5_2_bskull,5_2_rskull"]
+						"access_rules": ["$has_fist,$can_break_idol,slam,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$dash1,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$has_rock,5_2_bskull,5_2_rskull"]
 					},
 					{
 						"name": "Don't fight the ferryman",
 						"visibility_rules": ["challenge"],
-						"access_rules": ["$has_fist,$can_break_idol,slam,$has_revany1_fire2,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$dash1,$has_revany1_fire2,5_2_bskull,5_2_rskull"]
+						"access_rules": ["$has_fist,$can_break_idol,slam,$has_revany1_fire2,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$dash1,$has_revany1_fire2,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$has_rock,5_2_bskull,5_2_rskull"]
 					},
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["$has_fist,$can_break_idol,slam,$good_weapon,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$dash1,$good_weapon,5_2_bskull,5_2_rskull"]
+						"access_rules": ["$has_fist,$can_break_idol,slam,$good_weapon,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$dash1,$good_weapon,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$has_rock,5_2_bskull,5_2_rskull"]
 					}
 				],
 				"map_locations": [
@@ -1279,11 +1244,6 @@
 				"name": "5-4 LEVIATHAN",
 				"access_rules": ["5_4_access,$goal_not|goal54", "l5_access,$goal_not|goal54", "goal54,$goal_reach"],
 				"sections": [
-					{
-						"name": "Defeat the Leviathan",
-						"visibility_rules": ["bossstd"],
-						"access_rules": ["$good_weapon"]
-					},
 					{
 						"name": "Cleared 5-4",
 						"visibility_rules": ["$goal_not|goal54"],
@@ -1450,11 +1410,6 @@
 				"name": "6-2 AESTHETICS OF HATE",
 				"access_rules": ["6_2_access,$goal_not|goal62","l6_access,$goal_not|goal62", "goal62,$goal_reach"],
 				"sections": [
-					{
-						"name": "Defeat Gabriel",
-						"visibility_rules": ["bossstd"],
-						"access_rules": ["$level_6_2,$good_weapon"]
-					},
 					{
 						"name": "Cleared 6-2",
 						"visibility_rules": ["$goal_not|goal62"],
@@ -1671,11 +1626,6 @@
 				"name": "7-4 ...LIKE ANTENNAS TO HEAVEN",
 				"access_rules": ["7_4_access,$goal_not|goal74", "l7_access,$goal_not|goal74", "goal74,$goal_reach"],
 				"sections": [
-					{
-						"name": "Defeat 1000-THR \"Earthmover\"",
-						"visibility_rules": ["bossstd"],
-						"access_rules": ["slide,$can_break_idol,arm2,$good_weapon","slide,$can_break_idol,$slam_storage,$good_weapon"]
-					},
 					{
 						"name": "Cleared 7-4",
 						"visibility_rules": ["$goal_not|goal74"],
@@ -1919,6 +1869,189 @@
 				]
 			},
 			{
+				"name": "Enemies",
+				"access_rules": [],
+				"sections": [
+					{
+						"name": "Enemy: Filth",
+						"visibility_rules": ["enemyall"],
+						"access_rules": ["$filth_logic"]
+					},
+					{
+						"name": "Enemy: Stray",
+						"visibility_rules": ["enemyall"],
+						"access_rules": ["$stray_logic"]
+					},
+					{
+						"name": "Enemy: Schism",
+						"visibility_rules": ["enemyall"],
+						"access_rules": ["$schism_logic"]
+					},
+					{
+						"name": "Enemy: Soldier",
+						"visibility_rules": ["enemyall"],
+						"access_rules": ["$soldier_logic"]
+					},
+					{
+						"name": "Boss: The Corpse of King Minos",
+						"visibility_rules": ["enemyboss"],
+						"access_rules": ["$corpse_minos_logic"]
+					},
+					{
+						"name": "Enemy: Stalker",
+						"visibility_rules": ["enemyall"],
+						"access_rules": ["$stalker_logic"]
+					},
+					{
+						"name": "Enemy: Insurrectionist",
+						"visibility_rules": ["enemyall"],
+						"access_rules": ["$insurrectionist_logic"]
+					},
+					{
+						"name": "Boss: Ferryman",
+						"visibility_rules": ["enemyex"],
+						"access_rules": ["$ferryman_logic"]
+					},
+					{
+						"name": "Enemy: Swordsmachine",
+						"visibility_rules": ["enemyall"],
+						"access_rules": ["$swordsmachine_logic"]
+					},
+					{
+						"name": "Enemy: Drone",
+						"visibility_rules": ["enemyall"],
+						"access_rules": ["$drone_logic"]
+					},
+					{
+						"name": "Enemy: Streetcleaner",
+						"visibility_rules": ["enemyall"],
+						"access_rules": ["$streetcleaner_logic"]
+					},
+					{
+						"name": "Boss: V2",
+						"visibility_rules": ["enemyboss"],
+						"access_rules": ["$v2_1_logic"]
+					},
+					{
+						"name": "Enemy: Mindflayer",
+						"visibility_rules": ["enemyall"],
+						"access_rules": ["$mindflayer_logic"]
+					},
+					{
+						"name": "Boss: V2 (2nd)",
+						"visibility_rules": ["enemyboss"],
+						"access_rules": ["$v2_2_logic"]
+					},
+					{
+						"name": "Enemy: Sentry",
+						"visibility_rules": ["enemyall"],
+						"access_rules": ["$sentry_logic"]
+					},
+					{
+						"name": "Enemy: Gutterman",
+						"visibility_rules": ["enemyall"],
+						"access_rules": ["$gutterman_logic"]
+					},
+					{
+						"name": "Enemy: Guttertank",
+						"visibility_rules": ["enemyall"],
+						"access_rules": ["$gutterman_logic"]
+					},
+					{
+						"name": "Boss: Earthmover",
+						"visibility_rules": ["enemyboss"],
+						"access_rules": ["$earthmover_logic"]
+					},
+					{
+						"name": "Enemy: Malicious Face",
+						"visibility_rules": ["enemyall"],
+						"access_rules": ["$malicious_face_logic"]
+					},
+					{
+						"name": "Enemy: Cerberus",
+						"visibility_rules": ["enemyall"],
+						"access_rules": ["$cerberus_logic"]
+					},
+					{
+						"name": "Boss: Hideous Mass",
+						"visibility_rules": ["enemyex"],
+						"access_rules": ["$hideous_mass_logic"]
+					},
+					{
+						"name": "Enemy: Idol",
+						"visibility_rules": ["enemyall"],
+						"access_rules": ["$idol_logic"]
+					},
+					{
+						"name": "Boss: Leviathan",
+						"visibility_rules": ["enemyboss"],
+						"access_rules": ["$leviathan_logic"]
+					},
+					{
+						"name": "Enemy: Mannequin",
+						"visibility_rules": ["enemyall"],
+						"access_rules": ["$mannequin_logic"]
+					},
+					{
+						"name": "Boss: Minotaur",
+						"visibility_rules": ["enemyex"],
+						"access_rules": ["$minotaur_logic"]
+					},
+					{
+						"name": "Boss: Gabriel, Judge of Hell",
+						"visibility_rules": ["enemyboss"],
+						"access_rules": ["$gabriel_1_logic"]
+					},
+					{
+						"name": "Enemy: Virtue",
+						"visibility_rules": ["enemyall"],
+						"access_rules": ["$virtue_logic"]
+					},
+					{
+						"name": "Boss: Gabriel, Apostate of Hate",
+						"visibility_rules": ["enemyboss"],
+						"access_rules": ["$gabriel_2_logic"]
+					},
+					{
+						"name": "Boss: Flesh Prison",
+						"visibility_rules": ["enemyboss"],
+						"access_rules": ["$flesh_prison_logic"]
+					},
+					{
+						"name": "Boss: Flesh Panopticon",
+						"visibility_rules": ["enemyboss"],
+						"access_rules": ["$flesh_panopticon_logic"]
+					},
+					{
+						"name": "Boss: Minos Prime",
+						"visibility_rules": ["enemyboss"],
+						"access_rules": ["$minos_prime_logic"]
+					},
+					{
+						"name": "Boss: Sisyphus Prime",
+						"visibility_rules": ["enemyboss"],
+						"access_rules": ["$sisyphus_prime_logic"]
+					},
+					{
+						"name": "Boss: Very Cancerous Rodent",
+						"visibility_rules": ["enemyex"],
+						"access_rules": ["$rodent_logic"]
+					},
+					{
+						"name": "Boss: Mysterious Druid Knight (& Owl)",
+						"visibility_rules": ["enemyex"],
+						"access_rules": ["$druid_knight_logic"]
+					},
+				],
+				"map_locations": [
+					{
+						"map": "levelselect",
+						"x": 1503,
+						"y": 98
+					}
+				]
+			},
+			{
 				"name": "Museum",
 				"access_rules": [],
 				"sections": [
@@ -1940,7 +2073,7 @@
 						"y": 98
 					}
 				]
-			}
+			},
 		]
 	}
 ]

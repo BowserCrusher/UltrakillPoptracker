@@ -20,10 +20,24 @@
 	}, 
 	{
 		"name": "Revolver - Piercer",
-		"type": "toggle",
-		"img": "/images/weapons/rev0.png",
-		"codes": "rev0"
-	}, 
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": true,
+		"stages": [
+			{
+				"img": "/images/weapons/rev0.png",
+				"name": "Revolver - Piercer",
+				"codes": "rev0",
+				"inherit_codes": false
+			},
+			{
+				"img": "/images/weapons/rev0_fire2.png",
+				"name": "Secondary Fire - Piercer",
+				"codes": "rev0_fire2_prog",
+				"inherit_codes": true
+			},
+		]
+	},
 	{
 		"name": "Secondary Fire - Piercer",
 		"type": "toggle",
@@ -33,9 +47,23 @@
 	}, 
 	{
 		"name": "Revolver - Marksman",
-		"type": "toggle",
-		"img": "/images/weapons/rev1.png",
-		"codes": "rev1"
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": true,
+		"stages": [
+			{
+				"img": "/images/weapons/rev1.png",
+				"name": "Revolver - Marksman",
+				"codes": "rev1",
+				"inherit_codes": false
+			},
+			{
+				"img": "/images/weapons/rev1_fire2.png",
+				"name": "Secondary Fire - Marksman",
+				"codes": "rev1_fire2_prog",
+				"inherit_codes": true
+			},
+		]
 	}, 
 	{
 		"name": "Secondary Fire - Marksman",
@@ -46,9 +74,23 @@
 	}, 
 	{
 		"name": "Revolver - Sharpshooter",
-		"type": "toggle",
-		"img": "/images/weapons/rev2.png",
-		"codes": "rev2"
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": true,
+		"stages": [
+			{
+				"img": "/images/weapons/rev2.png",
+				"name": "Revolver - Sharpshooter",
+				"codes": "rev2",
+				"inherit_codes": false
+			},
+			{
+				"img": "/images/weapons/rev2_fire2.png",
+				"name": "Secondary Fire - Sharpshooter",
+				"codes": "rev2_fire2_prog",
+				"inherit_codes": true
+			},
+		]
 	}, 
 	{
 		"name": "Secondary Fire - Sharpshooter",
@@ -72,9 +114,23 @@
 	}, 
 	{
 		"name": "Shotgun - Core Eject",
-		"type": "toggle",
-		"img": "/images/weapons/sho0.png",
-		"codes": "sho0"
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": true,
+		"stages": [
+			{
+				"img": "/images/weapons/sho0.png",
+				"name": "Shotgun - Core Eject",
+				"codes": "sho0",
+				"inherit_codes": false
+			},
+			{
+				"img": "/images/weapons/sho0_fire2.png",
+				"name": "Secondary Fire - Core Eject",
+				"codes": "sho0_fire2_prog",
+				"inherit_codes": true
+			},
+		]
 	}, 
 	{
 		"name": "Secondary Fire - Core Eject",
@@ -85,10 +141,24 @@
 	}, 
 	{
 		"name": "Shotgun - Pump Charge",
-		"type": "toggle",
-		"img": "/images/weapons/sho1.png",
-		"codes": "sho1"
-	}, 
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": true,
+		"stages": [
+			{
+				"img": "/images/weapons/sho1.png",
+				"name": "Shotgun - Pump Charge",
+				"codes": "sho1",
+				"inherit_codes": false
+			},
+			{
+				"img": "/images/weapons/sho1_fire2.png",
+				"name": "Secondary Fire - Pump Charge",
+				"codes": "sho1_fire2_prog",
+				"inherit_codes": true
+			},
+		]
+	},
 	{
 		"name": "Secondary Fire - Pump Charge",
 		"type": "toggle",
@@ -98,9 +168,23 @@
 	}, 
 	{
 		"name": "Shotgun - Sawed-On",
-		"type": "toggle",
-		"img": "/images/weapons/sho2.png",
-		"codes": "sho2"
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": true,
+		"stages": [
+			{
+				"img": "/images/weapons/sho2.png",
+				"name": "Shotgun - Sawed-On",
+				"codes": "sho2",
+				"inherit_codes": false
+			},
+			{
+				"img": "/images/weapons/sho2_fire2.png",
+				"name": "Secondary Fire - Sawed-On",
+				"codes": "sho2_fire2_prog",
+				"inherit_codes": true
+			},
+		]
 	}, 
 	{
 		"name": "Secondary Fire - Sawed-On",
@@ -124,10 +208,24 @@
 	}, 
 	{
 		"name": "Nailgun - Attractor",
-		"type": "toggle",
-		"img": "/images/weapons/nai0.png",
-		"codes": "nai0"
-	}, 
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": true,
+		"stages": [
+			{
+				"img": "/images/weapons/nai0.png",
+				"name": "Nailgun - Attractor",
+				"codes": "nai0",
+				"inherit_codes": false
+			},
+			{
+				"img": "/images/weapons/nai0_fire2.png",
+				"name": "Secondary Fire - Attractor",
+				"codes": "nai0_fire2_prog",
+				"inherit_codes": true
+			},
+		]
+	},
 	{
 		"name": "Secondary Fire - Attractor",
 		"type": "toggle",
@@ -137,10 +235,24 @@
 	}, 
 	{
 		"name": "Nailgun - Overheat",
-		"type": "toggle",
-		"img": "/images/weapons/nai1.png",
-		"codes": "nai1"
-	}, 
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": true,
+		"stages": [
+			{
+				"img": "/images/weapons/nai1.png",
+				"name": "Nailgun - Overheat",
+				"codes": "nai1",
+				"inherit_codes": false
+			},
+			{
+				"img": "/images/weapons/nai1_fire2.png",
+				"name": "Secondary Fire - Overheat",
+				"codes": "nai1_fire2_prog",
+				"inherit_codes": true
+			},
+		]
+	},
 	{
 		"name": "Secondary Fire - Overheat",
 		"type": "toggle",
@@ -150,10 +262,24 @@
 	}, 
 	{
 		"name": "Nailgun - JumpStart",
-		"type": "toggle",
-		"img": "/images/weapons/nai2.png",
-		"codes": "nai2"
-	}, 
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": true,
+		"stages": [
+			{
+				"img": "/images/weapons/nai2.png",
+				"name": "Nailgun - JumpStart",
+				"codes": "nai2",
+				"inherit_codes": false
+			},
+			{
+				"img": "/images/weapons/nai2_fire2.png",
+				"name": "Secondary Fire - JumpStart",
+				"codes": "nai2_fire2_prog",
+				"inherit_codes": true
+			},
+		]
+	},
 	{
 		"name": "Secondary Fire - JumpStart",
 		"type": "toggle",
@@ -194,10 +320,24 @@
 	}, 
 	{
 		"name": "Rocket Launcher - Freezeframe",
-		"type": "toggle",
-		"img": "/images/weapons/rock0.png",
-		"codes": "rock0"
-	}, 
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": true,
+		"stages": [
+			{
+				"img": "/images/weapons/rock0.png",
+				"name": "Rocket Launcher - Freezeframe",
+				"codes": "rock0",
+				"inherit_codes": false
+			},
+			{
+				"img": "/images/weapons/rock0_fire2.png",
+				"name": "Secondary Fire - Freezeframe",
+				"codes": "rock0_fire2_prog",
+				"inherit_codes": true
+			},
+		]
+	},
 	{
 		"name": "Secondary Fire - Freezeframe",
 		"type": "toggle",
@@ -207,10 +347,24 @@
 	}, 
 	{
 		"name": "Rocket Launcher - S.R.S. Cannon",
-		"type": "toggle",
-		"img": "/images/weapons/rock1.png",
-		"codes": "rock1"
-	}, 
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": true,
+		"stages": [
+			{
+				"img": "/images/weapons/rock1.png",
+				"name": "Rocket Launcher - S.R.S. Cannon",
+				"codes": "rock1",
+				"inherit_codes": false
+			},
+			{
+				"img": "/images/weapons/rock1_fire2.png",
+				"name": "Secondary Fire - S.R.S. Cannon",
+				"codes": "rock1_fire2_prog",
+				"inherit_codes": true
+			},
+		]
+	},
 	{
 		"name": "Secondary Fire - S.R.S. Cannon",
 		"type": "toggle",
@@ -220,9 +374,23 @@
 	}, 
 	{
 		"name": "Rocket Launcher - Firestarter",
-		"type": "toggle",
-		"img": "/images/weapons/rock2.png",
-		"codes": "rock2"
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": true,
+		"stages": [
+			{
+				"img": "/images/weapons/rock2.png",
+				"name": "Rocket Launcher - Firestarter",
+				"codes": "rock2",
+				"inherit_codes": false
+			},
+			{
+				"img": "/images/weapons/rock2_fire2.png",
+				"name": "Secondary Fire - Firestarter",
+				"codes": "rock2_fire2_prog",
+				"inherit_codes": true
+			},
+		]
 	},
 	{
 		"name": "Secondary Fire - Firestarter",
@@ -1114,26 +1282,31 @@
 		]
 	},
 	{
-		"name": "Boss Rewards",
+		"name": "Enemy Rewards",
 		"type": "progressive",
 		"loop": false,
 		"allow_disabled": false,
 		"stages": [
 			{
-				"img": "images/other/BossOff.png",
-				"name": "Boss Rewards - Disabled",
-				"codes": "boss,bossoff"
+				"img": "images/other/EnemyOff.png",
+				"name": "Enemy Rewards - Disabled",
+				"codes": "enemy,enemyoff"
 			},
 			{
 				"img": "images/other/Boss.png",
-				"name": "Boss Rewards - Standard",
-				"codes": "boss,bossstd"
+				"name": "Enemy Rewards - Bosses",
+				"codes": "enemy,enemyboss"
 			},
 			{
 				"img": "images/other/BossEx.png",
-				"name": "Boss Rewards - Extended",
-				"codes": "boss,bossex"
-			}
+				"name": "Enemy Rewards - Extra",
+				"codes": "enemy,enemyex"
+			},
+			{
+				"img": "images/other/EnemyAll.png",
+				"name": "Enemy Rewards - All",
+				"codes": "enemy,enemyall"
+			},
 		]
 	},
 	{

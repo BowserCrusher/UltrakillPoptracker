@@ -19,7 +19,7 @@
 								"start",
 								"goal",
 								"goalamount",
-								"boss",
+								"enemy",
 								"challenge",
 								"prank",
 							],
@@ -31,11 +31,6 @@
 								"chess",
 								"rockrace",
 							],
-							[
-								"lswitches",
-								"vswitches",
-								"skulls"
-							]
 						]
 					}
 				]

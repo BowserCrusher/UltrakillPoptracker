@@ -1,6 +1,16 @@
 {
 	"versions": [
 		{
+			"package_version": "0.5",
+			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.5/UltrakillPoptracker.zip",
+			"sha256": "B48FBB88F74D40E675D5E2022B2D20025A274AC1476FAA30501740B736336341",
+			"changelog": [
+				"Added Progressive weapons",
+				"New enemy checks",
+				"Minor logic updates",
+			]
+		},
+		{
 			"package_version": "0.4.4",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.4.4/UltrakillPoptracker.zip",
 			"sha256": "7c96789ddab893d7323c8278bd95b260db88f2cb9f49011d3c87a5d8c08af169",

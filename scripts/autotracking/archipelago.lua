@@ -102,7 +102,7 @@ function updateSettings(slot_data)
 	}
 	Tracker:FindObjectForCode("goal").CurrentStage = goal_map[slot_data["goal"]]
 	Tracker:FindObjectForCode("goalamount").AcquiredCount = slot_data["goal_requirement"]
-	Tracker:FindObjectForCode("boss").CurrentStage = slot_data["boss_rewards"]
+	Tracker:FindObjectForCode("enemy").CurrentStage = slot_data["enemy_rewards"]
 	Tracker:FindObjectForCode("challenge").Active = slot_data["challenge_rewards"]
 	Tracker:FindObjectForCode("prank").Active = slot_data["p_rank_rewards"]
 	Tracker:FindObjectForCode("hank").Active = slot_data["hank_rewards"]
@@ -111,7 +111,7 @@ function updateSettings(slot_data)
 	Tracker:FindObjectForCode("clean").Active = slot_data["cleaning_rewards"]
 	Tracker:FindObjectForCode("chess").Active = slot_data["chess_rewards"]
 	Tracker:FindObjectForCode("rockrace").Active = slot_data["rocket_race_rewards"]
-	if slot_data["randomize_secondary_fire"] == false then
+	if slot_data["randomize_secondary_fire"] == 0 then
 		Tracker:FindObjectForCode("rev0_fire2").Active = true
 		Tracker:FindObjectForCode("rev1_fire2").Active = true
 		Tracker:FindObjectForCode("rev2_fire2").Active = true
