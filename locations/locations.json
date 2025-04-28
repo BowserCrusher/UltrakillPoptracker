@@ -1162,7 +1162,7 @@
 					{
 						"name": "Don't fight the ferryman",
 						"visibility_rules": ["challenge"],
-						"access_rules": ["$has_fist,$can_break_idol,slam,$has_revany1_fire2,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$dash1,$has_revany1_fire2,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$has_rock,5_2_bskull,5_2_rskull"]
+						"access_rules": ["$has_fist,$can_break_idol,slam,$has_revany1_fire2,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$dash1,$has_revany1_fire2,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$has_rock,$has_revany1_fire2,5_2_bskull,5_2_rskull"]
 					},
 					{
 						"name": "P Rank",
