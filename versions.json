@@ -1,5 +1,15 @@
 {
 	"versions": [
+	{
+			"package_version": "0.5.1",
+			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.5/UltrakillPoptracker.zip",
+			"sha256": "93AB5A31C2A7CBC14FB5A9D08B0D67CAC68DE2D8B4B6318974EBBE74D3775870",
+			"changelog": [
+				"Updated assets",
+				"Levels completed should autotrack",
+				"Perfect Goal option accounted for",
+			]
+		},
 		{
 			"package_version": "0.5",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.5/UltrakillPoptracker.zip",
