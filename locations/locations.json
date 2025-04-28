@@ -240,8 +240,8 @@
 					},
 					{
 						"name": "Goal Cleared",
-						"visibility_rules": ["$level_0_5,$not_pgoal","$good_weapon,$level_0_5,pgoal"],
-						"access_rules": ["$level_0_5"]
+						"visibility_rules": ["goal05,$goal_reach"],
+						"access_rules": ["$level_0_5,$not_pgoal","$good_weapon,$level_0_5,pgoal"]
 					},
 					{
 						"name": "Don’t inflict fatal damage to any enemy",
