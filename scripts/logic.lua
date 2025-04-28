@@ -1041,3 +1041,8 @@ function goal_not(item)
 	local count = Tracker:ProviderCountForCode(item)
 	return count <= 0
 end
+
+function not_pgoal()
+	local count = Tracker:ProviderCountForCode("pgoal")
+	return count <= 0
+end

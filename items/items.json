@@ -31,7 +31,7 @@
 				"inherit_codes": false
 			},
 			{
-				"img": "/images/weapons/rev0_fire2.png",
+				"img": "/images/weapons/rev0_prog.png",
 				"name": "Secondary Fire - Piercer",
 				"codes": "rev0_fire2_prog",
 				"inherit_codes": true
@@ -58,7 +58,7 @@
 				"inherit_codes": false
 			},
 			{
-				"img": "/images/weapons/rev1_fire2.png",
+				"img": "/images/weapons/rev1_prog.png",
 				"name": "Secondary Fire - Marksman",
 				"codes": "rev1_fire2_prog",
 				"inherit_codes": true
@@ -85,7 +85,7 @@
 				"inherit_codes": false
 			},
 			{
-				"img": "/images/weapons/rev2_fire2.png",
+				"img": "/images/weapons/rev2_prog.png",
 				"name": "Secondary Fire - Sharpshooter",
 				"codes": "rev2_fire2_prog",
 				"inherit_codes": true
@@ -125,7 +125,7 @@
 				"inherit_codes": false
 			},
 			{
-				"img": "/images/weapons/sho0_fire2.png",
+				"img": "/images/weapons/sho0_prog.png",
 				"name": "Secondary Fire - Core Eject",
 				"codes": "sho0_fire2_prog",
 				"inherit_codes": true
@@ -152,7 +152,7 @@
 				"inherit_codes": false
 			},
 			{
-				"img": "/images/weapons/sho1_fire2.png",
+				"img": "/images/weapons/sho1_prog.png",
 				"name": "Secondary Fire - Pump Charge",
 				"codes": "sho1_fire2_prog",
 				"inherit_codes": true
@@ -179,7 +179,7 @@
 				"inherit_codes": false
 			},
 			{
-				"img": "/images/weapons/sho2_fire2.png",
+				"img": "/images/weapons/sho2_prog.png",
 				"name": "Secondary Fire - Sawed-On",
 				"codes": "sho2_fire2_prog",
 				"inherit_codes": true
@@ -219,7 +219,7 @@
 				"inherit_codes": false
 			},
 			{
-				"img": "/images/weapons/nai0_fire2.png",
+				"img": "/images/weapons/nai0_prog.png",
 				"name": "Secondary Fire - Attractor",
 				"codes": "nai0_fire2_prog",
 				"inherit_codes": true
@@ -246,7 +246,7 @@
 				"inherit_codes": false
 			},
 			{
-				"img": "/images/weapons/nai1_fire2.png",
+				"img": "/images/weapons/nai1_prog.png",
 				"name": "Secondary Fire - Overheat",
 				"codes": "nai1_fire2_prog",
 				"inherit_codes": true
@@ -273,7 +273,7 @@
 				"inherit_codes": false
 			},
 			{
-				"img": "/images/weapons/nai2_fire2.png",
+				"img": "/images/weapons/nai2_prog.png",
 				"name": "Secondary Fire - JumpStart",
 				"codes": "nai2_fire2_prog",
 				"inherit_codes": true
@@ -331,7 +331,7 @@
 				"inherit_codes": false
 			},
 			{
-				"img": "/images/weapons/rock0_fire2.png",
+				"img": "/images/weapons/rock0_prog.png",
 				"name": "Secondary Fire - Freezeframe",
 				"codes": "rock0_fire2_prog",
 				"inherit_codes": true
@@ -358,7 +358,7 @@
 				"inherit_codes": false
 			},
 			{
-				"img": "/images/weapons/rock1_fire2.png",
+				"img": "/images/weapons/rock1_prog.png",
 				"name": "Secondary Fire - S.R.S. Cannon",
 				"codes": "rock1_fire2_prog",
 				"inherit_codes": true
@@ -385,7 +385,7 @@
 				"inherit_codes": false
 			},
 			{
-				"img": "/images/weapons/rock2_fire2.png",
+				"img": "/images/weapons/rock2_prog.png",
 				"name": "Secondary Fire - Firestarter",
 				"codes": "rock2_fire2_prog",
 				"inherit_codes": true
@@ -1280,6 +1280,12 @@
 				"inherit_codes": false
 			}
 		]
+	},
+	{
+		"name": "Perfect Goal",
+		"type": "toggle",
+		"img": "images/other/PGoal.png",
+		"codes": "pgoal"
 	},
 	{
 		"name": "Enemy Rewards",

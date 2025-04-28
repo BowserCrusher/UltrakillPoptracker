@@ -19,6 +19,7 @@
 								"start",
 								"goal",
 								"goalamount",
+								"pgoal",
 								"enemy",
 								"challenge",
 								"prank",
@@ -31,6 +32,10 @@
 								"chess",
 								"rockrace",
 							],
+							[
+								"lswitches",
+								"vswitches",
+							]
 						]
 					}
 				]

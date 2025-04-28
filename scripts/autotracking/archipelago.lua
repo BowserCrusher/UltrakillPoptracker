@@ -12,6 +12,36 @@ LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 AUTOTRACKER_ENABLE_ITEM_TRACKING = true
 AUTOTRACKER_ENABLE_LOCATION_TRACKING = true
+AUTOTRACKER_ENABLE_DEBUG_LOGGING = true
+
+function dump(o, depth)
+    if depth == nil then
+        depth = 0
+    end
+    if type(o) == 'table' then
+        local tabs = ('\t'):rep(depth)
+        local tabs2 = ('\t'):rep(depth + 1)
+        local s = '{\n'
+        for k, v in pairs(o) do
+            if type(k) ~= 'number' then
+                k = '"' .. k .. '"'
+            end
+            s = s .. tabs2 .. '[' .. k .. '] = ' .. dump(v, depth + 1) .. ',\n'
+        end
+        return s .. tabs .. '}'
+    else
+        return tostring(o)
+    end
+end
+
+function TableContains(table, value)
+    for i = 1, #table do
+        if (table[i] == value) then
+            return true
+        end
+    end
+    return false
+end
 
 function dump_table(o, depth)
     if depth == nil then
@@ -34,8 +64,6 @@ function dump_table(o, depth)
 end
 
 function updateSettings(slot_data)
-	--Tracker:FindObjectForCode("start").CurrentStage = slot_data["start"]
-	--Tracker:FindObjectForCode("goal").CurrentStage = slot_data["goal"]
 	local start_map = {
 		["0-1"] = 0,
 		["0-2"] = 1,
@@ -102,6 +130,7 @@ function updateSettings(slot_data)
 	}
 	Tracker:FindObjectForCode("goal").CurrentStage = goal_map[slot_data["goal"]]
 	Tracker:FindObjectForCode("goalamount").AcquiredCount = slot_data["goal_requirement"]
+	Tracker:FindObjectForCode("pgoal").Active = slot_data["perfect_goal"]
 	Tracker:FindObjectForCode("enemy").CurrentStage = slot_data["enemy_rewards"]
 	Tracker:FindObjectForCode("challenge").Active = slot_data["challenge_rewards"]
 	Tracker:FindObjectForCode("prank").Active = slot_data["p_rank_rewards"]
@@ -232,11 +261,37 @@ function onClear(slot_data)
     end
 	updateSettings(slot_data)
 	
+	completed_levels_key = "Slot:"..Archipelago.PlayerNumber..":completedLevels"
+	print(completed_levels_key)
+	
+	Archipelago:SetNotify({completed_levels_key})
+	Archipelago:Get({completed_levels_key})
+	
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
     -- manually run snes interface functions after onClear in case we are already ingame
     if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
         -- add snes interface functions here
+    end
+end
+
+function onNotifyLaunch(key, value)
+	if value == nil then
+		return
+	end
+	print(string.format("called onNotifyLaunch: %s, %s", key, dump(value)))
+	Tracker:FindObjectForCode("lvlcomplete").AcquiredCount = #value
+end
+
+function onNotify(key, value, old_value)
+
+    print(string.format("called onNotify: %s, %s, %s", key, dump(value), old_value))
+    if value == nil or value == old_value then
+		return
+	end
+
+    if key == completed_levels_key then
+		Tracker:FindObjectForCode("lvlcomplete").AcquiredCount = #value
     end
 end
 
@@ -353,5 +408,7 @@ end
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
+Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)
+Archipelago:AddSetReplyHandler("notify handler", onNotify)
 -- Archipelago:AddScoutHandler("scout handler", onScout)
 -- Archipelago:AddBouncedHandler("bounce handler", onBounce)
