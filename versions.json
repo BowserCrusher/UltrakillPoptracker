@@ -4,7 +4,7 @@
 		{
 			"package_version": "0.5.2",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.5/UltrakillPoptracker.zip",
-			"sha256": "10C3D8357F9287F9761620D41CDF7FC1A5D02BD0E2CE0D98D3C40369CE39A6F2",
+			"sha256": "38A9566ACEA0DC21BA25CA259D4AB0973C24667A5E07175C39B443276E1300ED",
 			"changelog": [
 				"Fixed progressive weapons not tracking correctly",
 				"Minor logic fix for 0-5 Goal"
