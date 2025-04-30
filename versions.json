@@ -3,7 +3,7 @@
 	{
 		{
 			"package_version": "0.5.2",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.5/UltrakillPoptracker.zip",
+			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.5.2/UltrakillPoptracker.zip",
 			"sha256": "38A9566ACEA0DC21BA25CA259D4AB0973C24667A5E07175C39B443276E1300ED",
 			"changelog": [
 				"Fixed progressive weapons not tracking correctly",
@@ -12,7 +12,7 @@
 		},
 		{
 			"package_version": "0.5.1",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.5/UltrakillPoptracker.zip",
+			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.5.1/UltrakillPoptracker.zip",
 			"sha256": "93AB5A31C2A7CBC14FB5A9D08B0D67CAC68DE2D8B4B6318974EBBE74D3775870",
 			"changelog": [
 				"Updated assets",
