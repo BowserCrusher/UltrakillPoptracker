@@ -645,7 +645,7 @@ end
 
 function level_4_3()
 	return(
-		can_punch() or has("rai2") or has_shoany0_fire2() or pro_boost()
+		has_fist() or has("rai2") or has_shoany0_fire2() or pro_boost()
 	)
 end
 
