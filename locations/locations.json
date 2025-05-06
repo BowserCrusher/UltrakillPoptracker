@@ -847,7 +847,7 @@
 				"sections": [
 					{
 						"name": "Secret #1",
-						"access_rules": ["$dash1","$has_rock0_fire2"]
+						"access_rules": ["$dash1","$rocket_ride"]
 					},
 					{
 						"name": "Secret #2",
@@ -1129,7 +1129,7 @@
 				"sections": [
 					{
 						"name": "Secret #1",
-						"access_rules": ["slide","$has_rock"]
+						"access_rules": ["slide","$rocket_ride"]
 					},
 					{
 						"name": "Secret #2",
@@ -1145,29 +1145,28 @@
 					},
 					{
 						"name": "Secret #5",
-						"access_rules": ["$has_fist,$can_break_idol,slam,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$dash1,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$has_rock,5_2_bskull,5_2_rskull"]
+						"access_rules": ["$exit_5_2"]
 					},
 					{
 						"name": "Cleared 5-2",
 						"visibility_rules": ["$goal_not|goal52"],
-						"access_rules": ["$has_fist,$can_break_idol,slam,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$dash1,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$has_rock,5_2_bskull,5_2_rskull"],
+						"access_rules": ["$exit_5_2"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal52,$goal_reach"],
-						"access_rules": ["$has_fist,$can_break_idol,slam,5_2_bskull,5_2_rskull,$not_pgoal","$has_fist,$can_break_idol,$dash1,5_2_bskull,5_2_rskull,$not_pgoal","$has_fist,$can_break_idol,$has_rock,5_2_bskull,5_2_rskull,$not_pgoal",
-						"$has_fist,$can_break_idol,slam,$good_weapon,5_2_bskull,5_2_rskull,pgoal","$has_fist,$can_break_idol,$dash1,$good_weapon,5_2_bskull,5_2_rskull,pgoal","$has_fist,$can_break_idol,$has_rock,5_2_bskull,5_2_rskull,pgoal"]
+						"access_rules": ["$exit_5_2,$not_pgoal", "$exit_5_2,$good_weapon,pgoal"]
 					},
 					{
 						"name": "Don't fight the ferryman",
 						"visibility_rules": ["challenge"],
-						"access_rules": ["$has_fist,$can_break_idol,slam,$has_revany1_fire2,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$dash1,$has_revany1_fire2,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$has_rock,$has_revany1_fire2,5_2_bskull,5_2_rskull"]
+						"access_rules": ["$exit_5_2,$has_revany1_fire2"]
 					},
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["$has_fist,$can_break_idol,slam,$good_weapon,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$dash1,$good_weapon,5_2_bskull,5_2_rskull","$has_fist,$can_break_idol,$has_rock,5_2_bskull,5_2_rskull"]
+						"access_rules": ["$exit_2_1,$good_weapon"]
 					}
 				],
 				"map_locations": [
@@ -1254,17 +1253,17 @@
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal54,$goal_reach"],
-						"access_rules": ["$not_pgoal","$good_weapon,$has_rock0_fire2,pgoal"]
+						"access_rules": ["$not_pgoal","$good_weapon,$rocket_ride,pgoal"]
 					},
 					{
 						"name": "Reach the surface in under 10 seconds",
 						"visibility_rules": ["challenge"],
-						"access_rules": ["$good_weapon,$has_rock0_fire2"]
+						"access_rules": ["$good_weapon,$rocket_ride"]
 					},
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon,$has_rock0_fire2"]
+						"access_rules": ["$good_weapon,$rocket_ride"]
 					}
 				],
 				"map_locations": [
@@ -1630,18 +1629,18 @@
 					{
 						"name": "Cleared 7-4",
 						"visibility_rules": ["$goal_not|goal74"],
-						"access_rules": ["slide,$can_break_idol,arm2,$good_weapon","slide,$can_break_idol,$slam_storage,$good_weapon"],
+						"access_rules": ["slide,$can_break_idol,arm2,$good_weapon","slide,$can_break_idol,$slam_storage,$good_weapon","slide,$can_break_idol,$rocket_ride,$good_weapon"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal74,$goal_reach"],
-						"access_rules": ["slide,$can_break_idol,arm2,$good_weapon","slide,$can_break_idol,$slam_storage,$good_weapon,$not_pgoal"]
+						"access_rules": ["slide,$can_break_idol,arm2,$good_weapon","slide,$can_break_idol,$slam_storage,$good_weapon,$not_pgoal","slide,$can_break_idol,$rocket_ride,$good_weapon,$not_pgoal"]
 					},
 					{
 						"name": "Don't fight the security system",
 						"visibility_rules": ["challenge"],
-						"access_rules": ["slide,$can_break_idol,arm2,$can_zap,$good_weapon","slide,$can_break_idol,$slam_storage,$can_zap,$good_weapon"]
+						"access_rules": ["slide,$can_break_idol,arm2,$can_zap,$good_weapon","slide,$can_break_idol,$slam_storage,$can_zap,$good_weapon","slide,$can_break_idol,$rocket_ride,$can_zap,$good_weapon"]
 					},
 					{
 						"name": "P Rank",
