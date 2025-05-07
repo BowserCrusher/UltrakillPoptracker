@@ -1629,23 +1629,23 @@
 					{
 						"name": "Cleared 7-4",
 						"visibility_rules": ["$goal_not|goal74"],
-						"access_rules": ["slide,$can_break_idol,arm2,$good_weapon","slide,$can_break_idol,$slam_storage,$good_weapon","slide,$can_break_idol,$rocket_ride,$good_weapon"],
+						"access_rules": ["slide,$can_break_idol_em,arm2,$good_weapon","slide,$can_break_idol_em,$slam_storage,$good_weapon","slide,$can_break_idol_em,$rocket_ride,$good_weapon"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal74,$goal_reach"],
-						"access_rules": ["slide,$can_break_idol,arm2,$good_weapon","slide,$can_break_idol,$slam_storage,$good_weapon,$not_pgoal","slide,$can_break_idol,$rocket_ride,$good_weapon,$not_pgoal"]
+						"access_rules": ["slide,$can_break_idol_em,arm2,$good_weapon","slide,$can_break_idol_em,$slam_storage,$good_weapon,$not_pgoal","slide,$can_break_idol_em,$rocket_ride,$good_weapon,$not_pgoal"]
 					},
 					{
 						"name": "Don't fight the security system",
 						"visibility_rules": ["challenge"],
-						"access_rules": ["slide,$can_break_idol,arm2,$can_zap,$good_weapon","slide,$can_break_idol,$slam_storage,$can_zap,$good_weapon","slide,$can_break_idol,$rocket_ride,$can_zap,$good_weapon"]
+						"access_rules": ["slide,$can_break_idol_em,arm2,$can_zap,$good_weapon","slide,$can_break_idol_em,$slam_storage,$can_zap,$good_weapon","slide,$can_break_idol_em,$rocket_ride,$can_zap,$good_weapon"]
 					},
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["slide,$can_break_idol,arm2,$good_weapon"]
+						"access_rules": ["slide,$can_break_idol_em,arm2,$good_weapon"]
 					}
 				],
 				"map_locations": [

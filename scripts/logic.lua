@@ -402,6 +402,12 @@ function can_break_idol()
 	)
 end
 
+function can_break_idol_em()
+	return(
+		can_punch() or has_shoalt()
+	)
+end
+
 function jump_gen()
 	return(
 		has("slam") or has_rock() or has_shostd_fire2() or has_shoalt() or pro_boost() or has("rai2")
