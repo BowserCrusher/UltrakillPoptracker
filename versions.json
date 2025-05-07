@@ -4,7 +4,7 @@
 		{
 			"package_version": "0.5.4",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.5.4/UltrakillPoptracker.zip",
-			"sha256": "73D8B2B1347B54D4603B7EDA8964BFC4FDA6CBD424C09167D011FEEC2BDB4D11",
+			"sha256": "28477C8E56F6E86C14F9BA76E297408336FFC9ACEB0DD441CA81520E0F4E6415",
 			"changelog": [
 				"More logic fixes changed in APWorld"
 			]
