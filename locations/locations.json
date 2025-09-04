@@ -987,7 +987,7 @@
 					{
 						"name": "Don't pick up the torch",
 						"visibility_rules": ["challenge"],
-						"access_rules": ["$has_shoany0_fire2,$has_fist,4_3_bskull","$pro_boost,$has_fist,4_3_bskull"]
+						"access_rules": ["$has_shoany0_fire2,$has_fist,4_3_bskull","$pro_boost,$has_fist,4_3_bskull", "$has_rock0_fire2,$has_rev,$has_fist,4_3_bskull"]
 					},
 					{
 						"name": "P Rank",
