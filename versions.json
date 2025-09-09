@@ -4,9 +4,10 @@
 		{
 			"package_version": "0.5.5",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.5.5/UltrakillPoptracker.zip",
-			"sha256": "DA2F316F7E4EF36198AFECD25DB4A45773980665AA69070EC349BD480A0ACA35",
+			"sha256": "EE54E9BA29337613EEAE5FD81D514591E52C270DEFB65DFBDFBB2630E658EFE6",
 			"changelog": [
-				"Changed Challenge in 4-3"
+				"Changed Challenge in 4-3",
+				"Changed P Rank in 5-2"
 			]
 		},
 		{
