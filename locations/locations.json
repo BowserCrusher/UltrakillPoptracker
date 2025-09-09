@@ -1166,7 +1166,7 @@
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["$exit_2_1,$good_weapon"]
+						"access_rules": ["$exit_5_2,$good_weapon"]
 					}
 				],
 				"map_locations": [
