@@ -528,6 +528,12 @@ function secret3_0_2()
 	)
 end
 
+function secret_exit_0_2()
+	return(
+		has("0_2_bskull") and has_fist() and (wall_jump3() or slam_storage() or has_shostd_fire2() or has_shoalt() or pro_boost() or has("rai2") or has_rock())
+	)
+end
+
 function challenge_0_3()
 	return(
 		can_break_far_glass() and (
@@ -1063,4 +1069,10 @@ end
 function not_pgoal()
 	local count = Tracker:ProviderCountForCode("pgoal")
 	return count <= 0
+end
+
+function not_sebehavior()
+	return (
+		not has("sebehavior")
+	)
 end

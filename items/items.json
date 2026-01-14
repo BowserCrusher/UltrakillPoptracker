@@ -35,7 +35,7 @@
 				"name": "Secondary Fire - Piercer",
 				"codes": "rev0_fire2_prog",
 				"inherit_codes": true
-			},
+			}
 		]
 	},
 	{
@@ -62,7 +62,7 @@
 				"name": "Secondary Fire - Marksman",
 				"codes": "rev1_fire2_prog",
 				"inherit_codes": true
-			},
+			}
 		]
 	}, 
 	{
@@ -89,7 +89,7 @@
 				"name": "Secondary Fire - Sharpshooter",
 				"codes": "rev2_fire2_prog",
 				"inherit_codes": true
-			},
+			}
 		]
 	}, 
 	{
@@ -129,7 +129,7 @@
 				"name": "Secondary Fire - Core Eject",
 				"codes": "sho0_fire2_prog",
 				"inherit_codes": true
-			},
+			}
 		]
 	}, 
 	{
@@ -156,7 +156,7 @@
 				"name": "Secondary Fire - Pump Charge",
 				"codes": "sho1_fire2_prog",
 				"inherit_codes": true
-			},
+			}
 		]
 	},
 	{
@@ -183,7 +183,7 @@
 				"name": "Secondary Fire - Sawed-On",
 				"codes": "sho2_fire2_prog",
 				"inherit_codes": true
-			},
+			}
 		]
 	}, 
 	{
@@ -223,7 +223,7 @@
 				"name": "Secondary Fire - Attractor",
 				"codes": "nai0_fire2_prog",
 				"inherit_codes": true
-			},
+			}
 		]
 	},
 	{
@@ -250,7 +250,7 @@
 				"name": "Secondary Fire - Overheat",
 				"codes": "nai1_fire2_prog",
 				"inherit_codes": true
-			},
+			}
 		]
 	},
 	{
@@ -277,7 +277,7 @@
 				"name": "Secondary Fire - JumpStart",
 				"codes": "nai2_fire2_prog",
 				"inherit_codes": true
-			},
+			}
 		]
 	},
 	{
@@ -335,7 +335,7 @@
 				"name": "Secondary Fire - Freezeframe",
 				"codes": "rock0_fire2_prog",
 				"inherit_codes": true
-			},
+			}
 		]
 	},
 	{
@@ -362,7 +362,7 @@
 				"name": "Secondary Fire - S.R.S. Cannon",
 				"codes": "rock1_fire2_prog",
 				"inherit_codes": true
-			},
+			}
 		]
 	},
 	{
@@ -389,7 +389,7 @@
 				"name": "Secondary Fire - Firestarter",
 				"codes": "rock2_fire2_prog",
 				"inherit_codes": true
-			},
+			}
 		]
 	},
 	{
@@ -431,6 +431,12 @@
 		"codes": "0_5_access"
 	},
 	{
+		"name": "0-S: SOMETHING WICKED",
+		"type": "toggle",
+		"img": "images/levels/0-S.png",
+		"codes": "0_s_access"
+	},
+	{
 		"name": "OVERTURE: THE MOUTH OF HELL",
 		"type": "toggle",
 		"img": "images/levels/layer0.png",
@@ -461,6 +467,12 @@
 		"codes": "1_4_access"
 	},
 	{
+		"name": "1-S: THE WITLESS",
+		"type": "toggle",
+		"img": "images/levels/1-S.png",
+		"codes": "1_s_access"
+	},
+	{
 		"name": "LAYER 1: LIMBO",
 		"type": "toggle",
 		"img": "images/levels/layer1.png",
@@ -489,6 +501,12 @@
 		"type": "toggle",
 		"img": "images/levels/2-4.png",
 		"codes": "2_4_access"
+	},
+	{
+		"name": "2-S: ALL-IMPERFECT LOVE SONG",
+		"type": "toggle",
+		"img": "images/levels/2-S.png",
+		"codes": "2_s_access"
 	},
 	{
 		"name": "LAYER 2: LUST",
@@ -539,6 +557,12 @@
 		"codes": "4_4_access"
 	},
 	{
+		"name": "4-S: CLASH OF THE BRANDICOOT",
+		"type": "toggle",
+		"img": "images/levels/4-S.png",
+		"codes": "4_s_access"
+	},
+	{
 		"name": "LAYER 4: GREED",
 		"type": "toggle",
 		"img": "images/levels/layer4.png",
@@ -567,6 +591,12 @@
 		"type": "toggle",
 		"img": "images/levels/5-4.png",
 		"codes": "5_4_access"
+	},
+	{
+		"name": "5-S: I ONLY SAY MORNING",
+		"type": "toggle",
+		"img": "images/levels/5-S.png",
+		"codes": "5_s_access"
 	},
 	{
 		"name": "LAYER 5: WRATH",
@@ -615,6 +645,12 @@
 		"type": "toggle",
 		"img": "images/levels/7-4.png",
 		"codes": "7_4_access"
+	},
+	{
+		"name": "7-S: HELL BATH NO FURY",
+		"type": "toggle",
+		"img": "images/levels/7-S.png",
+		"codes": "7_s_access"
 	},
 	{
 		"name": "LAYER 7: VIOLENCE",
@@ -1288,6 +1324,18 @@
 		"codes": "pgoal"
 	},
 	{
+		"name": "Secret Mission Unlock",
+		"type": "toggle",
+		"img": "images/other/SecretMissionUnlock.png",
+		"codes": "smunlock"
+	},
+	{
+		"name": "Secret Exit Behavior",
+		"type": "toggle",
+		"img": "images/other/SeccretExitBehavior.png",
+		"codes": "sebehavior"
+	},
+	{
 		"name": "Enemy Rewards",
 		"type": "progressive",
 		"loop": false,
@@ -1312,7 +1360,7 @@
 				"img": "images/other/EnemyAll.png",
 				"name": "Enemy Rewards - All",
 				"codes": "enemy,enemyall"
-			},
+			}
 		]
 	},
 	{

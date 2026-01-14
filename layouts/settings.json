@@ -20,9 +20,11 @@
 								"goal",
 								"goalamount",
 								"pgoal",
+								"smunlock",
+								"sebehavior",
 								"enemy",
 								"challenge",
-								"prank",
+								"prank"
 							],
 							[
 								"hank",
@@ -30,11 +32,11 @@
 								"fish",
 								"clean",
 								"chess",
-								"rockrace",
+								"rockrace"
 							],
 							[
 								"lswitches",
-								"vswitches",
+								"vswitches"
 							]
 						]
 					}

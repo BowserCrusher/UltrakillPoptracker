@@ -131,6 +131,10 @@ function updateSettings(slot_data)
 	Tracker:FindObjectForCode("goal").CurrentStage = goal_map[slot_data["goal"]]
 	Tracker:FindObjectForCode("goalamount").AcquiredCount = slot_data["goal_requirement"]
 	Tracker:FindObjectForCode("pgoal").Active = slot_data["perfect_goal"]
+    Tracker:FindObjectForCode["smunlock"].Active = slot_data["secret_mission_unlock_type"]
+    if slot_data["secret_exit_behavior"] == false then
+        Tracker:FindObjectForCode("sebehavior").Active = true
+    end
 	Tracker:FindObjectForCode("enemy").CurrentStage = slot_data["enemy_rewards"]
 	Tracker:FindObjectForCode("challenge").Active = slot_data["challenge_rewards"]
 	Tracker:FindObjectForCode("prank").Active = slot_data["p_rank_rewards"]

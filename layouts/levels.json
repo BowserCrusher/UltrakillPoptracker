@@ -20,19 +20,22 @@
 								"0_2_access",
 								"0_3_access",
 								"0_4_access",
-								"0_5_access"
+								"0_5_access",
+								"0_s_access"
 							],
 							[
 								"1_1_access",
 								"1_2_access",
 								"1_3_access",
-								"1_4_access"
+								"1_4_access",
+								"1_s_access"
 							],
 							[
 								"2_1_access",
 								"2_2_access",
 								"2_3_access",
-								"2_4_access"
+								"2_4_access",
+								"2_s_access"
 							],
 							[
 								"3_1_access",
@@ -43,13 +46,15 @@
 								"4_1_access",
 								"4_2_access",
 								"4_3_access",
-								"4_4_access"
+								"4_4_access",
+								"4_s_access"
 							],
 							[
 								"5_1_access",
 								"5_2_access",
 								"5_3_access",
-								"5_4_access"
+								"5_4_access",
+								"5_s_access"
 							],
 							[
 								"6_1_access",
@@ -60,11 +65,12 @@
 								"7_1_access",
 								"7_2_access",
 								"7_3_access",
-								"7_4_access"
+								"7_4_access",
+								"7_s_access"
 							],
 							[
 								"0_e_access",
-								"1_e_access",
+								"1_e_access"
 							],
 							[
 								"lvlcomplete"
