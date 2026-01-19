@@ -249,7 +249,7 @@
 						"access_rules": ["$level_0_5,$not_pgoal","$good_weapon,$level_0_5,pgoal"]
 					},
 					{
-						"name": "Don’t inflict fatal damage to any enemy",
+						"name": "Don't inflict fatal damage to any enemy",
 						"visibility_rules": ["challenge"],
 						"access_rules": ["$level_0_5,$dash1"]
 					},
@@ -478,7 +478,7 @@
 				]
 			},
 			{
-				"name": "1-4 CLAIRE DE LUNE",
+				"name": "1-4 CLAIR DE LUNE",
 				"access_rules": ["1_4_access,$goal_not|goal14","l1_access,$goal_not|goal14","goal14,$goal_reach"],
 				"sections": [
 					{
@@ -1042,7 +1042,7 @@
 				]
 			},
 			{
-				"name": "4-4 CLAIRE DE SOLEIL",
+				"name": "4-4 CLAIR DE SOLEIL",
 				"access_rules": ["4_4_access,$goal_not|goal44", "l4_access,$goal_not|goal44", "goal44,$goal_reach"],
 				"sections": [
 					{

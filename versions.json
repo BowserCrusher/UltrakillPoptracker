@@ -2,6 +2,17 @@
 	"versions": [
 	{
 		{
+			"package_version": "0.6",
+			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.6/UltrakillPoptracker.zip",
+			"sha256": "9AF4EB8D40501A672BB8E8418075D6D159D4E6EE373F7A5753EDA477F5E485D1",
+			"changelog": [
+				"New Secret Mission Access items" ,
+				"Updated logic to show whether Secret Missions are clearable with both Unlock Types",
+				"New locations added when Secret Exit Behavior is set to Add Rewards",
+				"Updated Level Cleared logic to change based on the Secret Exit Behavior option"
+			]
+		},
+		{
 			"package_version": "0.5.5",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.5.5/UltrakillPoptracker.zip",
 			"sha256": "EE54E9BA29337613EEAE5FD81D514591E52C270DEFB65DFBDFBB2630E658EFE6",
