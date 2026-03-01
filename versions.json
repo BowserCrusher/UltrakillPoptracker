@@ -2,6 +2,14 @@
 	"versions": [
 	{
 		{
+			"package_version": "0.6.2",
+			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.6.2/UltrakillPoptracker.zip",
+			"sha256": "267FB4EC742999A861F457E3265C20ACF4299CB7866D22108F78827FB2F20844",
+			"changelog": [
+				"Updated logic so coins cant break glass"
+			]
+		},
+		{
 			"package_version": "0.6.1",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.6.1/UltrakillPoptracker.zip",
 			"sha256": "D787519D555228620269B3FAD816CE3FC985F67F0B32142C1DCCB8E9123D349F",
