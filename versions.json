@@ -2,6 +2,16 @@
 	"versions": [
 	{
 		{
+			"package_version": "0.7",
+			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.7/UltrakillPoptracker.zip",
+			"sha256": "381611B7317E67BA72A658E966C1940917442806E0625A3F72EC3C91CBF34D6A",
+			"changelog": [
+				"Added Layer 8 Items and skulls",
+				"Added Layer 8 Locations",
+				"Added new enemies/updated enemy logic for Layer 8"
+			]
+		},
+		{
 			"package_version": "0.6.2",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.6.2/UltrakillPoptracker.zip",
 			"sha256": "267FB4EC742999A861F457E3265C20ACF4299CB7866D22108F78827FB2F20844",
