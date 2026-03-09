@@ -72,7 +72,9 @@ function updateSettings(slot_data)
 		["1-3"] = 4,
 		["2-3"] = 5,
 		["3-1"] = 6,
-		["4-2"] = 7
+		["4-2"] = 7,
+        ["8-2"] = 8,
+        ["8-3"] = 9
 	}
 	local start_access_map = {
 		["0-1"] = "0_1_access",
@@ -83,7 +85,9 @@ function updateSettings(slot_data)
 		["2-1"] = "2_2_access",
 		["2-3"] = "2_3_access",
 		["3-1"] = "3_1_access",
-		["4-2"] = "4_2_access"
+		["4-2"] = "4_2_access",
+        ["8-2"] = "8_2_access",
+        ["8-3"] = "8_3_access"
 	}
 	Tracker:FindObjectForCode("start").CurrentStage = start_map[slot_data["start"]]
 	Tracker:FindObjectForCode(start_access_map[slot_data["start"]]).Active = true
@@ -123,10 +127,14 @@ function updateSettings(slot_data)
 		["7-3"] = 32,
 		["7-4"] = 33,
 		["7-S"] = 34,
-		["0-E"] = 35,
-		["1-E"] = 36,
-		["P-1"] = 37,
-		["P-2"] = 38
+        ["8-1"] = 35,
+        ["8-2"] = 36,
+        ["8-3"] = 37,
+        ["8-4"] = 38,
+		["0-E"] = 39,
+		["1-E"] = 40,
+		["P-1"] = 41,
+		["P-2"] = 42
 	}
 	Tracker:FindObjectForCode("goal").CurrentStage = goal_map[slot_data["goal"]]
 	Tracker:FindObjectForCode("goalamount").AcquiredCount = slot_data["goal_requirement"]

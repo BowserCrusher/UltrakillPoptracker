@@ -659,6 +659,36 @@
 		"codes": "l7_access"
 	},
 	{
+		"name": "8-1: HURTBREAK WONDERLAND",
+		"type": "toggle",
+		"img": "images/levels/8-1.png",
+		"codes": "8_1_access"
+	},
+	{
+		"name": "8-2: THROUGH THE MIRROR",
+		"type": "toggle",
+		"img": "images/levels/8-2.png",
+		"codes": "8_2_access"
+	},
+	{
+		"name": "8-3: DISINTEGRATION LOOP",
+		"type": "toggle",
+		"img": "images/levels/8-3.png",
+		"codes": "8_3_access"
+	},
+	{
+		"name": "8-4: FINAL FIGHT",
+		"type": "toggle",
+		"img": "images/levels/8-4.png",
+		"codes": "8_4_access"
+	},
+	{
+		"name": "LAYER 8: FRAUD",
+		"type": "toggle",
+		"img": "images/levels/layer8.png",
+		"codes": "l8_access"
+	},
+	{
 		"name": "0-E: THIS HEAT, AN EVIL HEAT",
 		"type": "toggle",
 		"img": "images/levels/0-E.png",
@@ -896,6 +926,62 @@
 		"codes": "7_s_rskull"
 	},
 	{
+		"name": "Blue Skull (8-1)",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "images/keys/8-1Blue.png",
+		"codes": "8_1_bskull"
+	},
+	{
+		"name": "Red Skull (8-1)",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "images/keys/8-1Red.png",
+		"codes": "8_1_rskull"
+	},
+	{
+		"name": "Blue Skull (8-2)",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "images/keys/8-2Blue.png",
+		"codes": "8_2_bskull"
+	},
+	{
+		"name": "Red Skull (8-2)",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "images/keys/8-2Red.png",
+		"codes": "8_2_rskull"
+	},
+	{
+		"name": "Blue Skull (8-3)",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "images/keys/8-3Blue.png",
+		"codes": "8_3_bskull"
+	},
+	{
+		"name": "Red Skull (8-3)",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "images/keys/8-3Red.png",
+		"codes": "8_3_rskull"
+	},
+	{
+		"name": "Blue Skull (8-4)",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "images/keys/8-4Blue.png",
+		"codes": "8_4_bskull"
+	},
+	{
+		"name": "Red Skull (8-4)",
+		"type": "toggle",
+		"initial_active_state": true,
+		"img": "images/keys/8-4Red.png",
+		"codes": "8_4_rskull"
+	},
+	{
 		"name": "Blue Skull (0-E)",
 		"type": "toggle",
 		"initial_active_state": true,
@@ -1061,6 +1147,18 @@
 				"name": "Start: 4-2",
 				"codes": "start,start42",
 				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/8-2.png",
+				"name": "Start: 8-2",
+				"codes": "start,start82",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/8-3.png",
+				"name": "Start: 8-3",
+				"codes": "start,start83",
+				"inherit_codes": false
 			}
 		]
 	},
@@ -1079,7 +1177,7 @@
 		"type": "progressive",
 		"loop": true,
 		"allow_disabled": false,
-		"initial_stage_idx": 33,
+		"initial_stage_idx": 38,
 		"stages": [
 			{
 				"img": "images/levels/0-1.png",
@@ -1289,6 +1387,30 @@
 				"img": "images/levels/7-S.png",
 				"name": "Goal: 7-S",
 				"codes": "goal,goal7s",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/8-1.png",
+				"name": "Goal: 8-1",
+				"codes": "goal,goal81",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/8-2.png",
+				"name": "Goal: 8-2",
+				"codes": "goal,goal82",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/8-3.png",
+				"name": "Goal: 8-3",
+				"codes": "goal,goal83",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/levels/8-4.png",
+				"name": "Goal: 8-4",
+				"codes": "goal,goal84",
 				"inherit_codes": false
 			},
 			{

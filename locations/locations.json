@@ -1718,7 +1718,7 @@
 			},
 			{
 				"name": "7-S HELL BATH NO FURY",
-				"access_rules": ["7_s_access,$goal_not|goal7s", "7_3_access,smunlock,$goal_not|goal7s", "l7_access,smunlock,$goal_not|goal7s", "goal7s,$goal_reach"],
+				"access_rules": ["7_s_access,$goal_not|goal7s", "7_3_access,$secret_exit_7_3,smunlock,$goal_not|goal7s", "l7_access,$secret_exit_7_3smunlock,$goal_not|goal7s", "goal7s,$goal_reach"],
 				"sections": [
 					{
 						"name": "Cleaned Courtyard",
@@ -1762,6 +1762,202 @@
 						"map": "levelselect",
 						"x":2233,
 						"y":243
+					}
+				]
+			},
+			{
+				"name": "8-1 HURTBREAK WONDERLAND",
+				"access_rules": ["8_1_access,$goal_not|goal81", "l8_access,$goal_not|goal81", "goal81,$goal_reach"],
+				"sections": [
+					{
+						"name": "Secret #1",
+						"access_rules": []
+					},
+					{
+						"name": "Secret #2",
+						"access_rules": ["$secret2_8_1"]
+					},
+					{
+						"name": "Secret #3",
+						"access_rules": ["$good_weapon,$has_fist,8_1_bskull,8_1_rskull,$can_break_glass"]
+					},
+					{
+						"name": "Secret #4",
+						"access_rules": ["$exit_8_1"]
+					},
+					{
+						"name": "Secret #5",
+						"access_rules": ["$secret5_8_1"]
+					},
+					{
+						"name": "Cleared 8-1",
+						"visibility_rules": ["$goal_not|goal81"],
+						"access_rules": ["$exit_8_1"],
+						"hosted_item": "lvlcomplete"
+					},
+					{
+						"name": "Goal Cleared",
+						"visibility_rules": ["goal81,$goal_reach"],
+						"access_rules": ["$exit_8_1"]
+					},
+					{
+						"name": "Parry a Providence",
+						"visibility_rules": ["challenge"],
+						"access_rules": ["$exit_8_1,arm0", "$exit_8_1,$has_sho"]
+					},
+					{
+						"name": "P Rank",
+						"visibility_rules": ["prank"],
+						"access_rules": ["$exit_8_1"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "levelselect",
+						"x": 1660,
+						"y": 598
+					}
+				]
+			},
+			{
+				"name": "8-2 THROUGH THE MIRROR",
+				"access_rules": ["8_2_access,$goal_not|goal82", "l8_access,$goal_not|goal82", "goal82,$goal_reach", "start82"],
+				"sections": [
+					{
+						"name": "Secret #1",
+						"access_rules": []
+					},
+					{
+						"name": "Secret #2",
+						"access_rules": ["$jump_gen1"]
+					},
+					{
+						"name": "Secret #3",
+						"access_rules": ["slide"]
+					},
+					{
+						"name": "Secret #4",
+						"access_rules": ["$secret4_8_2"]
+					},
+					{
+						"name": "Secret #5",
+						"access_rules": ["$secret4_8_2,8_2_rskull"]
+					},
+					{
+						"name": "Cleared 8-2",
+						"visibility_rules": ["$goal_not|goal82"],
+						"access_rules": ["$secret4_8_2,8_2_rskull,$can_break_glass"],
+						"hosted_item": "lvlcomplete"
+					},
+					{
+						"name": "Goal Cleared",
+						"visibility_rules": ["goal82,$goal_reach"],
+						"access_rules": ["$secret4_8_2,8_2_rskull,$can_break_glass"]
+					},
+					{
+						"name": "Finish the level upside down",
+						"visibility_rules": ["challenge"],
+						"access_rules": ["$challenge_8_2"]
+					},
+					{
+						"name": "P Rank",
+						"visibility_rules": ["prank"],
+						"access_rules": ["$secret4_8_2,8_2_rskull,$can_break_glass"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "levelselect",
+						"x": 1847,
+						"y": 598
+					}
+				]
+			},
+			{
+				"name": "8-3 DISINTEGRATION LOOP",
+				"access_rules": ["8_3_access,$goal_not|goal83", "l8_access,$goal_not|goal83", "goal83,$goal_reach", "start83"],
+				"sections": [
+					{
+						"name": "Secret #1",
+						"access_rules": []
+					},
+					{
+						"name": "Secret #2",
+						"access_rules": ["$good_weapon,slide"]
+					},
+					{
+						"name": "Secret #3",
+						"access_rules": ["$good_weapon"]
+					},
+					{
+						"name": "Secret #4",
+						"access_rules": ["$good_weapon,slide"]
+					},
+					{
+						"name": "Secret #5",
+						"access_rules": ["$exit_8_3"]
+					},
+					{
+						"name": "Cleared 8-3",
+						"visibility_rules": ["$goal_not|goal83"],
+						"access_rules": ["$exit_8_3"],
+						"hosted_item": "lvlcomplete"
+					},
+					{
+						"name": "Goal Cleared",
+						"visibility_rules": ["goal83,$goal_reach"],
+						"access_rules": ["$exit_8_3"]
+					},
+					{
+						"name": "Kill a Power with terminal velocity",
+						"visibility_rules": ["challenge"],
+						"access_rules": ["$exit_8_3,arm0"]
+					},
+					{
+						"name": "P Rank",
+						"visibility_rules": ["prank"],
+						"access_rules": ["$exit_8_3"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "levelselect",
+						"x": 2047,
+						"y": 598
+					}
+				]
+			},
+			{
+				"name": "8-4 FINAL FIGHT",
+				"access_rules": ["8_4_access,$goal_not|goal84", "l8_access,$goal_not|goal84", "goal84,$goal_reach"],
+				"sections": [
+					{
+						"name": "Cleared 8-4",
+						"visibility_rules": ["$goal_not|goal84"],
+						"access_rules": ["$challenge_8_4", "$good_weapon,$dash2,$has_fist,8_4_bskull,8_4_rskull,arm0", "$good_weapon,$dash2,$has_fist,8_4_bskull,8_4_rskull,arm2"],
+						"hosted_item": "lvlcomplete"
+					},
+					{
+						"name": "Goal Cleared",
+						"visibility_rules": ["goal84,$goal_reach"],
+						"access_rules": ["$challenge_8_4", "$good_weapon,$dash2,$has_fist,8_4_bskull,8_4_rskull,arm0", "$good_weapon,$dash2,$has_fist,8_4_bskull,8_4_rskull,arm2"]
+					},
+					{
+						"name": "Do not pick up any skulls",
+						"visibility_rules": ["challenge"],
+						"access_rules": ["$challenge_8_4"]
+					},
+					{
+						"name": "P Rank",
+						"visibility_rules": ["prank"],
+						"access_rules": ["$challenge_8_4", "$good_weapon,$dash2,$has_fist,8_4_bskull,8_4_rskull,arm0", "$good_weapon,$dash2,$has_fist,8_4_bskull,8_4_rskull,arm2"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "levelselect",
+						"x": 2244,
+						"y": 598
 					}
 				]
 			},
@@ -1979,6 +2175,11 @@
 						"access_rules": ["$ferryman_logic"]
 					},
 					{
+						"name": "Boss: Mirror Reaper",
+						"visibility_rules": ["enemyex"],
+						"access_rules": ["$mirror_reaper_logic"]
+					},
+					{
 						"name": "Enemy: Swordsmachine",
 						"visibility_rules": ["enemyall"],
 						"access_rules": ["$swordsmachine_logic"]
@@ -2064,6 +2265,16 @@
 						"access_rules": ["$minotaur_logic"]
 					},
 					{
+						"name": "Enemy: Deathcatcher",
+						"visibility_rules": ["enemyall"],
+						"access_rules": ["$deathcatcher_logic"]
+					},
+					{
+						"name": "Boss: Geryon, Watcher of the Skies",
+						"visibility_rules": ["enemyboss"],
+						"access_rules": ["$geryon_logic"]
+					},
+					{
 						"name": "Boss: Gabriel, Judge of Hell",
 						"visibility_rules": ["enemyboss"],
 						"access_rules": ["$gabriel_1_logic"]
@@ -2077,6 +2288,16 @@
 						"name": "Boss: Gabriel, Apostate of Hate",
 						"visibility_rules": ["enemyboss"],
 						"access_rules": ["$gabriel_2_logic"]
+					},
+					{
+						"name": "Enemy: Providence",
+						"visibility_rules": ["enemyall"],
+						"access_rules": ["$providence_logic"]
+					},
+					{
+						"name": "Enemy: Power",
+						"visibility_rules": ["enemyall"],
+						"access_rules": ["$power_logic"]
 					},
 					{
 						"name": "Boss: Flesh Prison",

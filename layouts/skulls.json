@@ -21,7 +21,8 @@
 								"1_1_bskull",
 								"1_2_bskull",
 								"1_3_bskull",
-								"1_4_bskull"
+								"1_4_bskull",
+								"2_3_bskull"
 							],
 							[
 								"",
@@ -29,48 +30,56 @@
 								"1_1_rskull",
 								"1_2_rskull",
 								"1_3_rskull",
-								""
+								"",
+								"2_3_rskull"
 							],
 							[
-								"2_3_bskull",
+								
 								"2_4_bskull",
 								"4_2_bskull",
 								"4_3_bskull",
 								"4_4_bskull",
-								"5_1_bskull"
+								"5_1_bskull",
+								"5_2_bskull",
+								"5_3_bskull"
 							],
 							[
-								"2_3_rskull",
 								"2_4_rskull",
 								"4_2_rskull",
 								"",
 								"",
 								"",
+								"5_2_rskull",
+								"5_3_rskull"
 							],
 							[
-								"5_2_bskull",
-								"5_3_bskull",
 								"6_1_rskull",
 								"7_1_bskull",
 								"7_2_rskull",
-								"7_s_bskull"
+								"7_s_bskull",
+								"8_1_bskull",
+								"8_2_bskull",
+								"8_3_bskull"
 							],
 							[
-								"5_2_rskull",
-								"5_3_rskull",
 								"",
 								"7_1_rskull",
 								"",
-								"7_s_rskull"
+								"7_s_rskull",
+								"8_1_rskull",
+								"8_2_rskull",
+								"8_3_rskull"
 							],
 							[
+								"8_4_bskull",
 								"0_e_bskull",
 								"1_e_bskull",
 								"p_2_bskull"
 							],
 							[
+								"8_4_rskull",
 								"0_e_rskull",
-								"1_e_rskull",
+								"1_e_rskull"
 							]
 						]
 					}

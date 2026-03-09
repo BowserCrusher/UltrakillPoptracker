@@ -408,6 +408,12 @@ function can_break_idol_em()
 	)
 end
 
+function non_explosive_ranged_weapon()
+	return(
+		has_rev() or (has_shoany2_fire2() and has("arm1") or has_nai() or has("rai0") or has("rai1") or has_rock1_fire2() or has_rock2_fire2())
+	)
+end
+
 function jump_gen()
 	return(
 		has("slam") or has_rock() or has_shostd_fire2() or has_shoalt() or pro_boost() or has("rai2")
@@ -486,9 +492,15 @@ function jump_gen2()
 	)
 end
 
+function jump_gen3()
+	return ( 
+		jump_gen() or wall_jump3()
+	)
+end
+
 function good_weaponW()
 	return (
-		has_rev() or has_shoany_fire2() or has_naistd2() or pro_boost()
+		has_rev() or has_shostd_fire2() or has_naistd2() or pro_boost()
 	)
 end
 
@@ -539,7 +551,7 @@ function challenge_0_3()
 		can_break_far_glass() and (
 			slam_storage() or
 			has_shoalt0_fire2() or
-			has_shoany1_fire2() or 
+			has_shostd1_fire2() or 
 			(has_shostd0_fire2() and wall_jump2()) or
 			rocket_ride() or
 			has("rai2")
@@ -555,7 +567,7 @@ end
 
 function switch_1_1()
 	return(
-		has("slam") or has_rock() or has_shoany_fire2() or pro_boost() or has("rai2")
+		has("slam") or has_rock() or has_shoany0_fire2() or has_shostd1_fire2() or pro_boost() or has("rai2")
 	)
 end
 
@@ -586,7 +598,7 @@ end
 function secret3_2_1()
 	return(
 		exit_2_1() and (
-			has_shoalt0_fire2() or has_shoalt1_fire2() or has("rai2") or rocket_ride()
+			has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2") or rocket_ride()
 		)
 	)
 end
@@ -608,7 +620,7 @@ function challenge_2_1()
 	return (
 		can_break_wall() and (
 			rocket_ride() or slam_storage() or (
-				wall_jump3() and dash2() and (has_shoalt0_fire2() or has_shoany1_fire2() or has("rai2"))
+				wall_jump3() and dash2() and (has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2"))
 			)
 		)
 	)
@@ -636,7 +648,7 @@ end
 
 function secret4_4_1()
 	return(
-		slam_storage() or rocket_ride() or has_shoalt0_fire2() or has_shoany1_fire2() or has("rai2")
+		slam_storage() or rocket_ride() or has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2")
 	)
 end
 
@@ -649,14 +661,14 @@ end
 function challenge_4_1()
 	return(
 		rocket_ride() or (slam_storage() and can_break_wall()) or 
-		((has("rai2") or has_shoany1_fire2() or has_shoalt0_fire2()) and (wall_jump1() or has("slam")))
+		((has("rai2") or has_shostd1_fire2() or has_shoalt0_fire2()) and (wall_jump1() or has("slam")))
 	)
 end
 
 function secret_exit_4_2()
 	return (
 		has_fist() and (
-			has("slam") or wall_jump3() or has_rock() or has_shoany0_fire2() or has_shoany1_fire2() or pro_boost() or has("rai2") or has_rev2_fire2() or (has_shoalt() and wall_jump2())
+			has("slam") or wall_jump3() or has_rock() or has_shoany0_fire2() or has_shostd1_fire2() or pro_boost() or has("rai2") or has_rev2_fire2() or (has_shoalt() and wall_jump2())
 		)
 	)
 end
@@ -703,13 +715,63 @@ end
 
 function challenge_6_1()
 	return(
-		has_shoany0_fire2() or has_shoany1_fire2() or pro_boost() or has("rai2") or rocket_ride()
+		has_shoany0_fire2() or has_shostd1_fire2() or pro_boost() or has("rai2") or rocket_ride()
 	)
 end
 
 function level_6_2()
 	return(
-		has("slam") or slam_storage() or wall_jump2() or has_shoalt0_fire2() or has_shoany1_fire2() or has("rai2") or rocket_ride()
+		has("slam") or slam_storage() or wall_jump2() or has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2") or rocket_ride()
+	)
+end
+
+function secret_exit_7_3()
+	return(
+		good_weapon() and can_break_idol() and (has("arm2") or wall_jump3() or (wall_jump2() and dash()) or (has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2")))
+	)
+end
+
+function secret2_8_1()
+	return (
+		good_weapon() and has_fist() and has("8_1_bskull") and has("8_1_rskull") and (has("arm2") or has_rock0_fire2() or slam_storage()) 
+	)
+end
+
+function exit_8_1()
+	return(
+		good_weapon() and has_fist() and has("8_1_bskull") and has("8_1_rskull") and can_break_glass() and 
+		(has("arm2") or rocket_ride() or dash3() or (dash2() and wall_jump1()) or has_shoany0_fire2() or has_shostd1_fire2() or has("rai2") or (has_rock() and dash1()))
+	)
+end
+
+function secret5_8_1()
+	return(
+		exit_8_1() and (has_rock() or has_shoany0_fire2() or has_shostd1_fire2() or has("rai2") or dash2())
+	)
+end
+
+function secret4_8_2()
+	return(
+		has_fist() and has("8_2_bskull") and jump_gen3() and (has("arm2") or non_explosive_ranged_weapon()) and good_weapon() and can_break_idol()
+	)
+end
+
+function challenge_8_2()
+	return(
+		secret4_8_2() and has("8_2_rskull") and can_break_glass() and 
+		(wall_jump2() or slam_storage() or has_shoany0_fire2() or has_shostd1_fire2() or pro_boost() or has("rai2") or has_rock())
+	)
+end
+
+function exit_8_3()
+	return(
+		good_weapon() and has_fist() and (has("slide") and has("8_3_bskull") and has("8_3_rskull") and (dash1() or wall_jump3() or has_shoalt() or has_rock()))
+	)
+end
+
+function challenge_8_4()
+	return(
+		good_weapon() and dash2() and (wall_jump3() and has_rock() or slam_storage() or has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2") or has_rock0_fire2()) and (has("arm0") or has("arm2"))
 	)
 end
 
@@ -748,7 +810,8 @@ function filth_logic()
 		has("4_1_access") or has("4_2_access") or (has("4_3_access") and level_4_3()) or has("l4_access") or
 		(has("5_1_access") and level_5_1()) or (has("5_2_access") and (has("slam") or dash1() or has_rock())) or has("5_3_access") or has("l5_access") or
 		has("6_1_access") or has("l6_access") or
-		has("7_3_access") or (has("7_4_access") and has("slide") and (has("arm2") or slam_storage() or rocket_ride()) and good_weapon()) or has("l7_access") or
+		has("7_3_access") or (has("7_s_access") and jump_gen2()) or (has("7_4_access") and has("slide") and (has("arm2") or slam_storage() or rocket_ride()) and good_weapon()) or has("l7_access") or
+		(has("8_1_access") and good_weapon()) or (has("8_2_access") and has_fist() and has("8_2_bskull") and jump_gen3() and (has("arm2") or non_explosive_ranged_weapon()) and good_weapon()) or has("8_3_access") or has("l8_access") or 
 		(has("0_e_access") and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_glass() and has("slide") and dash3() and has("0_e_rskull") and has("0_e_bskull"))
 	)
 end
@@ -762,7 +825,8 @@ function stray_logic()
 		has("4_1_access") or has("4_2_access") or (has("4_3_access") and level_4_3()) or has("l4_access") or
 		(has("5_1_access") and level_5_1()) or (has("5_2_access") and can_punch() and (has("slam") or dash1() or has_rock())) or has("5_3_access") or has("l5_access") or
 		has("6_1_access") or has("l6_access") or
-		(has("7_1_access") and has_fist() and has("7_1_bskull") and has("7_1_rskull")) or has("7_3_access") or (has("7_4_access") and has("slide") and (has("arm2") or slam_storage() or rocket_ride()) and good_weapon()) or has("l7_access")
+		(has("7_1_access") and has_fist() and has("7_1_bskull") and has("7_1_rskull")) or has("7_3_access") or (has("7_4_access") and has("slide") and (has("arm2") or slam_storage() or rocket_ride()) and good_weapon()) or has("l7_access") or
+		(has("8_2_access") and has_fist() and has("8_2_bskull") and jump_gen1() and (has("arm2") or non_explosive_ranged_weapon()) and good_weapon()) or has("8_3_access") or has("l8_access")
 	)
 end
 
@@ -776,6 +840,7 @@ function schism_logic()
 		(has("5_1_access") and level_5_1() and has_5_1_skull()) or has("5_2_access") or has("5_3_access") or has("l5_access") or
 		has("6_1_access") or has("l6_access") or
 		(has("7_1_access") and has_fist() and has("7_1_bskull") and has("7_1_rskull")) or has("7_3_access") or (has("7_4_access") and has("slide") and (has("arm2") or slam_storage() or rocket_ride()) and good_weapon()) or has("l7_access") or
+		(has("8_1_access") and good_weapon()) or (has("8_2_access") and has_fist() and has("8_2_bskull") and jump_gen1() and (has("arm2") or non_explosive_ranged_weapon()) and good_weapon()) or has("8_3_access") or has("l8_access") or 
 		(has("0_e_access") and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_glass()) or
 		(has("1_e_access") and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3()) or
 		(has("p_2_access") and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and has("slide") and dash3())
@@ -790,6 +855,7 @@ function soldier_logic()
 		(has("5_1_access") and level_5_1()) or (has("5_2_access") and (has("slam") or dash1() or has_rock())) or has("5_3_access") or has("l5_access") or
 		has("6_1_access") or has("l6_access") or
 		(has("7_1_access") and has_fist() and has("7_1_bskull") and has("7_1_rskull")) or (has("7_2_access") and has("arm2")) or has("7_3_access") or (has("7_4_access") and has("slide") and (has("arm2") or slam_storage() or rocket_ride())) or has("l7_access") or
+		(has("8_1_access") and good_weapon()) or (has("8_2_access") and has_fist() and has("8_2_bskull") and (jump_gen1() or has("arm2") or non_explosive_ranged_weapon()) and good_weapon()) or has("8_3_access") or has("l8_access") or 
 		((has("0_e_access") or has("l0_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_glass())
 	)
 end
@@ -805,6 +871,7 @@ function stalker_logic()
 		has("4_2_access") or (has("4_3_access") and level_4_3()) or has("l4_access") or
 		((has("5_2_access") or has("l5_access")) and (has("slam") or dash1() or has_rock())) or 
 		((has("7_2_access") or has("l7_access")) and has("arm2")) or
+		((has("8_3_access") or has("l8_access")) and good_weapon() and has("slide")) or 
 		((has("0_e_access") or has("l0_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_glass() and has("slide")) or
 		((has("1_e_access") or has("l1_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_wall() and has("slide") and dash2() and has("1_e_bskull") and has("1_e_rskull")) or
 		((has("p_2_access") or has("l6_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and has("slide") and dash3() and has("p_2_bskull"))
@@ -816,6 +883,7 @@ function insurrectionist_logic()
 		((has("4_2_access") or has("l4_access")) and has_fist() and has("4_2_bskull") and has("4_2_rskull")) or
 		((has("6_1_access") or has("l6_access")) and has_fist() and has("6_1_rskull")) or
 		((has("7_2_access") or has("l7_access")) and has("arm2")) or
+		((has("8_2_access") or has("l8_access")) and has_fist() and has("8_2_bskull") and jump_gen3() and (has("arm2") or non_explosive_ranged_weapon()) and good_weapon() and can_break_idol()) or 
 		((has("p_2_access") or has("l6_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and has("slide") and dash3() and has("p_2_bskull"))
 	)
 end
@@ -823,7 +891,14 @@ end
 function ferryman_logic()
 	return (
 		((has("5_2_access") or has("l5_access")) and (has("slam") or dash1() or has_rock()) and has_fist() and has("5_2_bskull") and (has("5_2_rskull") or slam_storage() or rocket_ride()) and can_break_idol()) or
+		((has("8_3_access") or has("l8_access")) and good_weapon() and has_fist() and has("slide") and has("8_3_bskull") and has("8_3_rskull") and (dash1() or wall_jump3() or has_shoalt() or has_rock())) or 
 		((has("p_2_access") or has("l6_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and has("slide") and dash3())
+	)
+end
+
+function mirror_reaper_logic()
+	return(
+		((has("8_2_access") or has("l8_access")) and has_fist() and has("8_2_bskull") and has("8_2_rskull") and jump_gen3() and (has("arm2") or non_explosive_ranged_weapon()) and good_weapon() and can_break_idol() and can_break_glass()) 
 	)
 end
 
@@ -832,7 +907,8 @@ function swordsmachine_logic()
 		((has("0_2_access") or has("l0_access")) and has("slide") and good_weapon()) or ((has("0_3_access") or has("l0_access")) and (can_break_wall() or challenge_0_3()) and good_weapon()) or
 		((has("1_3_access") or has("l1_access")) and has_fist() and has("1_3_bskull") and has("1_3_rskull") and good_weapon()) or
 		has("6_1_access") or has("l6_access") or
-		(has("7_2_access") and has("arm2")) or has("7_3_access") or
+		(has("7_2_access") and has("arm2")) or has("7_3_access") or has("7_s_access") or has("l7_access") or
+		((has("8_1_access") or has("8_3_access") or has("l8_access")) and good_weapon()) or (has("8_2_access") and has_fist() and has("8_2_bskull") and jump_gen3() and (has("arm2") or non_explosive_ranged_weapon()) and good_weapon()) or
 		((has("0_e_access") or has("l0_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_glass()) or
 		((has("1_e_access") or has("l1_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3()) or
 		(has("p_2_access") and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and has("slide") and dash3())
@@ -847,7 +923,8 @@ function drone_logic()
 		has("4_1_access") or has("4_2_access") or (has("4_3_access") and level_4_3()) or has("l4_access") or
 		(has("5_1_access") and level_5_1()) or has("5_2_access") or has("5_3_access") or has("l5_access") or
 		((has("7_1_access") or has("l7_access")) and has_fist() and has("7_1_bskull") and has("7_1_rskull")) or 
-		((has("7_3_access") or has("l7_access")) and (has("arm2") or wall_jump3() or (wall_jump2() or dash1()) or (has_shoalt0_fire2() or has_shoany1_fire2() or has("rai2"))) and has_fist() and has("7_s_rskull")) or
+		(((has("7_3_access") and has("smunlock")) or has("7_s_access") or has("l7_access")) and (has("arm2") or wall_jump3() or (wall_jump2() or dash1()) or (has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2"))) and has_fist() and has("7_s_rskull")) or
+		(has("8_1_access") and good_weapon() and has_fist() and has("8_1_bskull") and has("8_1_rskull")) or (has("8_2_access") and has_fist() and has("8_2_bskull") and jump_gen1() and (has("arm2") or non_explosive_ranged_weapon()) and good_weapon()) or has("8_3_access") or has("l8_access") or
 		((has("0_e_access") or has("l0_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_glass()) or
 		((has("1_e_access") or has("l1_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3())
 	)
@@ -862,6 +939,7 @@ function streetcleaner_logic()
 		(has("5_1_access") and level_5_1()) or (has("5_2_access") and can_break_idol() and (has("slam") or dash1() or has_rock())) or has("5_3_access") or has("l5_access") or
 		((has("6_1_access") or has("l6_access")) and has_fist() and has("6_1_rskull")) or
 		(has("7_1_access") and has_fist() and has("7_1_bskull") and has("7_1_rskull")) or has("7_3_access") or (has("7_4_access") and has("slide") and (has("arm2") or slam_storage() or rocket_ride())) or has("l7_access") or
+		(has("8_2_access") and has_fist() and has("8_2_bskull") and jump_gen3() and (has("arm2") or non_explosive_ranged_weapon()) and good_weapon() and can_break_idol()) or has("8_3_access") or has("l8_access") or
 		((has("0_e_access") or has("l0_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_glass()) or
 		(has("1_e_access") and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3()) or
 		((has("p_2_access") or has("l6_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and has("slide") and dash3())
@@ -880,7 +958,8 @@ function mindflayer_logic()
 		has("3_1_access") or has("l3_access") or
 		(has("5_1_access") and level_5_1()) or has("5_3_access") or has("l5_access") or
 		((has("6_1_access") or has("l6_access")) and has_fist() and has("6_1_rskull") and jump_gen1()) or
-		(has("7_1_access") and has_fist() and has("7_1_bskull") and has("7_1_rskull")) or has("7_3_access") or has("l7_access") or
+		(has("7_1_access") and has_fist() and has("7_1_bskull") and has("7_1_rskull")) or has("7_3_access") or (has("7_s_access") and (has("arm2") or wall_jump3() or (wall_jump2() and dash1()) or (has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2"))) and has_fist() and has("7_s_rskull") and can_break_idol()) or has("l7_access") or
+		((has("8_2_access") or has("l8_access")) and has_fist() and has("8_2_bskull") and jump_gen3() and (has("arm2") or non_explosive_ranged_weapon()) and good_weapon() and can_break_idol()) or 
 		((has("0_e_access") or has("l0_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_glass() and has("slide") and dash3() and has("0_e_rskull") and has("0_e_bskull")) or
 		((has("1_e_access") or has("l1_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3()) or
 		((has("p_2_access") or has("l6_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and has("slide") and dash3())
@@ -897,7 +976,8 @@ function sentry_logic()
 	return (
 		(has("5_1_access") and level_5_1() and has_fist() and has_5_1_skull()) or has("5_2_access") or has("5_3_access") or has("l5_access") or
 		has("6_1_access") or has("l6_access") or
-		(has("7_2_access") and has("arm2")) or has("7_3_access") or (has("7_4_access") and has("slide") and (has("arm2") or slam_storage() or rocket_ride())) or has("l7_access") or
+		(has("7_2_access") and has("arm2")) or has("7_3_access") or (has("7_s_access") and (has("arm2") or wall_jump3() or (wall_jump2() and dash1()) or (has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2"))) and has_fist() and has("7_s_rskull") and can_break_idol()) or (has("7_4_access") and has("slide") and (has("arm2") or slam_storage() or rocket_ride())) or has("l7_access") or
+		((has("8_1_access") or has("8_3_access") or has("l8_access")) and good_weapon()) or (has("8_2_access") and has_fist() and has("8_2_bskull") and jump_gen3() and (has("arm2") or non_explosive_ranged_weapon()) and good_weapon() and can_break_idol()) or
 		((has("0_e_access") or has("l0_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_glass()) or
 		((has("1_e_access") or has("l1_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3()) or
 		(has("p_2_access") and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and has("slide") and dash3())
@@ -906,7 +986,8 @@ end
 
 function gutterman_logic()
 	return (
-		(has("7_2_access") and has("arm2")) or has("7_3_access") or (has("7_4_access") and has("slide") and (has("arm2") or slam_storage() or rocket_ride())) or has("l7_access") or
+		(has("7_2_access") and has("arm2")) or has("7_3_access") or (has("7_s_access") and (has("arm2") or wall_jump3() or (wall_jump2() and dash1()) or (has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2"))) and has_fist() and has("7_s_rskull") and can_break_idol()) or (has("7_4_access") and has("slide") and (has("arm2") or slam_storage() or rocket_ride())) or has("l7_access") or
+		has("8_1_access") or (has("8_2_access") and has_fist() and has("8_2_bskull") and jump_gen3() and (has("arm2") or non_explosive_ranged_weapon()) and good_weapon() and can_break_idol()) or (has("8_3_access") and good_weapon()) or has("l8_access") or
 		((has("0_e_access") or has("l0_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_glass()) or
 		((has("1_e_access") or has("l1_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3())
 	)
@@ -915,6 +996,7 @@ end
 function guttertank_logic()
 	return (
 		(has("7_2_access") and has("arm2")) or has("7_3_access") or (has("7_4_access") and has("slide") and (has("arm2") or slam_storage() or rocket_ride())) or has("l7_access") or
+		((has("8_1_access") or has("8_3_access") or has("l8_access")) and good_weapon()) or (has("8_2_access") and has_fist() and has("8_2_bskull")) or
 		((has("0_e_access") or has("l0_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_glass()) or
 		((has("1_e_access") or has("l1_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3())
 	)
@@ -922,7 +1004,7 @@ end
 
 function earthmover_logic()
 	return (
-		((has("7_4_access") or has("l7_access")) and has("slide") and (has("arm2") or slam_storage() or rocket_ride()) and good_weapon())
+		((has("7_4_access") or has("l7_access")) and has("slide") and (has("arm2") or slam_storage() or rocket_ride()) and (can_punch() or has_shoalt()) and good_weapon())
 	)
 end
 
@@ -935,7 +1017,8 @@ function malicious_face_logic()
 		has("4_1_access") or has("4_2_access") or (has("4_3_access") and level_4_3()) or has("l4_access") or
 		(has("5_1_access") and level_5_1()) or (has("5_2_access") and (has("slam") or dash1() or has_rock())) or has("5_3_access") or has("l5_access") or
 		has("6_1_access") or has("l6_access") or
-		(has("7_1_access") and has_fist() and has("7_1_bskull") and has("7_1_rskull")) or has("7_3_access") or (has("7_4_access") and has("slide") and (has("arm2") or slam_storage() or rocket_ride())) or has("l7_access") or
+		(has("7_1_access") and has_fist() and has("7_1_bskull") and has("7_1_rskull")) or has("7_3_access") or (has("7_s_access") and (has("arm2") or wall_jump3() or (wall_jump2() and dash1()) or (has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2"))) and has_fist() and has("7_s_rskull") and can_break_idol()) or (has("7_4_access") and has("slide") and (has("arm2") or slam_storage() or rocket_ride())) or has("l7_access") or
+		has("8_1_access") or (has("8_2_access") and has_fist() and has("8_2_bskull") and jump_gen1() and (has("arm2") or non_explosive_ranged_weapon())) or has("8_3_access") or has("l8_access") or 
 		(has("0_e_access") and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_glass()) or
 		(has("1_e_access") and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3()) or
 		(has("p_2_access") and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and has("slide") and dash3())
@@ -951,7 +1034,8 @@ function cerberus_logic()
 		has("4_1_access") or has("4_2_access") or (has("4_3_access") and level_4_3()) or has("l4_access") or
 		(has("5_1_access") and level_5_1()) or (has("5_2_access") and can_break_idol() and (has("slam") or dash1() or has_rock())) or has("5_3_access") or has("l5_access") or
 		((has("6_1_access") or has("l6_access")) and has_fist() and has("6_1_rskull")) or
-		(has("7_1_access") and has_fist() and has("7_1_bskull") and has("7_1_rskull")) or (has("7_2_access") and has("arm2")) or has("7_3_access") or has("l7_access") or
+		(has("7_1_access") and has_fist() and has("7_1_bskull") and has("7_1_rskull")) or (has("7_2_access") and has("arm2")) or has("7_3_access") or (has("7_s_access") and jump_gen2()) or has("l7_access") or
+		((has("8_1_access") or has("8_3_access") or has("l8_access")) and good_weapon()) or (has("8_2_access") and has_fist() and has("8_2_bskull") and jump_gen3() and (has("arm2") or non_explosive_ranged_weapon()) and good_weapon()) or
 		has("0_e_access") or (has("1_e_access") and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_wall() and dash2() and has("1_e_rskull")) or
 		((has("p_2_access") or has("l6_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and has("slide") and dash3())
 	)
@@ -961,7 +1045,8 @@ function hideous_mass_logic()
 	return (
 		((has("1_3_access") or has("l1_access")) and has_fist() and (has("1_3_bskull") or has("1_3_rskull")) and good_weapon()) or
 		((has("6_1_access") or has("l6_access")) and has_fist() and has("6_1_rskull") and can_break_idol()) or
-		has("7_3_access") or has("l7_access") or
+		has("7_3_access") or (has("7_s_access") and (arm2() or wall_jump3() or (wall_jump2() and dash1()) or (has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2"))) and has_fist() and has("7_s_rskull") and can_break_idol()) or has("l7_access") or
+		((has("8_3_access") or has("l8_access")) and good_weapon()) or 
 		((has("1_e_access") or has("l1_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_wall() and has("slide") and dash2() and has("1_e_bskull") and has("1_e_rskull")) or
 		((has("p_2_access") or has("l6_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and has("slide") and dash3() and has("p_2_bskull"))
 	)
@@ -972,8 +1057,9 @@ function idol_logic()
 		can_break_idol() and (
 			((has("5_2_access") or has("l5_access")) and (has("slam") or dash1() or has_rock())) or ((has("5_3_access") or has("l5_access")) and has_fist() and (has("5_3_bskull") or has("5_3_rskull")) and can_break_idol()) or
 			((has("6_1_access") or has("l6_access")) and has_fist() and has("6_1_rskull")) or
-			((has("7_3_access") or has("l7_access")) and (has("arm2") or wall_jump3() or (wall_jump2() or dash1()) or (has_shoalt0_fire2() or has_shoany1_fire2() or has("rai2"))) and has_fist() and has("7_s_rskull")) or
+			(((has("7_3_access") and has("smunlock")) or has("7_s_access") or has("l7_access")) and (has("arm2") or wall_jump3() or (wall_jump2() or dash1()) or (has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2"))) and has_fist() and has("7_s_rskull")) or
 			((has("7_4_access") or has("l7_access")) and has("slide") and (has("arm2") or slam_storage() or rocket_ride()) and good_weapon()) or 
+			((has("8_3_access") or has("l8_access")) and (good_weapon() and has_fist() and (has("slide") and has("8_3_rskull") or (dash1() or wall_jump3() or has_shoalt() or has_rock()) and has("8_3_bskull")))) or
 			((has("0_e_access") or has("l0_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_glass() and has("slide")) or
 			((has("1_e_access") or has("l1_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_wall() and has("slide") and dash2() and has("1_e_bskull") and has("1_e_rskull")) or
 			((has("p_2_access") or has("l6_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and has("slide") and dash3())
@@ -989,9 +1075,24 @@ end
 
 function mannequin_logic()
 	return (
-		(has("7_1_access") and has_fist() and has("7_1_rskull")) or (has("7_2_access") and has("arm2")) or has("7_3_access") and ((has("7_4_access") or has("l7_access")) and has("slide") and (has("arm2") or slam_storage() or rocket_ride())) or has("l7_access") or
+		(has("7_1_access") and has_fist() and has("7_1_rskull")) or (has("7_2_access") and has("arm2")) or has("7_3_access")  or has("7_s_access") or ((has("7_4_access") or has("l7_access")) and has("slide") and (has("arm2") or slam_storage() or rocket_ride())) or has("l7_access") or
+		(has"8_1_access") and (good_weapon() and has_fist() and has("8_1_bskull") and has("8_1_rskull") and can_break_glass()) or (has("8_2_access") and has_fist() and has("8_2_bskull") and has("8_2_rskull") and jump_gen3() and (has("arm2") or non_explosive_ranged_weapon()) and good_weapon() and can_break_idol()) or ((has("8_3_access") or has("l8_access")) and good_weapon()) or
 		(has("0_e_access") and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_glass()) or
 		(has("1_e_access") and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_wall() and dash2() and has("1_e_rskull"))
+	)
+end
+
+function deathcatcher_logic()
+	return(
+		can_break_idol() and (
+			((has("8_2_access") or has("l8_access")) and has_fist() and has("8_2_bskull") and jump_gen3() and (has("arm2") or non_explosive_ranged_weapon()) and good_weapon()) or ((has("8_3_access") or has("l8_access")) and good_weapon() and (dash1() or wall_jump3() or has_shoalt() or has_rock())) 
+		)
+	)
+end
+
+function geryon_logic()
+	return(
+		(has("8_4_access") or has("l8_access")) and good_weapon() and dash2() and (has_fist() and has("8_4_bskull") and has("8_4_rskull") or wall_jump3() and has_rock() or slam_storage() or has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2") or has_rock0_fire2())
 	)
 end
 
@@ -1012,7 +1113,9 @@ function virtue_logic()
 		has("4_1_access") or has("4_2_access") or (has("4_3_access") and level_4_3()) or has("l4_access") or
 		(has("5_1_access") and level_5_1()) or (has("5_2_access") and (has("slam") or dash1() or has_rock())) or has("5_3_access") or has("l5_access") or
 		has("6_1_access") or has("l6_access") or
-		(has("7_1_access") and has_fist() and has("7_1_rskull")) or has("7_3_access") or has("l7_access") or
+		(has("7_1_access") and has_fist() and has("7_1_rskull")) or has("7_3_access") or (has("7_s_access") and (has("arm2") or wall_jump3() or (wall_jump2() and dash1()) or (has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2"))) and has_fist() and has("7_s_rskull") and can_break_idol()) or has("l7_access") or
+		((has("8_1_access") or has("l8_access")) and good_weapon()) or (has("8_2_access") and has_fist() and has("8_2_bskull") and jump_gen3() and (has("arm2") or non_explosive_ranged_weapon()) and good_weapon() and can_break_idol()) or 
+		(has("8_3_access") and good_weapon() and has("slide")) or (has("8_4_access") and good_weapon() and dash2() and (has_fist() and has("8_4_bskull") and has("8_4_rskull") or wall_jump3() and has_rock() or slam_storage() or has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2") or has_rock0_fire2())) or
 		(has("0_e_access") and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_glass()) or
 		(has("1_e_access") and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3()) or
 		((has("p_2_access") or has("l6_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and has("slide") and dash3())
@@ -1021,7 +1124,20 @@ end
 
 function gabriel_2_logic()
 	return (
-		((has("6_2_access") or has("l6_access")) and (has("slam") or slam_storage() or wall_jump1() or has_shoalt0_fire2() or has_shoany1_fire2() or has("rai2") or rocket_ride()) and good_weapon())
+		((has("6_2_access") or has("l6_access")) and (has("slam") or slam_storage() or wall_jump1() or has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2") or rocket_ride()) and good_weapon())
+	)
+end
+
+function providence_logic()
+	return(
+		has("8_1_access") or (has("8_2_access") and has_fist() and has("8_2_bskull") and jump_gen1() and (has("arm2") or non_explosive_ranged_weapon()) and good_weapon()) or has("8_3_access") or 
+		(has("8_4_access") and good_weapon() and dash2() and (has_fist() and has("8_4_bskull") and has("8_4_rskull") or wall_jump3() and has_rock() or slam_storage() or has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2") or has_rock0_fire2())) or has("l8_access")
+	)
+end
+
+function power_logic()
+	return(
+		((has("8_3_access") or has("l8_access")) and good_weapon())
 	)
 end
 
