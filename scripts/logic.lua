@@ -765,7 +765,7 @@ end
 
 function exit_8_3()
 	return(
-		good_weapon() and has_fist() and (has("slide") and has("8_3_bskull") and has("8_3_rskull") and (dash1() or wall_jump3() or has_shoalt() or has_rock()))
+		good_weapon() and has_fist() and (has("slide") and has("8_3_bskull") and has("8_3_rskull") and (dash1() or wall_jump3() or has_shoalt() or has_rock()) and has("arm2"))
 	)
 end
 
@@ -883,6 +883,7 @@ function insurrectionist_logic()
 		((has("4_2_access") or has("l4_access")) and has_fist() and has("4_2_bskull") and has("4_2_rskull")) or
 		((has("6_1_access") or has("l6_access")) and has_fist() and has("6_1_rskull")) or
 		((has("7_2_access") or has("l7_access")) and has("arm2")) or
+		((has("8_1_access") or has("l8_access")) and good_weapon() and has_fist() and has("8_1_bskull") and has("8_1_rskull") and can_break_glass() and (has("arm2") or rocket_ride() or dash3() or (dash2() and wall_jump1()) or has_shoany0_fire2() or has_shostd1_fire2() or has("rai2") or (has_rock() and dash1()))) or 
 		((has("8_2_access") or has("l8_access")) and has_fist() and has("8_2_bskull") and jump_gen3() and (has("arm2") or non_explosive_ranged_weapon()) and good_weapon() and can_break_idol()) or 
 		((has("p_2_access") or has("l6_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and has("slide") and dash3() and has("p_2_bskull"))
 	)
