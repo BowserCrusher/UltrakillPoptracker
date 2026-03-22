@@ -2,6 +2,15 @@
 	"versions": [
 	{
 		{
+			"package_version": "0.7.2",
+			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.7.2/UltrakillPoptracker.zip",
+			"sha256": "0F96900B8A832B4FD3539CC1F747DEF957AF13A766C402BED154984B09035AB6",
+			"changelog": [
+				"Fixed minor item/location mapping",
+				"Updated 8-3 Ferryman and Idol logic"
+			]
+		},
+		{
 			"package_version": "0.7.1",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.7.1/UltrakillPoptracker.zip",
 			"sha256": "C650A39AF1A405D1ED02BD0A725CE7FA90D5E2D25F557200F874EF0318A58EE9",
