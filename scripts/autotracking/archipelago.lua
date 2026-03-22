@@ -218,6 +218,14 @@ function updateSettings(slot_data)
 		Tracker:FindObjectForCode("7_2_rskull").Active = true
 		Tracker:FindObjectForCode("7_s_bskull").Active = true
 		Tracker:FindObjectForCode("7_s_rskull").Active = true
+		Tracker:FindObjectForCode("8_1_bskull").Active = true
+        Tracker:FindObjectForCode("8_1_rskull").Active = true
+        Tracker:FindObjectForCode("8_2_rskull").Active = true
+		Tracker:FindObjectForCode("8_2_bskull").Active = true
+		Tracker:FindObjectForCode("8_3_bskull").Active = true
+		Tracker:FindObjectForCode("8_3_rskull").Active = true
+        Tracker:FindObjectForCode("8_4_bskull").Active = true
+		Tracker:FindObjectForCode("8_4_rskull").Active = true
 		Tracker:FindObjectForCode("0_e_bskull").Active = true
 		Tracker:FindObjectForCode("0_e_rskull").Active = true
 		Tracker:FindObjectForCode("1_e_bskull").Active = true

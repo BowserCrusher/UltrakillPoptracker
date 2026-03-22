@@ -892,7 +892,7 @@ end
 function ferryman_logic()
 	return (
 		((has("5_2_access") or has("l5_access")) and (has("slam") or dash1() or has_rock()) and has_fist() and has("5_2_bskull") and (has("5_2_rskull") or slam_storage() or rocket_ride()) and can_break_idol()) or
-		((has("8_3_access") or has("l8_access")) and good_weapon() and has_fist() and has("slide") and has("8_3_bskull") and has("8_3_rskull") and (dash1() or wall_jump3() or has_shoalt() or has_rock())) or 
+		((has("8_3_access") or has("l8_access")) and good_weapon() and has_fist() and has("slide") and has("8_3_bskull") and has("8_3_rskull") and (dash1() or wall_jump3() or has_shoalt() or has_rock()) and has("arm2")) or 
 		((has("p_2_access") or has("l6_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and has("slide") and dash3())
 	)
 end
@@ -1060,7 +1060,7 @@ function idol_logic()
 			((has("6_1_access") or has("l6_access")) and has_fist() and has("6_1_rskull")) or
 			(((has("7_3_access") and has("smunlock")) or has("7_s_access") or has("l7_access")) and (has("arm2") or wall_jump3() or (wall_jump2() or dash1()) or (has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2"))) and has_fist() and has("7_s_rskull")) or
 			((has("7_4_access") or has("l7_access")) and has("slide") and (has("arm2") or slam_storage() or rocket_ride()) and good_weapon()) or 
-			((has("8_3_access") or has("l8_access")) and (good_weapon() and has_fist() and (has("slide") and has("8_3_rskull") or (dash1() or wall_jump3() or has_shoalt() or has_rock()) and has("8_3_bskull")))) or
+			((has("8_3_access") or has("l8_access")) and (good_weapon() and has_fist() and (has("slide") and has("8_3_rskull") or (dash1() or wall_jump3() or has_shoalt() or has_rock()) and has("8_3_bskull") and has("arm2")))) or
 			((has("0_e_access") or has("l0_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_glass() and has("slide")) or
 			((has("1_e_access") or has("l1_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_wall() and has("slide") and dash2() and has("1_e_bskull") and has("1_e_rskull")) or
 			((has("p_2_access") or has("l6_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and has("slide") and dash3())
