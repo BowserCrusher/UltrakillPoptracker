@@ -1,214 +1,67 @@
 {
-	"versions": [
-	{
-		{
-			"package_version": "0.7.2",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.7.2/UltrakillPoptracker.zip",
-			"sha256": "0F96900B8A832B4FD3539CC1F747DEF957AF13A766C402BED154984B09035AB6",
-			"changelog": [
-				"Fixed minor item/location mapping",
-				"Updated 8-3 Ferryman and Idol logic"
-			]
-		},
-		{
-			"package_version": "0.7.1",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.7.1/UltrakillPoptracker.zip",
-			"sha256": "C650A39AF1A405D1ED02BD0A725CE7FA90D5E2D25F557200F874EF0318A58EE9",
-			"changelog": [
-				"Added Insurrectionist Logic to 8-1",
-				"Updated 8-3 Blue Skull path logic"
-			]
-		},
-		{
-			"package_version": "0.7",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.7/UltrakillPoptracker.zip",
-			"sha256": "381611B7317E67BA72A658E966C1940917442806E0625A3F72EC3C91CBF34D6A",
-			"changelog": [
-				"Added Layer 8 Items and skulls",
-				"Added Layer 8 Locations",
-				"Added new enemies/updated enemy logic for Layer 8"
-			]
-		},
-		{
-			"package_version": "0.6.2",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.6.2/UltrakillPoptracker.zip",
-			"sha256": "267FB4EC742999A861F457E3265C20ACF4299CB7866D22108F78827FB2F20844",
-			"changelog": [
-				"Updated logic so coins cant break glass"
-			]
-		},
-		{
-			"package_version": "0.6.1",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.6.1/UltrakillPoptracker.zip",
-			"sha256": "D787519D555228620269B3FAD816CE3FC985F67F0B32142C1DCCB8E9123D349F",
-			"changelog": [
-				"Fixed autotracking"
-			]
-		},
-		{
-			"package_version": "0.6",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.6/UltrakillPoptracker.zip",
-			"sha256": "9AF4EB8D40501A672BB8E8418075D6D159D4E6EE373F7A5753EDA477F5E485D1",
-			"changelog": [
-				"New Secret Mission Access items" ,
-				"Updated logic to show whether Secret Missions are clearable with both Unlock Types",
-				"New locations added when Secret Exit Behavior is set to Add Rewards",
-				"Updated Level Cleared logic to change based on the Secret Exit Behavior option"
-			]
-		},
-		{
-			"package_version": "0.5.5",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.5.5/UltrakillPoptracker.zip",
-			"sha256": "EE54E9BA29337613EEAE5FD81D514591E52C270DEFB65DFBDFBB2630E658EFE6",
-			"changelog": [
-				"Changed Challenge in 4-3",
-				"Changed P Rank in 5-2"
-			]
-		},
-		{
-			"package_version": "0.5.4",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.5.4/UltrakillPoptracker.zip",
-			"sha256": "28477C8E56F6E86C14F9BA76E297408336FFC9ACEB0DD441CA81520E0F4E6415",
-			"changelog": [
-				"More logic fixes changed in APWorld"
-			]
-		},
-		{
-			"package_version": "0.5.3",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.5.3/UltrakillPoptracker.zip",
-			"sha256": "D4C5B95ED3C06787E8C5E4BA8793800DB828B1B9EBF2C003F7890D5CF1B1296E",
-			"changelog": [
-				"Logic fix with 4-3"
-			]
-		},
-		{
-			"package_version": "0.5.2",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.5.2/UltrakillPoptracker.zip",
-			"sha256": "38A9566ACEA0DC21BA25CA259D4AB0973C24667A5E07175C39B443276E1300ED",
-			"changelog": [
-				"Fixed progressive weapons not tracking correctly",
-				"Minor logic fix for 0-5 Goal"
-			]
-		},
-		{
-			"package_version": "0.5.1",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.5.1/UltrakillPoptracker.zip",
-			"sha256": "93AB5A31C2A7CBC14FB5A9D08B0D67CAC68DE2D8B4B6318974EBBE74D3775870",
-			"changelog": [
-				"Updated assets",
-				"Levels completed should autotrack",
-				"Perfect Goal option accounted for"
-			]
-		},
-		{
-			"package_version": "0.5",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.5/UltrakillPoptracker.zip",
-			"sha256": "B48FBB88F74D40E675D5E2022B2D20025A274AC1476FAA30501740B736336341",
-			"changelog": [
-				"Added Progressive weapons",
-				"New enemy checks",
-				"Minor logic updates"
-			]
-		},
-		{
-			"package_version": "0.4.4",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.4.4/UltrakillPoptracker.zip",
-			"sha256": "7c96789ddab893d7323c8278bd95b260db88f2cb9f49011d3c87a5d8c08af169",
-			"changelog": [
-				"Updated Encore level icons",
-				"Minor 0-3 bug fix"
-			]
-		},
-		{
-			"package_version": "0.4.3",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.4.3/UltrakillPoptracker.zip",
-			"sha256": "e7a1c7b949db7389f95b1639e4982198f8e29793a9278bf38e8c9d4b758429b1",
-			"changelog": [
-				"Minor logic updates"
-			]
-		},
-		{
-			"package_version": "0.4.2",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.4.2/UltrakillPoptracker.zip",
-			"sha256": "4a01cf4a3ce5801f69085d96d9d678aee57d5889f858c6ba332afd6175a4fb56",
-			"changelog": [
-				"Updated Encore and Prime Sanctum logic",
-				"Updated map image to use rework icons"
-			]
-		},
-		{
-			"package_version": "0.4.1",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.4.1/UltrakillPoptracker.zip",
-			"sha256": "ce69bb5df250580cd7b4555a92158bffc6d344e377771dd30527126293d4bd03",
-			"changelog": [
-				"Fixed logic errors"
-			]
-		},
-		{
-			"package_version": "0.4",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.4/UltrakillPoptracker.zip",
-			"sha256": "ac8aa0c6c8fe8e0c1c80a1d09f467856ed46f6c836ab74d4551c9cc34780591e",
-			"changelog": [
-				"Updated logic to work with revamp",
-				"Removed 2-1 as starting level option",
-				"Added Encore access items, skulls, goal level options, and locations",
-				"Updated map image"
-			]
-		},
-		{
-			"package_version": "0.3.2",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.3.2/UltrakillPoptracker.zip",
-			"sha256": "106b24f2be20077408d387fa37636e25406faa71bb8857bc15994217ad85ff17",
-			"changelog": [
-				"All icons/keys updated to use in-game font",
-				"Start level is highlighted in the levels tab",
-				"Code rework for easier scaling"
-			]
-		},
-		{
-			"package_version": "0.3.1",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.3.1/UltrakillPoptracker.zip",
-			"sha256": "d1102c4963d09938b88f38639279f7f09532c10bba34d523e3f0e6569368069c",
-			"changelog": [
-				"Randomize Secondary Fire when set to false now gives all secondary fires instead of removing them",
-				"Start with arm, slide, and slam, when true now gives the items on tracker",
-				"Setting stamina and wall jumps to 3 should give each item in respective category"
-			]
-		},
-		{
-			"package_version": "0.3",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.3/UltrakillPoptracker.zip",
-			"sha256": "c2786d8bceae07cf67b94c336c574a7f9de1477859c010d759af9719b8fac7c6",
-			"changelog": [
-				"Added option to select starting level",
-				"More options added to goal level",
-				"New skull item and locations for Prime Sanctum P Ranks",
-				"Some logic rewrites"
-			]
-		},
-		{
-			"package_version": "0.2.1",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.2.1/UltrakillPoptracker.zip",
-			"sha256": "398e19fe427d235e0301c16eff37c4a3cffb97db460955222e587129e78c8e27",
-			"changelog": [
-				"Fixed an issue where the locations for 7-S with skull randomized not being tracked"
-			]
-		},
-		{
-			"package_version": "0.2",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.2/UltrakillPoptracker.zip",
-			"sha256": "6a0b3e762c7a00ac30964e21d254034d5ded51384fa164cb9d7fc0b06cf6b533",
-			"changelog": [
-				"Added Autotracking for starting weapon varient and settings"
-			]
-		},
-		{
-			"package_version": "0.1",
-			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.1.zip",
-			"sha256": "07bbc631d50b461c3b115f022d9fd04f85cf0cc6962bffc2aaca64bfff47b952",
-			"changelog": [
-				"Initial Release"
-			]
-		}
-	]
+    "versions": [
+        {
+            "package_version": "0.4-2 AP",
+            "download_url": "https://github.com/Fairweather-Furry/pt-fair/releases/download/v0.4-2/pt-fair.zip",
+            "sha256": "d88d5d70991625f1156adc1ca05f74451bb88b5681c7df2aca0b759506b6030a",
+            "changelog": [
+                "Small update 2",
+                "Logic tweak, file cleanup."
+            ]
+        },
+        {
+            "package_version": "0.4-1 AP",
+            "download_url": "https://github.com/Fairweather-Furry/pt-fair/releases/download/v0.4-1/pt-fair.zip",
+            "sha256": "0e808eec108c6018426149d8362c93da3ac4d4ade053050649031e3a114a4ff0",
+            "changelog": [
+                "Minor Logic Update",
+                "Some Logic Fixes"
+            ]
+        },
+        {
+            "package_version": "0.4 AP",
+            "download_url": "https://github.com/Fairweather-Furry/pt-fair/releases/download/v0.4/pt-fair.zip",
+            "sha256": "92d93c7e972c71a5d436c82cb693e35a10c241b625d9ab01fc574ce61d4ef98c",
+            "changelog": [
+                "Transformation Rando!",
+                "Added all transformations and logic associated with transformation rando.",
+                "Extra toggles for turning movement rando and transformation rando on or off."
+            ]
+        },
+        {
+            "package_version": "0.3 AP",
+            "download_url": "https://github.com/Fairweather-Furry/pt-fair/releases/download/v0.3/pt-fair.zip",
+            "sha256": "b04770d7d2416d8a716fef223fc93d04781d303b1f484dde9311549633633eb0",
+            "changelog": [
+                "Tricksy Treat, Lap 2 Portals, And More",
+                "Multiple logic changes and fixes for various levels.",
+                "Added Tricksy Treat and pumpkins, along with option toggle.",
+                "Added Lap 2 Portal options toggles."
+            ]
+        },
+        {
+            "package_version": "0.2 AP",
+            "download_url": "https://github.com/Fairweather-Furry/pt-fair/releases/download/v0.2/pt-fair.zip",
+            "sha256": "7e13e9b592b48908a96077b8b4bb09c85bda8541b0066745d79d38e9ae171d68",
+            "changelog": [
+                "Entrance Rando",
+                "Added Entrance rando.",
+                "READ HERE: A toggle was added to allow you to not spoil the randomized entrances. This only works on connect, turn it on before connecting. You may then use the entrances tab to manually check off your levels. REFRESHING THE PACK DISABLES THIS AND WILL REVEAL YOUR ENTRANCES.",
+                "Multiple function edits for logic.",
+                "Added code to properly check off moves not added to the pool as being already obtained."
+            ]
+        },
+        {
+            "package_version": "0.1 AP",
+            "download_url": "https://github.com/Fairweather-Furry/pt-fair/releases/download/v0.1/pt-fair.zip",
+            "sha256": "a6d9664b057b41ae4bc16ce862c903a3ec38a5d36e89555eda4a87922f1ea1f6",
+            "changelog": [
+                "Initial Release!",
+                "Pack has been created and includes all current locations in-game. Works with APWorld 1.0.1 as of right now.",
+                "For now, the tracker is a main overview of the levels. Tracking of moves, collected toppins, collected floor keys, lap portal activation, and various yaml options are all included.",
+                "If you have secrets as checks, you need to toggle that on manually as of right now.",
+                "TO-DO: Entrance rando logic and options, secrets option auto tracking."
+            ]
+        }
+    ]
 }
