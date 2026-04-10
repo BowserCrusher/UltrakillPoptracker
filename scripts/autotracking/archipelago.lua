@@ -150,8 +150,8 @@ function updateSettings(slot_data)
 	Tracker:FindObjectForCode("clash").Active = slot_data["randomize_clash_mode"]
 	Tracker:FindObjectForCode("fish").Active = slot_data["fish_rewards"]
 	Tracker:FindObjectForCode("clean").Active = slot_data["cleaning_rewards"]
-	Tracker:FindObjectForCode("chess").Active = slot_data["chess_rewards"]
-	Tracker:FindObjectForCode("rockrace").Active = slot_data["rocket_race_rewards"]
+	Tracker:FindObjectForCode("chess").Active = slot_data["chess_reward"]
+	Tracker:FindObjectForCode("rockrace").Active = slot_data["rocket_race_reward"]
 	if slot_data["randomize_secondary_fire"] == 0 then
 		Tracker:FindObjectForCode("rev0_fire2").Active = true
 		Tracker:FindObjectForCode("rev1_fire2").Active = true

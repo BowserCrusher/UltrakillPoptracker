@@ -1928,7 +1928,7 @@
 				]
 			},
 			{
-				"name": "8-4 FINAL FIGHT",
+				"name": "8-4 FINAL FLIGHT",
 				"access_rules": ["8_4_access,$goal_not|goal84", "l8_access,$goal_not|goal84", "goal84,$goal_reach"],
 				"sections": [
 					{
