@@ -374,25 +374,25 @@ end
 
 function can_break_glass()
 	return(
-		has_rai() or has_rock() or has("arm1") or has_rev0_fire2() or has_rev2_fire2() or has_revalt() or has_shostd_fire2() or has_shoalt() or pro_boost()
+		has_rai() or has("rai1") or has_rock() or has("arm1") or has_rev0_fire2() or has_rev2_fire2() or has_revalt() or has_shostd_fire2() or has_shoalt() or pro_boost()
 	)
 end
 
 function can_break_far_glass()
 	return(
-		has_rai() or has_rock() or has_rev0_fire2() or has_rev2_fire2() or has_revalt() or has_shoany0_fire2() or pro_boost()
+		has_rai() or has("rai1") or has_rock() or has_rev0_fire2() or has_rev2_fire2() or has_revalt() or has_shoany0_fire2() or pro_boost()
 	)
 end
 
 function can_break_wall()
 	return(
-		has_rai() or has_rock() or has("arm1") or has_naistd1_fire2() or has_revalt() or has_shostd_fire2() or has_shoalt() or pro_boost()
+		has_rai() or has("rai1") or has_rock() or has("arm1") or has_naistd1_fire2() or has_revalt() or has_shostd_fire2() or has_shoalt() or pro_boost()
 	)
 end
 
 function can_break_glass_wall()
 	return(
-		has_rai() or has_rock() or has("arm1") or has_naistd1_fire2() or has_rev0_fire2() or has_rev2_fire2() or has_revalt() or has_shostd_fire2() or has_shoalt() or pro_boost()
+		has_rai() or has("rai1") or has_rock() or has("arm1") or has_naistd1_fire2() or has_rev0_fire2() or has_rev2_fire2() or has_revalt() or has_shostd_fire2() or has_shoalt() or pro_boost()
 	)
 end
 
@@ -568,12 +568,6 @@ end
 function switch_1_1()
 	return(
 		has("slam") or has_rock() or has_shoany0_fire2() or has_shostd1_fire2() or pro_boost() or has("rai2")
-	)
-end
-
-function can_break_wall_cancerous_rodent()
-	return(
-		has_rai() or has_rock() or has("arm1") or has_revalt() or has_shostd_fire2() or has_shoalt() or pro_boost()
 	)
 end
 
@@ -1168,7 +1162,7 @@ end
 
 function rodent_logic()
 	return (
-		(has("1_2_access") or has("l1_access")) and (has_fist() and has("1_2_bskull") and has("1_2_rskull") or can_break_wall() and can_zap()) and can_break_wall_cancerous_rodent()
+		(has("1_2_access") or has("l1_access")) and (has_fist() and has("1_2_bskull") and has("1_2_rskull") or can_break_wall() and can_zap()) and can_break_wall()
 	)
 end
 

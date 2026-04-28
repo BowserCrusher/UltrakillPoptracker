@@ -386,7 +386,7 @@
 					{
 						"name": "Switch",
 						"visibility_rules": ["lswitches"],
-						"access_rules": ["$can_break_wall_cancerous_rodent,$has_fist,1_2_bskull,1_2_rskull","$can_break_wall_cancerous_rodent,$can_break_wall,$can_zap"]
+						"access_rules": ["$can_break_wall,$has_fist,1_2_bskull,1_2_rskull","$can_break_wall,$can_break_wall,$can_zap"]
 					},
 					{
 						"name": "Cleared 1-2",
@@ -483,14 +483,14 @@
 				"sections": [
 					{
 						"name": "V2's Arm",
-						"access_rules": []
+						"access_rules": ["$good_weapon"]
 					},
 					{
 						"name": "Secret Weapon",
-						"access_rules": ["1_1_access,1_2_access,1_3_access,$switch_1_1,$can_break_glass,$can_break_wall_cancerous_rodent,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,1_2_bskull,1_2_rskull,$lswitches_off",
-						"1_1_access,1_2_access,1_3_access,$switch_1_1,$can_break_glass,$can_break_wall_cancerous_rodent,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,$can_zap,$lswitches_off",
-						"l1_access,$switch_1_1,$can_break_glass,$can_break_wall_cancerous_rodent,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,1_2_bskull,1_2_rskull,$lswitches_off",
-						"l1_access,$switch_1_1,$can_break_glass,$can_break_wall_cancerous_rodent,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,$can_zap,$lswitches_off",
+						"access_rules": ["1_1_access,1_2_access,1_3_access,$switch_1_1,$can_break_glass,$can_break_wall,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,1_2_bskull,1_2_rskull,$lswitches_off",
+						"1_1_access,1_2_access,1_3_access,$switch_1_1,$can_break_glass,$can_break_wall,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,$can_zap,$lswitches_off",
+						"l1_access,$switch_1_1,$can_break_glass,$can_break_wall,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,1_2_bskull,1_2_rskull,$lswitches_off",
+						"l1_access,$switch_1_1,$can_break_glass,$can_break_wall,$good_weapon,$has_fist,1_1_bskull,1_1_rskull,1_3_bskull,1_3_rskull,$can_zap,$lswitches_off",
 						"lswitch1,lswitch2,lswitch3,lswitch4,lswitches"]
 					},
 					{
