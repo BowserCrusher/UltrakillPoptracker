@@ -374,13 +374,13 @@ end
 
 function can_break_glass()
 	return(
-		has_rai() or has("rai1") or has_rock() or has("arm1") or has_rev0_fire2() or has_rev2_fire2() or has_revalt() or has_shostd_fire2() or has_shoalt() or pro_boost()
+		has_rai() or has_rock() or has("arm1") or has_rev0_fire2() or has_rev1_fire2() or has_rev2_fire2() or has_revalt() or has_shostd_fire2() or has_shoalt() or pro_boost()
 	)
 end
 
 function can_break_far_glass()
 	return(
-		has_rai() or has("rai1") or has_rock() or has_rev0_fire2() or has_rev2_fire2() or has_revalt() or has_shoany0_fire2() or pro_boost()
+		has_rai() or has_rock() or has_rev0_fire2()or has_rev1_fire2()  or has_rev2_fire2() or has_revalt() or has_shoany0_fire2() or pro_boost()
 	)
 end
 
@@ -392,7 +392,7 @@ end
 
 function can_break_glass_wall()
 	return(
-		has_rai() or has("rai1") or has_rock() or has("arm1") or has_naistd1_fire2() or has_rev0_fire2() or has_rev2_fire2() or has_revalt() or has_shostd_fire2() or has_shoalt() or pro_boost()
+		has_rai() or has("rai1") or has_rock() or has("arm1") or has_naistd1_fire2() or has_rev0_fire2() or has_rev1_fire2() or has_rev2_fire2() or has_revalt() or has_shostd_fire2() or has_shoalt() or pro_boost()
 	)
 end
 
