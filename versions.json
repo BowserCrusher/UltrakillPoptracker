@@ -4,7 +4,7 @@
 		{
 			"package_version": "0.7.4",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.7.4/UltrakillPoptracker.zip",
-			"sha256": "9BEED04F9231B30E5B8A7729347BA496A4AA29C364283ADBFFFFF147417BD6D1",
+			"sha256": "D562DD9A4F8CE51F1F26BE34ABCF94370E45640FD2F4558A19D33BBB3BCBC357",
 			"changelog": [
 				"Fixed V2's arm, Screwdriver breaking walls/glass, and C Rodent Wall"
 			]
