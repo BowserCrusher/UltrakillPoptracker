@@ -642,7 +642,7 @@ end
 
 function secret4_4_1()
 	return(
-		slam_storage() or rocket_ride() or has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2")
+		slam_storage() or has_rock() or has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2")
 	)
 end
 
@@ -759,7 +759,7 @@ end
 
 function exit_8_3()
 	return(
-		good_weapon() and has_fist() and (has("slide") and has("8_3_bskull") and has("8_3_rskull") and (dash1() or wall_jump3() or has_shoalt() or has_rock()) and has("arm2"))
+		good_weapon() and has_fist() and (has("slide") and has("8_3_rskull") or (dash1() or wall_jump3() or has_shoalt() or has_rock()) and has("arm2") and has("8_3_bskull"))
 	)
 end
 
