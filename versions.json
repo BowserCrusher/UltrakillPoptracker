@@ -2,6 +2,14 @@
 	"versions": [
 	{
 		{
+			"package_version": "0.7.5",
+			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.7.5/UltrakillPoptracker.zip",
+			"sha256": "1D8B179218CADD9BC667D0F9047A3EC8990D805425EFDAEAB8EDF94DAAF1C351",
+			"changelog": [
+				"Fixed 8-3 logic and 4-1 Secret 4 logic"
+			]
+		},
+		{
 			"package_version": "0.7.4",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.7.4/UltrakillPoptracker.zip",
 			"sha256": "D562DD9A4F8CE51F1F26BE34ABCF94370E45640FD2F4558A19D33BBB3BCBC357",
