@@ -715,7 +715,7 @@
 	{
 		"name": "Levels Completed",
 		"type": "consumable",
-		"max_quantity": 33,
+		"max_quantity": 42,
 		"initial_quantity": 0,
 		"img": "images/other/LevelsCompleted.png",
 		"codes": "lvlcomplete"
@@ -1165,7 +1165,7 @@
 	{
 		"name": "Goal Amount",
 		"type": "consumable",
-		"max_quantity": 36,
+		"max_quantity": 42,
 		"initial_quantity": 15,
 		"min_quantity": 5,
 		"allow_disabled": false,
