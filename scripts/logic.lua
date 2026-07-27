@@ -648,7 +648,7 @@ end
 
 function secret3_2_1()
 	return(
-		exit_2_1() and (
+		(has("speedrun") or exit_2_1()) and (
 			has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2") or rocket_ride()
 		)
 	)
@@ -679,7 +679,7 @@ end
 
 function secret1_2_2()
 	return(
-		has_rev() or has_sho() or has_nai() or has_rai() or has_rock() or has_fist() or has("slam")
+		has("speedrun") or has_rev() or has_sho() or has_nai() or has_rai() or has_rock() or has_fist() or has("slam")
 	)
 end
 
@@ -694,6 +694,12 @@ end
 function secret3_2_3()
 	return(
 		has("slam") or has("rai2") or wall_jump1() or has_shostd_fire2() or has_shoalt() or has_rock() or pro_boost()
+	)
+end
+
+function speedexit_2_4()
+	return(
+		has("speedrun") and (has_fist() and (has("2_4_bskull") or has("slide") and player_boost()))
 	)
 end
 

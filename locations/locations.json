@@ -563,11 +563,11 @@
 				"sections": [
 					{
 						"name": "Secret #1",
-						"access_rules": ["$can_break_wall"]
+						"access_rules": ["$can_break_wall", "speedrun"]
 					},
 					{
 						"name": "Secret #2",
-						"access_rules": ["$exit_2_1"]
+						"access_rules": ["$exit_2_1", "speedrun"]
 					},
 					{
 						"name": "Secret #3",
@@ -575,27 +575,27 @@
 					},
 					{
 						"name": "Secret #4",
-						"access_rules": ["$exit_2_1"]
+						"access_rules": ["$exit_2_1", "speedrun"]
 					},
 					{
 						"name": "Secret #5",
-						"access_rules": ["$tower_2_1"]
+						"access_rules": ["$tower_2_1", "speedrun"]
 					},
 					{
 						"name": "Cleared 2-1",
 						"visibility_rules": ["$goal_not|goal21"],
-						"access_rules": ["$tower_2_1"],
+						"access_rules": ["$tower_2_1", "speedrun"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal21,$goal_reach"],
-						"access_rules": ["$tower_2_1,$not_pgoal","$tower_2_1,$good_weapon,pgoal"]
+						"access_rules": ["$tower_2_1,$not_pgoal","$tower_2_1,$good_weapon,pgoal", "speedrun,$not_pgoal", "speedrun,$good_weapon,pgoal"]
 					},
 					{
 						"name": "Don't open any normal doors",
 						"visibility_rules": ["challenge"],
-						"access_rules": ["$challenge_2_1"]
+						"access_rules": ["$challenge_2_1", "speedrun,$can_break_wall"]
 					},
 					{
 						"name": "P Rank",
@@ -621,15 +621,15 @@
 					},
 					{
 						"name": "Secret #2",
-						"access_rules": ["$jump_gen1"]
+						"access_rules": ["$jump_gen1", "speedrun"]
 					},
 					{
 						"name": "Secret #3",
-						"access_rules": ["$jump_gen2"]
+						"access_rules": ["$jump_gen2", "speedrun,$player_boost", "speedrun,slam", "speedrun,arm2"]
 					},
 					{
 						"name": "Secret #4",
-						"access_rules": ["slide"]
+						"access_rules": ["slide", "speedrun,$has_rock0_fire2"]
 					},
 					{
 						"name": "Secret #5",
@@ -653,7 +653,7 @@
 					{
 						"name": "Beat the level in under 60 seconds",
 						"visibility_rules": ["challenge"],
-						"access_rules": ["$challenge_2_2"]
+						"access_rules": ["$challenge_2_2", "speedrun,slide", "speedrun,$dash1", "speedrun,$player_boost"]
 					},
 					{
 						"name": "P Rank",
@@ -683,26 +683,26 @@
 					},
 					{
 						"name": "Secret #3",
-						"access_rules": ["$has_fist,2_3_bskull,$secret3_2_3"]
+						"access_rules": ["$has_fist,2_3_bskull,$secret3_2_3", "speedrun,slide,has_rock0_fire2"]
 					},
 					{
 						"name": "Secret #4",
-						"access_rules": ["$has_fist,2_3_bskull"]
+						"access_rules": ["$has_fist,2_3_bskull", "speedrun,slide,has_rock0_fire2"]
 					},
 					{
 						"name": "Secret #5",
-						"access_rules": ["slide"]
+						"access_rules": ["slide", "speedrun,has_rock0_fire2"]
 					},
 					{
 						"name": "Cleared 2-3",
 						"visibility_rules": ["$goal_not|goal23"],
-						"access_rules": ["$has_fist,2_3_bskull,2_3_rskull","$secret3_2_3,$has_fist,2_3_bskull,slide,$not_sebehavior"],
+						"access_rules": ["$has_fist,2_3_bskull,2_3_rskull","$secret3_2_3,$has_fist,2_3_bskull,slide,$not_sebehavior", "speedrun,slide,has_rock0_fire2", "speedrun,slide,has_rock0_fire2,$has_fist,2_3_rskull,$not_sebehavior"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal23,$goal_reach"],
-						"access_rules": ["$has_fist,2_3_bskull,2_3_rskull,$not_pgoal","$secret3_2_3,$has_fist,2_3_bskull,slide,$not_sebehavior,$not_pgoal","$good_weapon,$has_fist,2_3_bskull,2_3_rskull,pgoal"]
+						"access_rules": ["$has_fist,2_3_bskull,2_3_rskull,$not_pgoal","$secret3_2_3,$has_fist,2_3_bskull,slide,$not_sebehavior,$not_pgoal","$good_weapon,$has_fist,2_3_bskull,2_3_rskull,pgoal", "speedrun,slide,has_rock0_fire2,$not_pgoal", "speedrun,slide,has_rock0_fire2,$has_fist,2_3_rskull,$not_sebehavior,$not_pgoal"]
 					},
 					{
 						"name": "Don't touch any water",
@@ -717,7 +717,7 @@
 					{
 						"name": "Secret Exit",
 						"visibility_rules": ["sebehavior"],
-						"access_rules": ["$secret3_2_3,$has_fist,2_3_bskull,slide"]
+						"access_rules": ["$secret3_2_3,$has_fist,2_3_bskull,slide", "speedrun,slide,has_rock0_fire2,$has_fist,2_3_rskull"]
 					}
 				],
 				"map_locations": [
@@ -735,23 +735,23 @@
 					{
 						"name": "Cleared 2-4",
 						"visibility_rules": ["$goal_not|goal24"],
-						"access_rules": ["$has_fist,2_4_bskull,2_4_rskull"],
+						"access_rules": ["$has_fist,2_4_bskull,2_4_rskull", "$speedexit_2_4"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal24,$goal_reach"],
-						"access_rules": ["$has_fist,2_4_bskull,2_4_rskull,$not_pgoal","$has_fist,2_4_bskull,2_4_rskull,$good_weapon"]
+						"access_rules": ["$has_fist,2_4_bskull,2_4_rskull,$not_pgoal","$has_fist,2_4_bskull,2_4_rskull,$good_weapon", "$speedexit_2_4,$not_pgoal", "$speedexit_2_4,$good_weapon,pgoal"]
 					},
 					{
 						"name": "Parry a punch",
 						"visibility_rules": ["challenge"],
-						"access_rules": ["$has_fist,2_4_bskull,2_4_rskull,arm0"]
+						"access_rules": ["$has_fist,2_4_bskull,2_4_rskull,arm0", "$speedexit_2_4,arm0"]
 					},
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["$has_fist,2_4_bskull,2_4_rskull,$good_weapon"]
+						"access_rules": ["$has_fist,2_4_bskull,2_4_rskull,$good_weapon", "$speedexit_2_4,$good_weapon"]
 					}
 				],
 				"map_locations": [
@@ -804,7 +804,7 @@
 					},
 					{
 						"name": "Secret #4",
-						"access_rules": ["slide"]
+						"access_rules": ["slide", "speedrun,$has_rock0_fire2"]
 					},
 					{
 						"name": "Secret #5",
