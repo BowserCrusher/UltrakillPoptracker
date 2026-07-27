@@ -1556,5 +1556,17 @@
 		"type": "toggle",
 		"img": "images/keys/Red.png",
 		"codes": "skulls"
+	},
+	{
+		"name": "Require Gutterman Shield Break",
+		"type": "toggle",
+		"img": "images/other/Gutterman.png",
+		"codes": "guttershield"
+	},
+	{
+		"name": "Speedrunner Logic",
+		"type": "toggle",
+		"img": "images/other/Speedrun.png",
+		"codes": "speedrun"
 	}
 ]

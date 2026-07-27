@@ -2,6 +2,14 @@
 	"versions": [
 	{
 		{
+			"package_version": "0.7.6",
+			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.7.6/UltrakillPoptracker.zip",
+			"sha256": "9E501E4D7FF908BE87F017B2A4767A74BEA043914A8885169E68EAAFC2ECD388",
+			"changelog": [
+				"Fixed max Levels Complete/goal Amount"
+			]
+		},
+		{
 			"package_version": "0.7.5",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.7.5/UltrakillPoptracker.zip",
 			"sha256": "1D8B179218CADD9BC667D0F9047A3EC8990D805425EFDAEAB8EDF94DAAF1C351",
