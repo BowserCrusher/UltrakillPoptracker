@@ -408,6 +408,16 @@ function can_break_idol_em()
 	)
 end
 
+function can_break_gutterman_shield()
+	if has("guttershield") then
+	 return(
+		has("arm1") or has_shoalt()
+	 )
+	else
+		return true
+	end
+end
+
 function non_explosive_ranged_weapon()
 	return(
 		has_rev() or (has_shoany2_fire2() and has("arm1") or has_nai() or has("rai0") or has("rai1") or has_rock1_fire2() or has_rock2_fire2())
@@ -522,6 +532,42 @@ function slam_storage()
 	)
 end
 
+function player_boost()
+	return(
+		has_rock() or has_sho0_fire2() or has_shostd1_fire2() or has_shoalt() or has("rai2") or pro_boost()
+	)
+end
+
+function windstate_wallbounce()
+	return(
+		has("slide") and wall_jump1()
+	)
+end
+
+function windstate_dash_extend()
+	return(
+		dash1() and has("slide")
+	)
+end
+
+function windstate_rocket()
+	return(
+		has_rock()
+	)
+end
+
+function ultraboost()
+	return(
+		has("rai2") and (has_sho0_fire2() or has_rock0_fire2())
+	)
+end
+
+function cannonbonk()
+	return(
+		has_rock1_fire2() and has("arm1")
+	)
+end
+
 function goal_reach()
 	local levelCount = Tracker:ProviderCountForCode("lvlcomplete")
 	local levelReq = Tracker:ProviderCountForCode("goalamount")
@@ -532,11 +578,17 @@ function goal_reach()
 	end
 end
 
+function speed_prank_0_1()
+	return(
+		has("speedrun") and (windstate_wallbounce() or (windstate_dash_extend() and has("slam")) or has("arm0"))
+	)
+end
+
 function secret3_0_2()
 	return (
-		has("slide") and (
+		(has("slide") and (
 			has_rock() or has("rai2") or has_shoany0_fire2() or pro_boost() or (wall_jump1() and dash1()) or wall_jump2() or slam_storage()
-		)
+		)) or (has("speedrun") and (ultraboost() or rocket_ride() or (has("slide") and slam_storage()) and jump_gen2()))
 	)
 end
 
@@ -548,14 +600,19 @@ end
 
 function challenge_0_3()
 	return(
-		can_break_far_glass() and (
+		(can_break_far_glass() and (
 			slam_storage() or
 			has_shoalt0_fire2() or
 			has_shostd1_fire2() or 
 			(has_shostd0_fire2() and wall_jump2()) or
 			rocket_ride() or
 			has("rai2")
-		)
+		)) or
+		(has("speedrun") and (
+			can_break_wall() or (can_break_glass() or windstate_wallbounce() or windstate_dash_extend()) and (
+				slam_storage() or (has("arm0") or has("arm2")) or ultraboost() or rocket_ride()
+			)
+		))
 	)
 end
 
@@ -567,7 +624,7 @@ end
 
 function switch_1_1()
 	return(
-		has("slam") or has_rock() or has_shoany0_fire2() or has_shostd1_fire2() or pro_boost() or has("rai2")
+		has("slam") or has_rock() or has_shoany0_fire2() or has_shostd1_fire2() or pro_boost() or has("rai2") or (has("speedrun") and (windstate_wallbounce() or windstate_dash_extend() or has("arm0")))
 	)
 end
 

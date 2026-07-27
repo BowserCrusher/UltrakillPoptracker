@@ -46,12 +46,12 @@
 					{
 						"name": "Get 5 kills with a single glass panel",
 						"visibility_rules": ["challenge"],
-						"access_rules": ["$can_break_glass"]
+						"access_rules": ["$can_break_glass", "speedrun,$windstate_wallbounce", "speedrun,$windstate_dash_extend"]
 					},
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon","arm1"]
+						"access_rules": ["$good_weapon","arm1", "$speed_prank_0_1"]
 					}
 				],
 				"map_locations": [
@@ -80,7 +80,7 @@
 					},
 					{
 						"name": "Secret #4",
-						"access_rules": ["slide"]
+						"access_rules": ["slide", "speedrun,$slam_storage", "speedrun,$ultraboost", "speedrun,$rocket_ride"]
 					},
 					{
 						"name": "Secret #5",
@@ -100,7 +100,7 @@
 					{
 						"name": "Beat the secret encounter",
 						"visibility_rules": ["challenge"],
-						"access_rules": ["slide,$good_weapon"]
+						"access_rules": ["slide,$good_weapon", "speedrun,$slam_storage,$good_weapon", "speedrun,$ultraboost,$good_weapon", "speedrun,$rocket_ride,$good_weapon"]
 					},
 					{
 						"name": "P Rank",
@@ -127,7 +127,7 @@
 				"sections": [
 					{
 						"name": "Secret #1",
-						"access_rules": ["slide"]
+						"access_rules": ["slide", "speedrun,$has_rock0_fire2"]
 					},
 					{
 						"name": "Secret #2",
@@ -189,7 +189,7 @@
 					},
 					{
 						"name": "Secret #2",
-						"access_rules": ["$can_break_glass"]
+						"access_rules": ["$can_break_glass", "speedrun,arm0", "speedrun,$windstate_wallbounce", "speedrun,$windstate_dash_extend"]
 					},
 					{
 						"name": "Secret #3",
@@ -197,7 +197,7 @@
 					},
 					{
 						"name": "Secret #4",
-						"access_rules": ["slide"]
+						"access_rules": ["slide", "speedrun,$has_rock0_fire2"]
 					},
 					{
 						"name": "Secret #5",
