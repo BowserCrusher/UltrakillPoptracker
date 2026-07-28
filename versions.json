@@ -2,6 +2,14 @@
 	"versions": [
 	{
 		{
+			"package_version": "0.7.7",
+			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.7.7/UltrakillPoptracker.zip",
+			"sha256": "997C4D959F67F36881EB2C4A8982E03B64329BF1509E1CDD26A2F43835A2C149",
+			"changelog": [
+				"New speedrun logic option, Gutterman shield option, and Streetcleaner fixes"
+			]
+		},
+		{
 			"package_version": "0.7.6",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.7.6/UltrakillPoptracker.zip",
 			"sha256": "9E501E4D7FF908BE87F017B2A4767A74BEA043914A8885169E68EAAFC2ECD388",
