@@ -815,8 +815,10 @@ end
 
 function challenge_8_2()
 	return(
-		secret4_8_2() and has("8_2_rskull") and can_break_glass() and 
-		(wall_jump2() or slam_storage() or has_shoany0_fire2() or has_shostd1_fire2() or pro_boost() or has("rai2") or has_rock())
+		secret4_8_2() and  
+		(wall_jump2() or slam_storage() or has_shoany0_fire2() or has_shostd1_fire2() or pro_boost() or has("rai2") or has_rock()) and 
+		(has("arm2") or has_sho0_fire2() or has_shostd1_fire2() or pro_boost() or has("rai2") or has_rock0_fire2() or slam_storage()) and 
+		has("8_2_rskull") and can_break_glass() and can_break_gutterman_shield()
 	)
 end
 
@@ -993,7 +995,7 @@ function streetcleaner_logic()
 		(has("1_2_access") and has_fist() and has("1_2_bskull") or can_break_wall() and can_zap()) or has("1_3_access") or has("l1_access") or
 		(has("2_1_access") and exit_2_1()) or has("2_2_access") or has("2_3_access") or has("l2_access") or
 		has("3_1_access") or has("l3_access") or
-		has("4_1_access") or (has("4_3_access") and level_4_3()) or has("l4_access") or
+		has("4_1_access") or has("4_2_access") or (has("4_3_access") and level_4_3()) or has("l4_access") or
 		(has("5_1_access") and level_5_1()) or (has("5_2_access") and can_break_idol() and (has("slam") or dash1() or has_rock())) or has("5_3_access") or has("l5_access") or
 		((has("6_1_access") or has("l6_access")) and has_fist() and has("6_1_rskull")) or
 		(has("7_1_access") and has_fist() and has("7_1_bskull") and has("7_1_rskull")) or has("7_3_access") or (has("7_4_access") and has("slide") and (has("arm2") or slam_storage() or rocket_ride())) or has("l7_access") or
@@ -1044,10 +1046,11 @@ end
 
 function gutterman_logic()
 	return (
-		(has("7_2_access") and has("arm2")) or has("7_3_access") or (has("7_s_access") and (has("arm2") or wall_jump3() or (wall_jump2() and dash1()) or (has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2"))) and has_fist() and has("7_s_rskull") and can_break_idol()) or (has("7_4_access") and has("slide") and (has("arm2") or slam_storage() or rocket_ride())) or has("l7_access") or
+		can_break_gutterman_shield() and 
+		((has("7_2_access") and has("arm2")) or has("7_3_access") or (has("7_s_access") and (has("arm2") or wall_jump3() or (wall_jump2() and dash1()) or (has_shoalt0_fire2() or has_shostd1_fire2() or has("rai2"))) and has_fist() and has("7_s_rskull") and can_break_idol()) or (has("7_4_access") and has("slide") and (has("arm2") or slam_storage() or rocket_ride())) or has("l7_access") or
 		has("8_1_access") or (has("8_2_access") and has_fist() and has("8_2_bskull") and jump_gen3() and (has("arm2") or non_explosive_ranged_weapon()) and good_weapon() and can_break_idol()) or (has("8_3_access") and good_weapon()) or has("l8_access") or
 		((has("0_e_access") or has("l0_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3() and can_break_glass()) or
-		((has("1_e_access") or has("l1_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3())
+		((has("1_e_access") or has("l1_access")) and has("arm0") and has("arm1") and has("arm2") and has_weapon_types_3()))
 	)
 end
 

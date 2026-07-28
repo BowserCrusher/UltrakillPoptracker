@@ -1025,7 +1025,7 @@
 					{
 						"name": "Don't pick up the torch",
 						"visibility_rules": ["challenge"],
-						"access_rules": ["$has_shoany0_fire2,$has_fist,4_3_bskull","$pro_boost,$has_fist,4_3_bskull", "$has_rock0_fire2,$has_rev,$has_fist,4_3_bskull"]
+						"access_rules": ["$has_shoany0_fire2,$has_fist,4_3_bskull", "$pro_boost,$has_fist,4_3_bskull", "$has_rock0_fire2,$has_rev,$has_fist,4_3_bskull", "$has_rock2_fire2,$has_fist,4_3_bskull"]
 					},
 					{
 						"name": "P Rank",
@@ -1602,7 +1602,7 @@
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal72,$goal_reach"],
-						"access_rules": ["arm2,7_2_rskull,$not_pgoal","$good_weapon,arm2,7_2_rskull,pgoal"]
+						"access_rules": ["arm2,7_2_rskull,$not_pgoal","$good_weapon,arm2,7_2_rskull,$can_break_gutterman_shield,pgoal"]
 					},
 					{
 						"name": "Don't kill any enemies",
@@ -1612,7 +1612,7 @@
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon,arm2,7_2_rskull"]
+						"access_rules": ["$good_weapon,arm2,7_2_rskull,$can_break_gutterman_shield"]
 					}
 				],
 				"map_locations": [
@@ -1650,13 +1650,13 @@
 					{
 						"name": "Cleared 7-3",
 						"visibility_rules": ["$goal_not|goal73"],
-						"access_rules": [],
+						"access_rules": ["$not_sebehavior", "$good_weapon,$can_break_gutterman_shield"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal73,$goal_reach"],
-						"access_rules": ["$not_pgoal","$good_weapon,pgoal"]
+						"access_rules": ["$not_sebehavior,$not_pgoal","$good_weapon,$can_break_gutterman_shield"]
 					},
 					{
 						"name": "Become marked for death",
@@ -1666,7 +1666,7 @@
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon"]
+						"access_rules": ["$good_weapon,$can_break_gutterman_shield"]
 					},
 					{
 						"name": "Secret Exit",
@@ -1689,23 +1689,23 @@
 					{
 						"name": "Cleared 7-4",
 						"visibility_rules": ["$goal_not|goal74"],
-						"access_rules": ["slide,$can_break_idol_em,arm2,$good_weapon","slide,$can_break_idol_em,$slam_storage,$good_weapon","slide,$can_break_idol_em,$rocket_ride,$good_weapon"],
+						"access_rules": ["slide,$can_break_idol_em,arm2,$good_weapon,$can_break_gutterman_shield","slide,$can_break_idol_em,$slam_storage,$good_weapon,$can_break_gutterman_shield","slide,$can_break_idol_em,$rocket_ride,$good_weapon,$can_break_gutterman_shield"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal74,$goal_reach"],
-						"access_rules": ["slide,$can_break_idol_em,arm2,$good_weapon","slide,$can_break_idol_em,$slam_storage,$good_weapon,$not_pgoal","slide,$can_break_idol_em,$rocket_ride,$good_weapon,$not_pgoal"]
+						"access_rules": ["slide,$can_break_idol_em,arm2,$good_weapon,$can_break_gutterman_shield","slide,$can_break_idol_em,$slam_storage,$good_weapon,$can_break_gutterman_shield,$not_pgoal","slide,$can_break_idol_em,$rocket_ride,$good_weapon,$can_break_gutterman_shield,$not_pgoal"]
 					},
 					{
 						"name": "Don't fight the security system",
 						"visibility_rules": ["challenge"],
-						"access_rules": ["slide,$can_break_idol_em,arm2,$can_zap,$good_weapon","slide,$can_break_idol_em,$slam_storage,$can_zap,$good_weapon","slide,$can_break_idol_em,$rocket_ride,$can_zap,$good_weapon"]
+						"access_rules": ["slide,$can_break_idol_em,arm2,$can_zap,$good_weapon,$can_break_gutterman_shield","slide,$can_break_idol_em,$slam_storage,$can_zap,$good_weapon,$can_break_gutterman_shield","slide,$can_break_idol_em,$rocket_ride,$can_zap,$good_weapon,$can_break_gutterman_shield"]
 					},
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["slide,$can_break_idol_em,arm2,$good_weapon"]
+						"access_rules": ["slide,$can_break_idol_em,arm2,$good_weapon,$can_break_gutterman_shield"]
 					}
 				],
 				"map_locations": [
@@ -1723,38 +1723,38 @@
 					{
 						"name": "Cleaned Courtyard",
 						"visibility_rules": ["clean"],
-						"access_rules": ["$has_fist,7_s_bskull,7_s_rskull"]
+						"access_rules": ["$has_fist,7_s_bskull,7_s_rskull,$can_break_gutterman_shield"]
 					},
 					{
 						"name": "Cleaned Library",
 						"visibility_rules": ["clean"],
-						"access_rules": ["$has_fist,7_s_bskull,7_s_rskull"]
+						"access_rules": ["$has_fist,7_s_bskull,7_s_rskull,$can_break_gutterman_shield"]
 					},
 					{
 						"name": "Cleaned Lobby",
 						"visibility_rules": ["clean"],
-						"access_rules": ["$has_fist,7_s_bskull,7_s_rskull"]
+						"access_rules": ["$has_fist,7_s_bskull,7_s_rskull,$can_break_gutterman_shield"]
 					},
 					{
 						"name": "Cleaned Lounge",
 						"visibility_rules": ["clean"],
-						"access_rules": ["$has_fist,7_s_bskull,7_s_rskull"]
+						"access_rules": ["$has_fist,7_s_bskull,7_s_rskull,$can_break_gutterman_shield"]
 					},
 					{
 						"name": "Cleaned Side Room",
 						"visibility_rules": ["clean"],
-						"access_rules": ["$has_fist,7_s_bskull,7_s_rskull"]
+						"access_rules": ["$has_fist,7_s_bskull,7_s_rskull,$can_break_gutterman_shield"]
 					},
 					{
 						"name": "Cleared 7-S",
 						"visibility_rules": ["$goal_not|goal7s"],
-						"access_rules": ["$has_fist,7_s_bskull,7_s_rskull"],
+						"access_rules": ["$has_fist,7_s_bskull,7_s_rskull,$can_break_gutterman_shield"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal7s,$goal_reach"],
-						"access_rules": ["$has_fist,7_s_bskull,7_s_rskull"]
+						"access_rules": ["$has_fist,7_s_bskull,7_s_rskull,$can_break_gutterman_shield"]
 					}
 				],
 				"map_locations": [
@@ -1798,7 +1798,7 @@
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal81,$goal_reach"],
-						"access_rules": ["$exit_8_1"]
+						"access_rules": ["$exit_8_1,$not_pgoal", "$exit_8_1,$can_break_gutterman_shield,pgoal"]
 					},
 					{
 						"name": "Parry a Providence",
@@ -1808,7 +1808,7 @@
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["$exit_8_1"]
+						"access_rules": ["$exit_8_1,$can_break_gutterman_shield"]
 					}
 				],
 				"map_locations": [
@@ -1841,18 +1841,18 @@
 					},
 					{
 						"name": "Secret #5",
-						"access_rules": ["$secret4_8_2,8_2_rskull"]
+						"access_rules": ["$secret4_8_2,8_2_rskull,$can_break_gutterman_shield"]
 					},
 					{
 						"name": "Cleared 8-2",
 						"visibility_rules": ["$goal_not|goal82"],
-						"access_rules": ["$secret4_8_2,8_2_rskull,$can_break_glass"],
+						"access_rules": ["$secret4_8_2,8_2_rskull,$can_break_glass,$can_break_gutterman_shield"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal82,$goal_reach"],
-						"access_rules": ["$secret4_8_2,8_2_rskull,$can_break_glass"]
+						"access_rules": ["$secret4_8_2,8_2_rskull,$can_break_glass,$can_break_gutterman_shield"]
 					},
 					{
 						"name": "Finish the level upside down",
@@ -1862,7 +1862,7 @@
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["$secret4_8_2,8_2_rskull,$can_break_glass"]
+						"access_rules": ["$secret4_8_2,8_2_rskull,$can_break_glass,$can_break_gutterman_shield"]
 					}
 				],
 				"map_locations": [
@@ -1883,40 +1883,40 @@
 					},
 					{
 						"name": "Secret #2",
-						"access_rules": ["$good_weapon,slide"]
+						"access_rules": ["$good_weapon,slide,$can_break_gutterman_shield"]
 					},
 					{
 						"name": "Secret #3",
-						"access_rules": ["$good_weapon"]
+						"access_rules": ["$good_weapon,$can_break_gutterman_shield"]
 					},
 					{
 						"name": "Secret #4",
-						"access_rules": ["$good_weapon,slide"]
+						"access_rules": ["$good_weapon,slide,$can_break_gutterman_shield"]
 					},
 					{
 						"name": "Secret #5",
-						"access_rules": ["$exit_8_3"]
+						"access_rules": ["$exit_8_3,$can_break_gutterman_shield"]
 					},
 					{
 						"name": "Cleared 8-3",
 						"visibility_rules": ["$goal_not|goal83"],
-						"access_rules": ["$exit_8_3"],
+						"access_rules": ["$exit_8_3,$can_break_gutterman_shield"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal83,$goal_reach"],
-						"access_rules": ["$exit_8_3"]
+						"access_rules": ["$exit_8_3,$can_break_gutterman_shield"]
 					},
 					{
 						"name": "Kill a Power with terminal velocity",
 						"visibility_rules": ["challenge"],
-						"access_rules": ["$exit_8_3,arm0"]
+						"access_rules": ["$exit_8_3,arm0,$can_break_gutterman_shield"]
 					},
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["$exit_8_3"]
+						"access_rules": ["$exit_8_3,$can_break_gutterman_shield"]
 					}
 				],
 				"map_locations": [
@@ -1968,18 +1968,18 @@
 					{
 						"name": "Cleared 0-E",
 						"visibility_rules": ["$goal_not|goal0e"],
-						"access_rules": ["arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_glass,$dash2,0_e_bskull,0_e_rskull"],
+						"access_rules": ["arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_glass,$dash2,0_e_bskull,0_e_rskull,$can_break_gutterman_shield"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal0e,$goal_reach"],
-						"access_rules": ["arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_glass,$dash2,0_e_bskull,0_e_rskull,$not_pgoal","arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_glass,$dash3,0_e_bskull,0_e_rskull,pgoal"]
+						"access_rules": ["arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_glass,$dash2,0_e_bskull,0_e_rskull,$can_break_gutterman_shield,$not_pgoal","arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_glass,$dash3,0_e_bskull,0_e_rskull,$can_break_gutterman_shield,pgoal"]
 					},
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_glass,$dash3,0_e_bskull,0_e_rskull"]
+						"access_rules": ["arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_glass,$dash3,0_e_bskull,0_e_rskull,$can_break_gutterman_shield"]
 					}
 				],
 				"map_locations" : [
@@ -1997,18 +1997,18 @@
 					{
 						"name": "Cleared 1-E",
 						"visibility_rules": ["$goal_not|goal1e"],
-						"access_rules": ["arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_wall,$dash2,1_e_bskull,1_e_rskull"],
+						"access_rules": ["arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_wall,$dash2,1_e_bskull,1_e_rskull,$can_break_gutterman_shield"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal1e,$goal_reach"],
-						"access_rules": ["arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_wall,$dash2,1_e_bskull,1_e_rskull,$not_pgoal", "arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_wall,$dash3,1_e_bskull,1_e_rskull"]
+						"access_rules": ["arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_wall,$dash2,1_e_bskull,1_e_rskull,$can_break_gutterman_shield,$not_pgoal", "arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_wall,$dash3,1_e_bskull,1_e_rskull,$can_break_gutterman_shield,pgoal"]
 					},
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_wall,$dash3,1_e_bskull,1_e_rskull"]
+						"access_rules": ["arm0,arm1,arm2,$has_weapon_types_3,slide,$can_break_wall,$dash3,1_e_bskull,1_e_rskull,$can_break_gutterman_shield"]
 					}
 				],
 				"map_locations" : [
