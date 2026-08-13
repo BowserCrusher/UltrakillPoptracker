@@ -18,7 +18,7 @@
 					},
 					{
 						"name": "Secret #3",
-						"access_rules": ["$jump_gen1"]
+						"access_rules": ["$jump_gen1,$glass_0_1"]
 					},
 					{
 						"name": "Secret #4",
@@ -35,13 +35,13 @@
 					{
 						"name": "Cleared 0-1",
 						"visibility_rules": ["$goal_not|goal01"],
-						"access_rules": [],
+						"access_rules": ["$exit_0_1"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal01,$goal_reach"],
-						"access_rules": ["$not_pgoal","$good_weapon,pgoal","arm1,pgoal", "$speed_prank_0_1,pgoal"]
+						"access_rules": ["$exit_0_1,$not_pgoal","$exit_0_1,$good_weapon,pgoal","$exit_0_1,arm1,pgoal"]
 					},
 					{
 						"name": "Get 5 kills with a single glass panel",
@@ -51,7 +51,7 @@
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["$good_weapon","arm1", "$speed_prank_0_1"]
+						"access_rules": ["$exit_0_1,$good_weapon", "$exit_0_1,arm1"]
 					}
 				],
 				"map_locations": [
@@ -110,7 +110,7 @@
 					{
 						"name": "Secret Exit",
 						"visibility_rules": ["sebehavior"],
-						"access_rules": ["$secret_exit_0_2"]
+						"access_rules": ["$secret_exit_0_2", "$speedrun_secret_exit_0_2"]
 					}
 				],
 				"map_locations": [
@@ -322,7 +322,7 @@
 					{
 						"name": "Switch",
 						"visibility_rules": ["lswitches"],
-						"access_rules": ["$has_fist,$switch_1_1,1_1_rskull,1_1_bskull"]
+						"access_rules": ["$has_fist,$switch_1_1,1_1_rskull,1_1_bskull", "$speedrun_switch_1_1"]
 					},
 					{
 						"name": "Cleared 1-1",
@@ -450,23 +450,23 @@
 					{
 						"name": "Cleared 1-3",
 						"visibility_rules": ["$goal_not|goal13"],
-						"access_rules": ["$has_fist,1_3_bskull","$has_fist,1_3_rskull"],
+						"access_rules": ["$has_fist,1_3_bskull","$has_fist,1_3_rskull", "speedrun,$has_rock0_fire2,slide,$wall_jump1"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal13,$goal_reach"],
-						"access_rules": ["$has_fist,1_3_bskull,$not_pgoal","$has_fist,1_3_rskull,$not_pgoal","$has_fist,1_3_bskull,$good_weapon,pgoal","$has_fist,1_3_rskull,$good_weapon,pgoal"]
+						"access_rules": ["$has_fist,1_3_bskull,$not_pgoal","$has_fist,1_3_rskull,$not_pgoal", "speedrun,$has_rock0_fire2,slide,$wall_jump1,$not_pgoal","$has_fist,1_3_bskull,$good_weapon,pgoal","$has_fist,1_3_rskull,$good_weapon,pgoal", "speedrun,$has_rock0_fire2,slide,$wall_jump1,$dash1,$good_weapon,pgoal"]
 					},
 					{
 						"name": "Beat the secret encounter",
 						"visibility_rules": ["challenge"],
-						"access_rules": ["$has_fist,1_3_bskull,1_3_rskull,$good_weapon"]
+						"access_rules": ["$has_fist,1_3_bskull,1_3_rskull,$good_weapon", "speedrun,$has_rock0_fire2,slide,$wall_jump1"]
 					},
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["$has_fist,1_3_bskull,$good_weapon","$has_fist,1_3_rskull,$good_weapon"]
+						"access_rules": ["$has_fist,1_3_bskull,$good_weapon","$has_fist,1_3_rskull,$good_weapon", "speedrun,$has_rock0_fire2,slide,$wall_jump1,$dash1,$good_weapon"]
 					}
 				],
 				"map_locations": [
@@ -717,7 +717,7 @@
 					{
 						"name": "Secret Exit",
 						"visibility_rules": ["sebehavior"],
-						"access_rules": ["$secret3_2_3,$has_fist,2_3_bskull,slide", "speedrun,slide,has_rock0_fire2,$has_fist,2_3_rskull"]
+						"access_rules": ["$secret3_2_3,$has_fist,2_3_bskull,slide", "speedrun,slide,$rocket_ride", "speedrun,slide,$has_rock0_fire2"]
 					}
 				],
 				"map_locations": [
@@ -741,7 +741,7 @@
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal24,$goal_reach"],
-						"access_rules": ["$has_fist,2_4_bskull,2_4_rskull,$not_pgoal","$has_fist,2_4_bskull,2_4_rskull,$good_weapon", "$speedexit_2_4,$not_pgoal", "$speedexit_2_4,$good_weapon,pgoal"]
+						"access_rules": ["$has_fist,2_4_bskull,2_4_rskull,$not_pgoal","$has_fist,2_4_bskull,2_4_rskull,$good_weapon,pgoal", "$speedexit_2_4,$not_pgoal"]
 					},
 					{
 						"name": "Parry a punch",
@@ -751,7 +751,7 @@
 					{
 						"name": "P Rank",
 						"visibility_rules": ["prank"],
-						"access_rules": ["$has_fist,2_4_bskull,2_4_rskull,$good_weapon", "$speedexit_2_4,$good_weapon"]
+						"access_rules": ["$has_fist,2_4_bskull,2_4_rskull,$good_weapon"]
 					}
 				],
 				"map_locations": [
@@ -847,18 +847,18 @@
 					{
 						"name": "Cleared 3-2",
 						"visibility_rules": ["$goal_not|goal32"],
-						"access_rules": ["slide","$has_naialt"],
+						"access_rules": ["slide,$good_weapon", "$has_naialt,$good_weapon", "speedrun,$has_rock0_fire2,$good_weapon"],
 						"hosted_item": "lvlcomplete"
 					},
 					{
 						"name": "Goal Cleared",
 						"visibility_rules": ["goal32,$goal_reach"],
-						"access_rules": ["slide,$not_pgoal","$has_naialt,$not_pgoal","$good_weapon,slide,pgoal","$good_weapon,$has_naialt,pgoal"]
+						"access_rules": ["slide,$good_weapon,$not_pgoal","$has_naialt,$good_weapon,$not_pgoal", "speedrun,$has_rock0_fire2,$good_weapon,$not_pgoal", "$good_weapon,slide,pgoal","$good_weapon,$has_naialt,pgoal"]
 					},
 					{
 						"name": "Drop Gabriel in a pit",
 						"visibility_rules": ["challenge"],
-						"access_rules": ["$good_weapon,slide,$wall_jump1","$good_weapon,$has_naialt,$wall_jump1"]
+						"access_rules": ["$good_weapon,slide,$wall_jump1","$good_weapon,$has_naialt,$wall_jump1", "speedrun,$has_rock0_fire2,$wall_jump1"]
 					},
 					{
 						"name": "P Rank",
@@ -1771,7 +1771,7 @@
 				"sections": [
 					{
 						"name": "Secret #1",
-						"access_rules": []
+						"access_rules": ["$can_break_gutterman_shield"]
 					},
 					{
 						"name": "Secret #2",
@@ -1779,7 +1779,7 @@
 					},
 					{
 						"name": "Secret #3",
-						"access_rules": ["$good_weapon,$has_fist,8_1_bskull,8_1_rskull,$can_break_glass"]
+						"access_rules": ["$good_weapon,$has_fist,8_1_bskull,8_1_rskull,$can_break_glass,$can_break_gutterman_shield"]
 					},
 					{
 						"name": "Secret #4",

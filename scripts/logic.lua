@@ -578,9 +578,17 @@ function goal_reach()
 	end
 end
 
-function speed_prank_0_1()
+function glass_0_1()
+	if (has("start01") or has("speedrun")) then
+		return true
+	else
+		return can_break_glass()
+	end
+end
+
+function exit_0_1()
 	return(
-		has("speedrun") and (windstate_wallbounce() or (windstate_dash_extend() and has("slam")) or has("arm0"))
+		(has("speedrun") and (windstate_wallbounce() or (windstate_dash_extend() and has("slam")) or has("arm0"))) or glass_0_1()
 	)
 end
 
@@ -588,13 +596,22 @@ function secret3_0_2()
 	return (
 		(has("slide") and (
 			has_rock() or has("rai2") or has_shoany0_fire2() or pro_boost() or (wall_jump1() and dash1()) or wall_jump2() or slam_storage()
-		)) or (has("speedrun") and (ultraboost() or rocket_ride() or (has("slide") and slam_storage()) and jump_gen2()))
+		)) or (has("speedrun") and (ultraboost() or rocket_ride() or (has("slide") and slam_storage()) and jump_gen2())) or
+		dash3()
 	)
 end
 
 function secret_exit_0_2()
 	return(
 		has("0_2_bskull") and has_fist() and (wall_jump3() or slam_storage() or has_shostd_fire2() or has_shoalt() or pro_boost() or has("rai2") or has_rock())
+	)
+end
+
+function speedrun_secret_exit_0_2()
+	return(
+		has("speedrun") and (
+			has_fist() and has("0_2_bskull") and (slam_storage() or ultraboost() or rocket_ride() or has("slide"))
+		)
 	)
 end
 
@@ -624,7 +641,13 @@ end
 
 function switch_1_1()
 	return(
-		has("slam") or has_rock() or has_shoany0_fire2() or has_shostd1_fire2() or pro_boost() or has("rai2") or (has("speedrun") and (windstate_wallbounce() or windstate_dash_extend() or has("arm0")))
+		has("slam") or has_rock() or has_shoany0_fire2() or has_shostd1_fire2() or pro_boost() or has("rai2")
+	)
+end
+
+function speedrun_switch_1_1()
+	return(
+		has("speedrun") and (windstate_wallbounce() or windstate_dash_extend() or has("arm0") or player_boost())
 	)
 end
 
@@ -699,7 +722,7 @@ end
 
 function speedexit_2_4()
 	return(
-		has("speedrun") and (has_fist() and (has("2_4_bskull") or has("slide") and player_boost()))
+		has("speedrun") and (has_fist() and (has("2_4_bskull") or has("slide") and player_boost()) and has("2_4_rskull"))
 	)
 end
 
@@ -790,20 +813,20 @@ end
 
 function secret2_8_1()
 	return (
-		good_weapon() and has_fist() and has("8_1_bskull") and has("8_1_rskull") and (has("arm2") or has_rock0_fire2() or slam_storage()) 
+		good_weapon() and has_fist() and has("8_1_bskull") and has("8_1_rskull") and (has("arm2") or has_rock0_fire2() or slam_storage()) and can_break_gutterman_shield()
 	)
 end
 
 function exit_8_1()
 	return(
 		good_weapon() and has_fist() and has("8_1_bskull") and has("8_1_rskull") and can_break_glass() and 
-		(has("arm2") or rocket_ride() or dash3() or (dash2() and wall_jump1()) or has_shoany0_fire2() or has_shostd1_fire2() or has("rai2") or (has_rock() and dash1()))
+		(has("arm2") or rocket_ride() or dash3() or (dash2() and wall_jump1()) or has_shoany0_fire2() or has_shostd1_fire2() or has("rai2") or (has_rock() and dash1())) and can_break_gutterman_shield()
 	)
 end
 
 function secret5_8_1()
 	return(
-		exit_8_1() and (has_rock() or has_shoany0_fire2() or has_shostd1_fire2() or has("rai2") or dash2())
+		exit_8_1() and (has_rock() or has_shoany0_fire2() or has_shostd1_fire2() or has("rai2") or dash2()) and can_break_gutterman_shield()
 	)
 end
 
