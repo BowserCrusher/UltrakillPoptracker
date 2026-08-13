@@ -2,6 +2,14 @@
 	"versions": [
 	{
 		{
+			"package_version": "0.7.8",
+			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.7.8/UltrakillPoptracker.zip",
+			"sha256": "F0DF36D3B6CAED94B4BCAAA308FE235EB16CF8CD7CF352C233B93FE943CD88FC",
+			"changelog": [
+				"Updated logic"
+			]
+		},
+		{
 			"package_version": "0.7.7",
 			"dowload_url": "https://github.com/BowserCrusher/UltrakillPoptracker/archive/refs/tags/0.7.7/UltrakillPoptracker.zip",
 			"sha256": "997C4D959F67F36881EB2C4A8982E03B64329BF1509E1CDD26A2F43835A2C149",
